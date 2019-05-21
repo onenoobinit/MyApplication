@@ -53,7 +53,6 @@ dependencies {
     api 'com.squareup.okhttp3:mockwebserver:+'
     //Gson
     api 'com.google.code.gson:gson:+'
-    api files('libs/Baidu_Mtj_3.8.1.1.jar')
     //https://github.com/laobie/StatusBarUtil
     api 'com.jaeger.statusbarutil:library:1.4.0'
     api 'com.lovedise:permissiongen:0.0.6'
