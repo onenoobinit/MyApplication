@@ -4,11 +4,86 @@
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
+        android:background="@color/white"
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView android:layout_width="wrap_content"
-              android:text="我的kotlin学习demo"
-              android:layout_height="wrap_content"/>
+    <FrameLayout android:layout_width="match_parent"
+                 android:id="@+id/fl_content"
+                 android:layout_height="match_parent"></FrameLayout>
 
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="horizontal"
+                  android:layout_alignParentBottom="true"
+                  android:layout_height="50dp">
+
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:id="@+id/ll_index"
+                      android:layout_height="match_parent">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/iv_index"
+                       android:src="@mipmap/ic_index_click"
+                       android:layout_marginTop="2dp"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="首页"
+                      android:id="@+id/tv_index"
+                      android:textSize="14sp"
+                      android:layout_marginTop="2dp"
+                      android:textColor="@color/c_4EB2FF"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:id="@+id/ll_center"
+                      android:layout_height="match_parent">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/iv_center"
+                       android:src="@mipmap/ic_index_gray"
+                       android:layout_marginTop="2dp"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="商城"
+                      android:id="@+id/tv_center"
+                      android:textSize="14sp"
+                      android:layout_marginTop="2dp"
+                      android:textColor="@color/c_4A4A4A"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="0dp"
+                      android:orientation="vertical"
+                      android:layout_weight="1"
+                      android:id="@+id/ll_me"
+                      android:layout_height="match_parent">
+
+            <ImageView android:layout_width="wrap_content"
+                       android:id="@+id/iv_me"
+                       android:src="@mipmap/ic_me_gray"
+                       android:layout_marginTop="2dp"
+                       android:layout_gravity="center_horizontal"
+                       android:layout_height="wrap_content"/>
+
+            <TextView android:layout_width="wrap_content"
+                      android:text="我的"
+                      android:id="@+id/tv_me"
+                      android:textSize="14sp"
+                      android:layout_marginTop="2dp"
+                      android:textColor="@color/c_4A4A4A"
+                      android:layout_gravity="center_horizontal"
+                      android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
 </RelativeLayout>

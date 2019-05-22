@@ -6,7 +6,6 @@
     <permission
             android:name="com.ityzp.something.permission.JPUSH_MESSAGE"
             android:protectionLevel="signature"/>
-
     <uses-permission android:name="com.ityzp.something.permission.JPUSH_MESSAGE"/>
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -54,7 +53,6 @@
                   android:screenOrientation="portrait"
                   android:theme="@style/Theme.AppCompat.Light.NoActionBar"
                   android:windowSoftInputMode="stateHidden|adjustPan"/>
-
         <meta-data
                 android:name="design_width_in_dp"
                 android:value="375"/>
