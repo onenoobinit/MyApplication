@@ -18,21 +18,12 @@ import com.example.baseklibrary.R
 /**
  * Created by wangqiang on 2019/5/20.
  */
-class StatusBarCompat {
+object StatusBarCompat {
+
     val DEFAULT_STATUS_BAR_ALPHA = 112
     private val FAKE_STATUS_BAR_VIEW_ID = R.id.statusbarutil_fake_status_bar_view
     private val FAKE_TRANSLUCENT_VIEW_ID = R.id.statusbarutil_translucent_view
     private val TAG_KEY_HAVE_SET_OFFSET = -123
-
-    /**
-     * 设置状态栏颜色
-     *
-     * @param activity 需要设置的 activity
-     * @param color    状态栏颜色值
-     */
-    fun setColor(activity: Activity, @ColorInt color: Int) {
-        setColor(activity, color, DEFAULT_STATUS_BAR_ALPHA)
-    }
 
     /**
      * 设置状态栏颜色
@@ -42,7 +33,13 @@ class StatusBarCompat {
      * @param statusBarAlpha 状态栏透明度
      */
 
-    fun setColor(activity: Activity, @ColorInt color: Int, @IntRange(from = 0, to = 255) statusBarAlpha: Int) {
+    @JvmOverloads
+    fun setColor(
+        activity: Activity, @ColorInt color: Int, @IntRange(
+            from = 0,
+            to = 255
+        ) statusBarAlpha: Int = DEFAULT_STATUS_BAR_ALPHA
+    ) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             activity.window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS)
             activity.window.clearFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_STATUS)
@@ -66,23 +63,14 @@ class StatusBarCompat {
     /**
      * 为滑动返回界面设置状态栏颜色
      *
-     * @param activity 需要设置的activity
-     * @param color    状态栏颜色值
-     */
-    fun setColorForSwipeBack(activity: Activity, color: Int) {
-        setColorForSwipeBack(activity, color, DEFAULT_STATUS_BAR_ALPHA)
-    }
-
-    /**
-     * 为滑动返回界面设置状态栏颜色
-     *
      * @param activity       需要设置的activity
      * @param color          状态栏颜色值
      * @param statusBarAlpha 状态栏透明度
      */
+    @JvmOverloads
     fun setColorForSwipeBack(
         activity: Activity, @ColorInt color: Int,
-        @IntRange(from = 0, to = 255) statusBarAlpha: Int
+        @IntRange(from = 0, to = 255) statusBarAlpha: Int = DEFAULT_STATUS_BAR_ALPHA
     ) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
 
@@ -151,22 +139,16 @@ class StatusBarCompat {
      *
      * 适用于图片作为背景的界面,此时需要图片填充到状态栏
      *
-     * @param activity 需要设置的activity
-     */
-    fun setTranslucent(activity: Activity) {
-        setTranslucent(activity, DEFAULT_STATUS_BAR_ALPHA)
-    }
-
-    /**
-     * 使状态栏半透明
-     *
-     *
-     * 适用于图片作为背景的界面,此时需要图片填充到状态栏
-     *
      * @param activity       需要设置的activity
      * @param statusBarAlpha 状态栏透明度
      */
-    fun setTranslucent(activity: Activity, @IntRange(from = 0, to = 255) statusBarAlpha: Int) {
+    @JvmOverloads
+    fun setTranslucent(
+        activity: Activity, @IntRange(
+            from = 0,
+            to = 255
+        ) statusBarAlpha: Int = DEFAULT_STATUS_BAR_ALPHA
+    ) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             return
         }
@@ -222,17 +204,6 @@ class StatusBarCompat {
     }
 
     /**
-     * 为DrawerLayout 布局设置状态栏变色
-     *
-     * @param activity     需要设置的activity
-     * @param drawerLayout DrawerLayout
-     * @param color        状态栏颜色值
-     */
-    fun setColorForDrawerLayout(activity: Activity, drawerLayout: DrawerLayout, @ColorInt color: Int) {
-        setColorForDrawerLayout(activity, drawerLayout, color, DEFAULT_STATUS_BAR_ALPHA)
-    }
-
-    /**
      * 为DrawerLayout 布局设置状态栏颜色,纯色
      *
      * @param activity     需要设置的activity
@@ -251,9 +222,10 @@ class StatusBarCompat {
      * @param color          状态栏颜色值
      * @param statusBarAlpha 状态栏透明度
      */
+    @JvmOverloads
     fun setColorForDrawerLayout(
         activity: Activity, drawerLayout: DrawerLayout, @ColorInt color: Int,
-        @IntRange(from = 0, to = 255) statusBarAlpha: Int
+        @IntRange(from = 0, to = 255) statusBarAlpha: Int = DEFAULT_STATUS_BAR_ALPHA
     ) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             return
@@ -342,19 +314,10 @@ class StatusBarCompat {
      * @param activity     需要设置的activity
      * @param drawerLayout DrawerLayout
      */
-    fun setTranslucentForDrawerLayout(activity: Activity, drawerLayout: DrawerLayout) {
-        setTranslucentForDrawerLayout(activity, drawerLayout, DEFAULT_STATUS_BAR_ALPHA)
-    }
-
-    /**
-     * 为 DrawerLayout 布局设置状态栏透明
-     *
-     * @param activity     需要设置的activity
-     * @param drawerLayout DrawerLayout
-     */
+    @JvmOverloads
     fun setTranslucentForDrawerLayout(
         activity: Activity, drawerLayout: DrawerLayout,
-        @IntRange(from = 0, to = 255) statusBarAlpha: Int
+        @IntRange(from = 0, to = 255) statusBarAlpha: Int = DEFAULT_STATUS_BAR_ALPHA
     ) {
         if (Build.VERSION.SDK_INT < Build.VERSION_CODES.KITKAT) {
             return
@@ -551,17 +514,6 @@ class StatusBarCompat {
     }
 
     /**
-     * 生成一个和状态栏大小相同的彩色矩形条
-     *
-     * @param activity 需要设置的 activity
-     * @param color    状态栏颜色值
-     * @return 状态栏矩形条
-     */
-    private fun createStatusBarView(activity: Activity, @ColorInt color: Int): View {
-        return createStatusBarView(activity, color, 0)
-    }
-
-    /**
      * 生成一个和状态栏大小相同的半透明矩形条
      *
      * @param activity 需要设置的activity
@@ -569,7 +521,7 @@ class StatusBarCompat {
      * @param alpha    透明值
      * @return 状态栏矩形条
      */
-    private fun createStatusBarView(activity: Activity, @ColorInt color: Int, alpha: Int): View {
+    private fun createStatusBarView(activity: Activity, @ColorInt color: Int, alpha: Int = 0): View {
         // 绘制一个和状态栏一样高的矩形
         val statusBarView = View(activity)
         val params = LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, getStatusBarHeight(activity))
@@ -678,3 +630,4 @@ class StatusBarCompat {
         return 0xff shl 24 or (red shl 16) or (green shl 8) or blue
     }
 }
+
