@@ -60,7 +60,7 @@ class SomeThingApp : BaseApplication() {
     override fun onCreate() {
         super.onCreate()
         instance = this
-        CrashReport.initCrashReport(getApplicationContext(), "f9880ea5d3", false)
+        CrashReport.initCrashReport(getApplicationContext(), "46e5f4aed1", false)
     }
 
     protected override fun attachBaseContext(base: Context) {

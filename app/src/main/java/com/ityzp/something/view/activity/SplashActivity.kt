@@ -1,9 +1,10 @@
-package com.ityzp.something.view
+package com.ityzp.something.view.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import com.example.baseklibrary.base.BaseActivity
+import com.example.baseklibrary.utils.SPUtil
 import com.ityzp.something.MainActivity
 import com.ityzp.something.R
 
@@ -18,18 +19,16 @@ class SplashActivity : BaseActivity() {
 
     private fun goActivity() {
         //是否登录
-//        val isFrist = SPUtil.get(this, "isFrist", false) as Boolean
+        val isFrist = SPUtil.get(this, "isFrist", false) as Boolean
         mHandler.postDelayed({
-            /*if (isFrist == true) {
+            if (isFrist == true) {
                 startActivity(Intent(this@SplashActivity, MainActivity::class.java))
 
                 overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left)
             } else if (isFrist == false) {
                 startActivity(Intent(this@SplashActivity, LeadActivity::class.java))
                 SPUtil.put(this, "isFrist", true)
-            }*/
-            startActivity(Intent(this@SplashActivity, MainActivity::class.java))
-
+            }
             overridePendingTransition(R.anim.slide_in_right, R.anim.slide_in_left)
             finish()
         }, 1000)

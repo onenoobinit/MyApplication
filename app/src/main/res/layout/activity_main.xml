@@ -23,19 +23,19 @@
                       android:id="@+id/ll_index"
                       android:layout_height="match_parent">
 
-            <ImageView android:layout_width="wrap_content"
+            <ImageView android:layout_width="25dp"
                        android:id="@+id/iv_index"
                        android:src="@mipmap/ic_index_click"
-                       android:layout_marginTop="2dp"
+                       android:layout_marginTop="3dp"
                        android:layout_gravity="center_horizontal"
-                       android:layout_height="wrap_content"/>
+                       android:layout_height="25dp"/>
 
             <TextView android:layout_width="wrap_content"
                       android:text="首页"
                       android:id="@+id/tv_index"
-                      android:textSize="14sp"
-                      android:layout_marginTop="2dp"
-                      android:textColor="@color/c_4EB2FF"
+                      android:textSize="11sp"
+                      android:layout_marginTop="3dp"
+                      android:textColor="@color/c_4A4A4A"
                       android:layout_gravity="center_horizontal"
                       android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -46,19 +46,19 @@
                       android:id="@+id/ll_center"
                       android:layout_height="match_parent">
 
-            <ImageView android:layout_width="wrap_content"
+            <ImageView android:layout_width="25dp"
                        android:id="@+id/iv_center"
-                       android:src="@mipmap/ic_index_gray"
-                       android:layout_marginTop="2dp"
+                       android:src="@mipmap/ic_center"
+                       android:layout_marginTop="3dp"
                        android:layout_gravity="center_horizontal"
-                       android:layout_height="wrap_content"/>
+                       android:layout_height="25dp"/>
 
             <TextView android:layout_width="wrap_content"
-                      android:text="商城"
+                      android:text="兴趣"
                       android:id="@+id/tv_center"
-                      android:textSize="14sp"
-                      android:layout_marginTop="2dp"
-                      android:textColor="@color/c_4A4A4A"
+                      android:textSize="11sp"
+                      android:layout_marginTop="3dp"
+                      android:textColor="@color/c_999999"
                       android:layout_gravity="center_horizontal"
                       android:layout_height="wrap_content"/>
         </LinearLayout>
@@ -69,21 +69,27 @@
                       android:id="@+id/ll_me"
                       android:layout_height="match_parent">
 
-            <ImageView android:layout_width="wrap_content"
+            <ImageView android:layout_width="25dp"
                        android:id="@+id/iv_me"
-                       android:src="@mipmap/ic_me_gray"
-                       android:layout_marginTop="2dp"
+                       android:src="@mipmap/ic_me"
+                       android:layout_marginTop="3dp"
                        android:layout_gravity="center_horizontal"
-                       android:layout_height="wrap_content"/>
+                       android:layout_height="25dp"/>
 
             <TextView android:layout_width="wrap_content"
                       android:text="我的"
                       android:id="@+id/tv_me"
-                      android:textSize="14sp"
-                      android:layout_marginTop="2dp"
-                      android:textColor="@color/c_4A4A4A"
+                      android:textSize="11sp"
+                      android:layout_marginTop="3dp"
+                      android:textColor="@color/c_999999"
                       android:layout_gravity="center_horizontal"
                       android:layout_height="wrap_content"/>
         </LinearLayout>
     </LinearLayout>
+
+    <View android:layout_width="match_parent"
+          android:layout_alignParentBottom="true"
+          android:layout_marginBottom="50dp"
+          android:background="@color/c_F3F2F2"
+          android:layout_height="1dp"></View>
 </RelativeLayout>

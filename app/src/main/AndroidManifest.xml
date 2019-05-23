@@ -6,6 +6,7 @@
     <permission
             android:name="com.ityzp.something.permission.JPUSH_MESSAGE"
             android:protectionLevel="signature"/>
+
     <uses-permission android:name="com.ityzp.something.permission.JPUSH_MESSAGE"/>
     <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -40,19 +41,25 @@
             android:usesCleartextTraffic="true"
             tools:ignore="AllowBackup"
             tools:replace="android:name">
-        <activity android:name=".view.SplashActivity"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/AppTheme.NoActionBarWithBackGround">
+        <activity android:name=".view.activity.LeadActivity">
+        </activity>
+        <activity
+                android:name=".view.activity.SplashActivity"
+                android:screenOrientation="portrait"
+                android:theme="@style/AppTheme.NoActionBarWithBackGround">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
+
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity"
-                  android:launchMode="singleTask"
-                  android:screenOrientation="portrait"
-                  android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-                  android:windowSoftInputMode="stateHidden|adjustPan"/>
+        <activity
+                android:name=".MainActivity"
+                android:launchMode="singleTask"
+                android:screenOrientation="portrait"
+                android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+                android:windowSoftInputMode="stateHidden|adjustPan"/>
+
         <meta-data
                 android:name="design_width_in_dp"
                 android:value="375"/>
