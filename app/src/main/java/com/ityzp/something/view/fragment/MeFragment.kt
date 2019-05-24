@@ -40,6 +40,17 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
         rv_vip.adapter = MeVipAdapter(mevips!!, mContext)
 
         tv_me_login.setOnClickListener(this)
+        iv_set.setOnClickListener(this)
+        tv_feed.setOnClickListener(this)
+        tv_favor.setOnClickListener(this)
+        tv_skin.setOnClickListener(this)
+        tv_service.setOnClickListener(this)
+        tv_order.setOnClickListener(this)
+        tv_gy.setOnClickListener(this)
+        tv_card.setOnClickListener(this)
+        tv_money.setOnClickListener(this)
+        tv_gift.setOnClickListener(this)
+        tv_about.setOnClickListener(this)
     }
 
     private fun initanimation() {
@@ -75,10 +86,32 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
     override fun onClick(v: View?) {
         when (v!!.id) {
-            R.id.tv_me_login -> {
+            R.id.tv_me_login -> {//登录
                 val intent = Intent()
                 intent.setClass(mContext, LoginActivity::class.java)
                 startActivityForResult(intent, 1001)
+            }
+            R.id.iv_set -> {//设置
+            }
+            R.id.tv_feed -> {//反馈
+            }
+            R.id.tv_favor -> {//收藏
+            }
+            R.id.tv_skin -> {//皮肤
+            }
+            R.id.tv_service -> {//服务
+            }
+            R.id.tv_order -> {//订单
+            }
+            R.id.tv_gy -> {//公益
+            }
+            R.id.tv_card -> {//卡券
+            }
+            R.id.tv_money -> {//钱包
+            }
+            R.id.tv_gift -> {//礼物
+            }
+            R.id.tv_about -> {//关于
             }
         }
     }
