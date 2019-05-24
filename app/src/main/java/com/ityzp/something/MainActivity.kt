@@ -6,6 +6,7 @@ import android.support.v4.app.Fragment
 import android.support.v4.app.FragmentTransaction
 import android.view.View
 import com.example.baseklibrary.base.BaseActivity
+import com.example.baseklibrary.utils.StatusBarCompat
 import com.ityzp.something.view.fragment.CenterFragment
 import com.ityzp.something.view.fragment.IndexFragment
 import com.ityzp.something.view.fragment.MeFragment
@@ -20,6 +21,7 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         get() = R.layout.activity_main
 
     override fun initViews(savedInstanceState: Bundle?) {
+        StatusBarCompat.setTranslucentForImageView(this, 0, null)
         ll_index.setOnClickListener(this)
         ll_center.setOnClickListener(this)
         ll_me.setOnClickListener(this)

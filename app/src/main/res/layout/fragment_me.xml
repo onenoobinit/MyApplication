@@ -1,11 +1,207 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:background="@color/white"
-                android:layout_height="match_parent">
+				android:layout_width="match_parent"
+				android:background="@color/c_F3F2F2"
+				android:id="@+id/rl_root"
+				android:layout_height="match_parent">
 
-    <TextView android:layout_width="wrap_content"
-              android:text="我的"
-              android:layout_centerInParent="true"
-              android:layout_height="wrap_content"/>
+	<ScrollView android:layout_width="match_parent"
+				android:overScrollMode="never"
+				android:id="@+id/sv_me"
+				android:scrollbars="none"
+				android:layout_height="match_parent">
+
+		<LinearLayout android:layout_width="match_parent"
+					  android:orientation="vertical"
+					  android:background="@color/c_F3F2F2"
+					  android:layout_height="match_parent">
+
+			<RelativeLayout android:layout_width="match_parent"
+							android:layout_height="wrap_content">
+
+				<ImageView android:layout_width="match_parent"
+						   android:id="@+id/iv_head_view"
+						   android:src="@mipmap/ic_me_head"
+						   android:scaleType="centerCrop"
+						   android:layout_height="match_parent"/>
+
+				<RelativeLayout android:layout_width="wrap_content"
+								android:id="@+id/rl_user"
+								android:layout_centerInParent="true"
+								android:layout_height="wrap_content">
+
+					<de.hdodenhof.circleimageview.CircleImageView android:layout_width="75dp"
+																  android:id="@+id/iv_user"
+																  android:src="@drawable/ic_app"
+																  android:layout_height="75dp"/>
+
+					<TextView android:layout_width="wrap_content"
+							  android:text="登录"
+							  android:id="@+id/tv_me_login"
+							  android:layout_below="@+id/iv_user"
+							  android:layout_centerHorizontal="true"
+							  android:layout_marginTop="15dp"
+							  android:textColor="@color/white"
+							  android:textSize="18sp"
+							  android:layout_height="wrap_content"/>
+
+					<LinearLayout android:layout_width="wrap_content"
+								  android:orientation="vertical"
+								  android:layout_toRightOf="@+id/iv_user"
+								  android:layout_marginLeft="15dp"
+								  android:id="@+id/ll_user"
+								  android:visibility="gone"
+								  android:layout_height="wrap_content">
+
+						<TextView android:layout_width="wrap_content"
+								  android:id="@+id/tv_name"
+								  android:text="弱鸡"
+								  android:layout_marginTop="15dp"
+								  android:textColor="@color/white"
+								  android:textSize="16sp"
+								  android:layout_height="wrap_content"/>
+
+						<TextView android:layout_width="wrap_content"
+								  android:text="个人信息"
+								  android:textColor="@color/white"
+								  android:textSize="16sp"
+								  android:layout_marginTop="10dp"
+								  android:layout_height="wrap_content"/>
+					</LinearLayout>
+				</RelativeLayout>
+
+				<ImageView android:layout_width="wrap_content"
+						   android:id="@+id/iv_set"
+						   android:src="@mipmap/ic_set"
+						   android:layout_alignParentRight="true"
+						   android:layout_marginTop="20dp"
+						   android:layout_marginRight="15dp"
+						   android:layout_height="wrap_content"/>
+			</RelativeLayout>
+
+			<TextView android:layout_width="match_parent"
+					  android:text="会员服务"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="16sp"
+					  android:background="@color/white"
+					  android:paddingLeft="10dp"
+					  android:gravity="center_vertical"
+					  android:layout_height="40dp"/>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="1dp"/>
+
+			<android.support.v7.widget.RecyclerView android:layout_width="match_parent"
+													android:id="@+id/rv_vip"
+													android:paddingLeft="5dp"
+													android:paddingRight="5dp"
+													android:background="@color/white"
+													android:layout_height="100dp">
+			</android.support.v7.widget.RecyclerView>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="10dp"></View>
+			<TextView android:layout_width="match_parent"
+					  android:text="我的服务"
+					  android:textSize="16sp"
+					  android:textColor="@color/c_4A4A4A"
+					  android:background="@color/white"
+					  android:paddingLeft="10dp"
+					  android:gravity="center_vertical"
+					  android:layout_height="40dp"/>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="1dp"></View>
+
+			<LinearLayout android:layout_width="match_parent"
+						  android:weightSum="3"
+						  android:layout_marginTop="1px"
+						  android:layout_height="wrap_content">
+
+				<TextView android:text="帮助反馈"
+						  android:id="@+id/tv_feed"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/professor_quzi_icon"/>
+				<TextView android:text="收藏"
+						  android:id="@+id/tv_favor"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/my_favorites"/>
+				<TextView android:text="皮肤"
+						  android:id="@+id/tv_skin"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/grzx_fsfw_icon"/>
+			</LinearLayout>
+
+			<LinearLayout android:layout_width="match_parent"
+						  android:weightSum="3"
+						  android:layout_marginTop="1px"
+						  android:layout_height="wrap_content">
+
+				<TextView android:text="客服"
+						  android:id="@+id/tv_service"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/grzx_kfzx_icon"/>
+				<TextView android:text="订单"
+						  android:id="@+id/tv_order"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/store_order_icon"/>
+				<TextView android:text="公益"
+						  android:id="@+id/tv_gy"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/wd_wdfw_fxhd_icon"/>
+			</LinearLayout>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="10dp"></View>
+
+			<LinearLayout android:layout_width="match_parent"
+						  android:weightSum="3"
+						  android:layout_marginTop="1px"
+						  android:layout_height="wrap_content">
+
+				<TextView android:text="卡券"
+						  android:id="@+id/tv_card"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/grzx_wdyhq_icon"/>
+				<TextView android:text="钱包"
+						  android:id="@+id/tv_money"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/my_fine"/>
+				<TextView android:text="礼包"
+						  android:id="@+id/tv_gift"
+						  style="@style/user_info"
+						  android:drawableTop="@mipmap/grzx_lkgz_icon"/>
+			</LinearLayout>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="10dp"></View>
+
+			<TextView android:layout_width="match_parent"
+					  android:id="@+id/tv_about"
+					  android:text="关于我们"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="16sp"
+					  android:background="@color/white"
+					  android:gravity="center"
+					  android:layout_height="50dp"/>
+			<View android:layout_width="match_parent"
+
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="10dp"></View>
+
+			<TextView android:layout_width="match_parent"
+					  android:text="somethingV1.0.0"
+					  android:gravity="center_horizontal"
+					  android:paddingTop="10dp"
+					  android:background="@color/white"
+					  android:textColor="@color/c_999999"
+					  android:textSize="14sp"
+					  android:layout_height="70dp"/>
+		</LinearLayout>
+	</ScrollView>
 </RelativeLayout>

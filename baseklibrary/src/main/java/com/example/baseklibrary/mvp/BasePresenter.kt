@@ -1,5 +1,6 @@
 package com.example.baseklibrary.mvp
 
+import com.google.gson.Gson
 import java.util.*
 
 /**
@@ -7,6 +8,7 @@ import java.util.*
  */
 abstract class BasePresenter<T> {
     var params: Map<String, Any> = HashMap()
+    val gson: Gson? = Gson()
     var view: T? = null
 
     fun attach(view: T) {
