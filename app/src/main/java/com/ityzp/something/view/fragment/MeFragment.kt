@@ -3,6 +3,7 @@ package com.ityzp.something.view.fragment
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
+import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -13,6 +14,7 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.baseklibrary.mvp.MvpFragment
+import com.example.baseklibrary.utils.L
 import com.ityzp.something.R
 import com.ityzp.something.adapter.MeVipAdapter
 import com.ityzp.something.contract.MeContract
@@ -144,7 +146,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
 
     private fun openGallery() {
-        PictureSelector.create(getActivity())
+        PictureSelector.create(mContext as Activity)
             .openGallery(PictureMimeType.ofImage())
             .theme(R.style.picture_QQ_style)
             .imageSpanCount(4)
@@ -187,8 +189,9 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
             ll_user.visibility = LinearLayout.GONE
             startOutAnimator()
         }
-
-        if (requestCode == PictureConfig.CHOOSE_REQUEST) {
+        L.i("AAAA", "我走了re" + resultCode)
+        if (requestCode == PictureConfig.CHOOSE_REQUEST && resultCode == -1) {
+            L.i("AAAA", "我走了" + requestCode)
             val medialist = PictureSelector.obtainMultipleResult(data)
             for (i in medialist.indices) {
                 val localMedia = medialist.get(i)
@@ -196,6 +199,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 if (localMedia.isCompressed()) {
                     filePath = localMedia.getCompressPath()
                 }
+                L.i("AAAA", filePath)
                 Glide.with(this).load(filePath).apply(mRequestOptions).into(iv_user)
                 val file = File(filePath)
                 val requestBody = RequestBody.create(MediaType.parse("image/jpeg"), file)
