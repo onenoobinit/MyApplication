@@ -14,7 +14,8 @@ import javax.net.ssl.*
 /**
  * Created by wangqiang on 2019/5/20.
  */
-class HttpsUtils {
+object HttpsUtils {
+
     private fun getWrappedTrustManagers(trustManagers: Array<TrustManager>): Array<TrustManager> {
 
         val originalTrustManager = trustManagers[0] as X509TrustManager

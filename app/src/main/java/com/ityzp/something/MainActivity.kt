@@ -1,5 +1,6 @@
 package com.ityzp.something
 
+import android.Manifest
 import android.graphics.Color
 import android.os.Bundle
 import android.support.v4.app.Fragment
@@ -10,6 +11,7 @@ import com.example.baseklibrary.utils.StatusBarCompat
 import com.ityzp.something.view.fragment.CenterFragment
 import com.ityzp.something.view.fragment.IndexFragment
 import com.ityzp.something.view.fragment.MeFragment
+import com.tbruyelle.rxpermissions2.RxPermissions
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity(), View.OnClickListener {
@@ -26,6 +28,24 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         ll_center.setOnClickListener(this)
         ll_me.setOnClickListener(this)
         initFragments()
+        checkPermisss()
+    }
+
+    private fun checkPermisss() {
+        val rxPermissions = RxPermissions(this)
+        rxPermissions
+            .request(
+                Manifest.permission.CAMERA,
+                Manifest.permission.READ_PHONE_STATE,
+                Manifest.permission.WRITE_EXTERNAL_STORAGE
+            )
+            .subscribe { granted ->
+                if (granted) {
+                    // All requested permissions are granted
+                } else {
+                    // At least one permission is denied
+                }
+            }
     }
 
     private fun initFragments() {

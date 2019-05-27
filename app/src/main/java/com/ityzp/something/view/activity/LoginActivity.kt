@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.baseklibrary.mvp.MvpActivity
 import com.ityzp.something.R
+import com.ityzp.something.SomeThingApp
 import com.ityzp.something.contract.LoginContract
 import com.ityzp.something.moudle.User
 import com.ityzp.something.presenter.LoginPresenter
@@ -26,16 +27,18 @@ class LoginActivity : MvpActivity<LoginContract.loginView, LoginPresenter>(), Lo
     }
 
     override fun login(user: User) {
-
+        user!!.isLogined = true
+        SomeThingApp.instance.setUser(user, true)
+        setResult(1)
+        finish()
     }
 
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.tv_login -> {
-                setResult(1)
-                finish()
+
+                mPresenter.login()
             }
         }
     }
-
 }

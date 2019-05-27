@@ -52,7 +52,7 @@ abstract class BaseObserver : DisposableObserver<BaseEntity>() {
 
     protected abstract fun onHandleSuccess(baseEntity: BaseEntity)
 
-    protected fun onFinally() {}
+    protected open fun onFinally() {}
 
     /*protected void onHandleFailed(String message) {
         ToastUtil.show(BaseApplication.getInstance(), message, Gravity.CENTER);
