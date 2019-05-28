@@ -3,7 +3,6 @@ package com.ityzp.something.view.fragment
 import android.animation.Animator
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -14,8 +13,8 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.baseklibrary.mvp.MvpFragment
-import com.example.baseklibrary.utils.L
 import com.ityzp.something.R
+import com.ityzp.something.SomeThingApp
 import com.ityzp.something.adapter.MeVipAdapter
 import com.ityzp.something.contract.MeContract
 import com.ityzp.something.moudle.MeInfo
@@ -23,16 +22,9 @@ import com.ityzp.something.presenter.MePresenter
 import com.ityzp.something.view.activity.LoginActivity
 import com.ityzp.something.view.activity.SettingActivity
 import com.ityzp.something.widgets.GlideCircleTransform
-import com.luck.picture.lib.PictureSelector
-import com.luck.picture.lib.config.PictureConfig
-import com.luck.picture.lib.config.PictureMimeType
 import kotlinx.android.synthetic.main.fragment_me.*
 import me.everything.android.ui.overscroll.IOverScrollUpdateListener
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
-import okhttp3.MediaType
-import okhttp3.MultipartBody
-import okhttp3.RequestBody
-import java.io.File
 
 
 /**
@@ -45,9 +37,6 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     private var mevips: ArrayList<String>? = ArrayList()
     val animatorSet = AnimatorSet()
     var animatorlist: ArrayList<Animator>? = arrayListOf()
-    private var requestBody: RequestBody? = null
-    private var mBody: MultipartBody.Part? = null
-    private val TAKE_PHOTO_REQUEST_CODE: Int = 1
     private val mRequestOptions = RequestOptions.placeholderOf(R.drawable.ic_app).transform(GlideCircleTransform())
     override val layoutResId: Int
         get() = R.layout.fragment_me
@@ -106,6 +95,16 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
         return MePresenter()
     }
 
+    override fun onResume() {
+        super.onResume()
+        if (!SomeThingApp.instance.isNeedLogin) {
+            Glide.with(this).load(SomeThingApp.instance.getUser().portrait).apply(mRequestOptions).into(iv_user)
+            tv_me_login.visibility = TextView.GONE
+            ll_user.visibility = LinearLayout.VISIBLE
+            startAnimatorSet()
+        }
+    }
+
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.tv_me_login -> {//登录
@@ -114,7 +113,15 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 startActivityForResult(intent, 1001)
             }
             R.id.iv_user -> {//选择头像
-                openGallery()
+                if (!SomeThingApp.instance.isNeedLogin) {
+                    val intent = Intent()
+                    intent.setClass(mContext, MeInfoActivity::class.java)
+                    startActivity(intent)
+                } else {
+                    val intent = Intent()
+                    intent.setClass(mContext, LoginActivity::class.java)
+                    startActivityForResult(intent, 1003)
+                }
             }
             R.id.iv_set -> {//设置
                 val intent = Intent()
@@ -145,65 +152,27 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     }
 
 
-    private fun openGallery() {
-        PictureSelector.create(mContext as Activity)
-            .openGallery(PictureMimeType.ofImage())
-            .theme(R.style.picture_QQ_style)
-            .imageSpanCount(4)
-            .selectionMode(PictureConfig.SINGLE)
-            .previewImage(true)
-            .previewVideo(false)
-            .enablePreviewAudio(false)
-            .isCamera(true)
-            .isZoomAnim(true)
-            .enableCrop(true)
-            .compress(true)
-            .synOrAsy(true)
-            .glideOverride(160, 160)
-            .withAspectRatio(1, 1)
-            .hideBottomControls(true)
-            .isGif(false)
-            .freeStyleCropEnabled(true)
-            .circleDimmedLayer(false)
-            .showCropFrame(true)
-            .showCropGrid(true)
-            .openClickSound(false)
-            .isDragFrame(false)
-            .minimumCompressSize(100)
-            .rotateEnabled(false)
-            .scaleEnabled(true)
-            //结果回调onActivityResult code
-            .forResult(PictureConfig.CHOOSE_REQUEST)
-    }
-
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == 1001 && resultCode == 1) {
-            tv_me_login.visibility = TextView.GONE
-            ll_user.visibility = LinearLayout.VISIBLE
-            startAnimatorSet()
-        }
-
-        if (requestCode == 1002 && resultCode == 2) {
-            tv_me_login.visibility = TextView.VISIBLE
-            ll_user.visibility = LinearLayout.GONE
-            startOutAnimator()
-        }
-        L.i("AAAA", "我走了re" + resultCode)
-        if (requestCode == PictureConfig.CHOOSE_REQUEST && resultCode == -1) {
-            L.i("AAAA", "我走了" + requestCode)
-            val medialist = PictureSelector.obtainMultipleResult(data)
-            for (i in medialist.indices) {
-                val localMedia = medialist.get(i)
-                var filePath = ""
-                if (localMedia.isCompressed()) {
-                    filePath = localMedia.getCompressPath()
+        if (resultCode == SomeThingApp.RESULT_OK) {
+            when (requestCode) {
+                1001 -> {
+                    tv_me_login.visibility = TextView.GONE
+                    ll_user.visibility = LinearLayout.VISIBLE
+                    startAnimatorSet()
                 }
-                L.i("AAAA", filePath)
-                Glide.with(this).load(filePath).apply(mRequestOptions).into(iv_user)
-                val file = File(filePath)
-                val requestBody = RequestBody.create(MediaType.parse("image/jpeg"), file)
-                val mBody = MultipartBody.Part.createFormData("file", file.name, requestBody)
+
+                1002 -> {
+                    tv_me_login.visibility = TextView.VISIBLE
+                    ll_user.visibility = LinearLayout.GONE
+                    startOutAnimator()
+                }
+
+                1003 -> {
+                    val intent = Intent()
+                    intent.setClass(mContext, LoginActivity::class.java)
+                    startActivityForResult(intent, 1001)
+                }
             }
         }
     }

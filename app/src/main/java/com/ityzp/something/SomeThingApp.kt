@@ -76,5 +76,6 @@ class SomeThingApp : BaseApplication() {
         private var user: User? = null
         lateinit var instance: SomeThingApp
         var APP_ID = "wx89bfbe26609a6b54"
+        val RESULT_OK = -1
     }
 }

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import com.example.baseklibrary.base.BaseActivity
 import com.ityzp.something.R
+import com.ityzp.something.SomeThingApp
 import kotlinx.android.synthetic.main.activity_setting.*
 
 class SettingActivity : BaseActivity(), View.OnClickListener {
@@ -21,7 +22,8 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
     override fun onClick(v: View?) {
         when (v!!.id) {
             R.id.tv_out -> {
-                setResult(2)
+                SomeThingApp.instance.setUser(null, false)
+                setResult(SomeThingApp.RESULT_OK)
                 finish()
             }
         }

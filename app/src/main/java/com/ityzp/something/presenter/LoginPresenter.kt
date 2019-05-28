@@ -21,12 +21,10 @@ import java.util.concurrent.TimeUnit
  */
 open class LoginPresenter : BasePresenter<LoginContract.loginView>() {
 
-
-    fun login() {
+    fun login(tell: String, password: String) {
         val postInfoBean = LoginPost().PostInfoBean()
-        postInfoBean.loginName = "name"
-        postInfoBean.password = "password"
-        postInfoBean.authId = "123"
+        postInfoBean.loginName = tell
+        postInfoBean.password = password
         val toJson = gson!!.toJson(postInfoBean)
         val requestBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), toJson)
         RetrofitManager.getInstance()!!.create(CommonService::class.java)

@@ -9,6 +9,9 @@
 		tools:context="com.ityzp.something.view.activity.SettingActivity">
 
 
+
+
+
 	<TextView android:layout_width="150dp"
 			  android:layout_alignParentBottom="true"
 			  android:layout_marginBottom="60dp"

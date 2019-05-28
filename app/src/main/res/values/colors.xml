@@ -103,4 +103,6 @@
     <color name="item_text">#666666</color>
     <color name="main_text">#333333</color>
     <color name="bg_398f3d">#398f3d</color>
+    <color name="tb_bg">#5ACDA5</color>
+    <color name="tb_bg_gray">#BFF6E3</color>
 </resources>
