@@ -19,6 +19,7 @@ import com.ityzp.something.adapter.MeVipAdapter
 import com.ityzp.something.contract.MeContract
 import com.ityzp.something.moudle.MeInfo
 import com.ityzp.something.presenter.MePresenter
+import com.ityzp.something.view.activity.AboutActivity
 import com.ityzp.something.view.activity.LoginActivity
 import com.ityzp.something.view.activity.SettingActivity
 import com.ityzp.something.widgets.GlideCircleTransform
@@ -28,6 +29,7 @@ import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 
 
 /**
+ * 我的
  * Created by wangqiang on 2019/5/23.
  */
 
@@ -147,6 +149,9 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
             R.id.tv_gift -> {//礼物
             }
             R.id.tv_about -> {//关于
+                val intent = Intent()
+                intent.setClass(mContext, AboutActivity::class.java)
+                startActivity(intent)
             }
         }
     }

@@ -44,6 +44,10 @@
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
 			tools:replace="android:name">
+		<activity android:name=".view.activity.FeedBackActivity">
+		</activity>
+		<activity android:name=".view.activity.AboutActivity">
+		</activity>
 		<activity android:name=".view.activity.RegisterChoseActivity">
 		</activity>
 		<activity android:name=".view.activity.RegisterActivity">
