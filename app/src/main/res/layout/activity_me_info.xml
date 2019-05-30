@@ -66,6 +66,150 @@
 			<View android:layout_width="match_parent"
 				  android:background="@color/c_F3F2F2"
 				  android:layout_height="1dp"></View>
+
+			<RelativeLayout
+					android:id="@+id/rl_meinfo_name"
+					android:layout_width="match_parent"
+					android:layout_height="70dp"
+					android:background="@drawable/ll_click"
+					android:clickable="true">
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="15dp"
+						android:orientation="horizontal">
+
+					<TextView
+							android:id="@+id/tv_meinfo_name"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text=""
+							android:textSize="14sp"
+							android:textColor="@color/c_999999"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/ic_app"/>
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:layout_marginLeft="10dp"
+							android:src="@mipmap/ic_me_arrow_big"/>
+				</LinearLayout>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="15dp"
+						android:text="昵称"
+						android:textColor="@color/c_4A4A4A"
+						android:textSize="14sp"/>
+			</RelativeLayout>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="1dp"></View>
+
+			<RelativeLayout
+					android:id="@+id/rl_meinfo_sex"
+					android:layout_width="match_parent"
+					android:layout_height="70dp"
+					android:background="@drawable/ll_click"
+					android:clickable="true">
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="15dp"
+						android:orientation="horizontal">
+
+					<TextView
+							android:id="@+id/tv_meinfo_sex"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text=""
+							android:textSize="14sp"
+							android:textColor="@color/c_999999"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/ic_app"/>
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:layout_marginLeft="10dp"
+							android:src="@mipmap/ic_me_arrow_big"/>
+				</LinearLayout>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="15dp"
+						android:text="性别"
+						android:textColor="@color/c_4A4A4A"
+						android:textSize="14sp"/>
+			</RelativeLayout>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="1dp"></View>
+
+			<RelativeLayout
+					android:id="@+id/rl_meinfo_brithday"
+					android:layout_width="match_parent"
+					android:layout_height="70dp"
+					android:background="@drawable/ll_click"
+					android:clickable="true">
+
+				<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerVertical="true"
+						android:layout_marginRight="15dp"
+						android:orientation="horizontal">
+
+					<TextView
+							android:id="@+id/tv_meinfo_brithday"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text=""
+							android:textSize="14sp"
+							android:textColor="@color/c_999999"
+							android:layout_gravity="center_vertical"
+							android:src="@drawable/ic_app"/>
+
+					<ImageView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:layout_gravity="center_vertical"
+							android:layout_marginLeft="10dp"
+							android:src="@mipmap/ic_me_arrow_big"/>
+				</LinearLayout>
+
+				<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerVertical="true"
+						android:layout_marginLeft="15dp"
+						android:text="生日"
+						android:textColor="@color/c_4A4A4A"
+						android:textSize="14sp"/>
+			</RelativeLayout>
+
+			<View android:layout_width="match_parent"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_height="1dp"></View>
+
+
+
 		</LinearLayout>
 	</ScrollView>
 </RelativeLayout>

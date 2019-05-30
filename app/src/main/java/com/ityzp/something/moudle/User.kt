@@ -58,7 +58,7 @@ class User : Serializable {
                 ""
             } else field
         }
-    var companyName: String? = null
+    var sex: String? = null
         get() {
             return if (TextUtils.isEmpty(field)) {
                 ""

@@ -44,6 +44,12 @@
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
 			tools:replace="android:name">
+		<activity android:name=".view.activity.AddAddressActivity">
+		</activity>
+		<activity android:name=".presenter.MyAddressActivity">
+		</activity>
+		<activity android:name=".view.activity.ChangeNameActivity">
+		</activity>
 		<activity android:name=".view.activity.FeedBackActivity">
 		</activity>
 		<activity android:name=".view.activity.AboutActivity">

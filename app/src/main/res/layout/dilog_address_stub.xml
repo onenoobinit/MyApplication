@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content">
+
+	<RelativeLayout android:layout_width="match_parent"
+					android:background="@drawable/bg_select_stub"
+					android:layout_alignParentBottom="true"
+					android:layout_height="450dp">
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="选择地址标签"
+				  android:textColor="@color/c_4A4A4A"
+				  android:textSize="10sp"
+				  android:id="@+id/tv_top"
+				  android:layout_centerHorizontal="true"
+				  android:layout_marginTop="10dp"
+				  android:layout_height="wrap_content"/>
+
+		<ImageView android:layout_width="wrap_content"
+				   android:src="@mipmap/ic_close"
+				   android:layout_alignParentRight="true"
+				   android:layout_marginTop="10dp"
+				   android:layout_marginRight="15dp"
+				   android:id="@+id/iv_stub_close"
+				   android:layout_height="wrap_content"/>
+
+		<RelativeLayout android:layout_width="match_parent"
+						android:layout_below="@+id/tv_top"
+						android:id="@+id/rl_stub"
+						android:layout_marginTop="30dp"
+						android:layout_marginLeft="10dp"
+						android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_stub_top"
+					   android:id="@+id/iv_et_left"
+					   android:layout_centerVertical="true"
+					   android:layout_height="wrap_content"/>
+
+			<EditText android:layout_width="250dp"
+					  android:background="@null"
+					  android:id="@+id/et_stub"
+					  android:layout_toRightOf="@+id/iv_et_left"
+					  android:layout_marginLeft="15dp"
+					  android:layout_marginTop="5dp"
+					  android:hint="默认显示姓名，可输入自定义标签"
+					  android:textSize="11sp"
+					  android:textColorHint="@color/c_999999"
+					  android:textColor="@color/c_4A4A4A"
+					  android:layout_height="wrap_content"/>
+
+			<View android:layout_width="250dp"
+				  android:background="@color/c_F3F2F2"
+				  android:layout_toRightOf="@+id/iv_et_left"
+				  android:layout_below="@+id/et_stub"
+				  android:layout_marginLeft="15dp"
+				  android:layout_marginTop="10dp"
+				  android:layout_height="1dp"></View>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="match_parent"
+						android:layout_marginTop="30dp"
+						android:layout_below="@+id/rl_stub"
+						android:id="@+id/rl_home"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="15dp"
+						android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_home"
+					   android:layout_centerVertical="true"
+					   android:id="@+id/iv_home"
+					   android:layout_height="wrap_content"/>
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="家"
+					  android:layout_centerVertical="true"
+					  android:layout_toRightOf="@+id/iv_home"
+					  android:layout_marginLeft="5dp"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="13sp"
+					  android:layout_height="wrap_content"/>
+
+			<ImageView android:layout_width="wrap_content"
+					   android:id="@+id/iv_stub_select"
+					   android:layout_centerVertical="true"
+					   android:src="@mipmap/ic_stub_select"
+					   android:visibility="gone"
+					   android:layout_alignParentRight="true"
+					   android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="match_parent"
+						android:layout_marginTop="30dp"
+						android:layout_below="@+id/rl_home"
+						android:id="@+id/rl_company"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="15dp"
+						android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_company"
+					   android:layout_centerVertical="true"
+					   android:id="@+id/iv_company"
+					   android:layout_height="wrap_content"/>
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="公司"
+					  android:layout_centerVertical="true"
+					  android:layout_toRightOf="@+id/iv_company"
+					  android:layout_marginLeft="5dp"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="13sp"
+					  android:layout_height="wrap_content"/>
+
+			<ImageView android:layout_width="wrap_content"
+					   android:id="@+id/iv_stub_select_company"
+					   android:layout_centerVertical="true"
+					   android:visibility="gone"
+					   android:src="@mipmap/ic_stub_select"
+					   android:layout_alignParentRight="true"
+					   android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="match_parent"
+						android:layout_marginTop="30dp"
+						android:layout_below="@+id/rl_company"
+						android:id="@+id/rl_scholl"
+						android:layout_marginLeft="10dp"
+						android:layout_marginRight="15dp"
+						android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_school"
+					   android:layout_centerVertical="true"
+					   android:id="@+id/iv_school"
+					   android:layout_height="wrap_content"/>
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="学校"
+					  android:layout_centerVertical="true"
+					  android:layout_toRightOf="@+id/iv_school"
+					  android:layout_marginLeft="5dp"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="13sp"
+					  android:layout_height="wrap_content"/>
+
+			<ImageView android:layout_width="wrap_content"
+					   android:id="@+id/iv_stub_select_school"
+					   android:visibility="gone"
+					   android:layout_centerVertical="true"
+					   android:src="@mipmap/ic_stub_select"
+					   android:layout_alignParentRight="true"
+					   android:layout_height="wrap_content"/>
+		</RelativeLayout>
+		<TextView android:layout_width="match_parent"
+				  android:id="@+id/tv_stub_complete"
+				  android:layout_marginLeft="15dp"
+				  android:layout_marginRight="15dp"
+				  android:layout_alignParentBottom="true"
+				  android:layout_marginBottom="30dp"
+				  android:text="完成"
+				  android:textColor="@color/white"
+				  android:gravity="center"
+				  android:background="@drawable/bg_stub"
+				  android:layout_height="40dp"/>
+	</RelativeLayout>
+
+</RelativeLayout>

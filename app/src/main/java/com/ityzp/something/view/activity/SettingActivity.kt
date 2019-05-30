@@ -1,5 +1,6 @@
 package com.ityzp.something.view.activity
 
+import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.AppCompatDelegate
 import android.view.View
@@ -8,11 +9,16 @@ import com.example.baseklibrary.utils.StatusBarCompat
 import com.example.baseklibrary.utils.ToastUtil
 import com.ityzp.something.R
 import com.ityzp.something.SomeThingApp
+import com.ityzp.something.presenter.MyAddressActivity
 import com.ityzp.something.widgets.DataCleanManager
 import com.ityzp.something.widgets.dialog.ClearCacheDialog
 import kotlinx.android.synthetic.main.activity_head.*
 import kotlinx.android.synthetic.main.activity_setting.*
 
+/**
+ * 设置
+ * Created by wangqiang on 2019/5/23.
+ */
 class SettingActivity : BaseActivity(), View.OnClickListener {
     private var clearCacheDialog: ClearCacheDialog? = null
     override val layoutId: Int
@@ -30,6 +36,7 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
         rl_set_change.setOnClickListener(this)
         rl_set_common.setOnClickListener(this)
         rl_set_clear.setOnClickListener(this)
+        rl_set_address.setOnClickListener(this)
         st_mode.setOnCheckedChangeListener { buttonView, isChecked ->
             if (isChecked) {
                 AppCompatDelegate.setDefaultNightMode(0)
@@ -58,6 +65,12 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
 
             R.id.rl_set_common -> {
                 ToastUtil.show(this, "功能开发中！")
+            }
+
+            R.id.rl_set_address ->{
+                val intent = Intent()
+                intent.setClass(this, MyAddressActivity::class.java)
+                startActivity(intent)
             }
 
             R.id.rl_set_clear -> {

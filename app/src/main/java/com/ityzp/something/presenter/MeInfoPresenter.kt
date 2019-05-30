@@ -41,4 +41,8 @@ class MeInfoPresenter : BasePresenter<MeInfoContract.meInfoView>() {
 
             })
     }
+
+    fun getBrithday(time: String) {
+
+    }
 }

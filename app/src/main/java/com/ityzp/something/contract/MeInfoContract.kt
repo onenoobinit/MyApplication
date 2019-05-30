@@ -7,6 +7,7 @@ interface MeInfoContract {
     interface meInfoView {
         //上传头像
         fun upLoadPicture(imgurl: String?)
-
+        //修改出生日期
+        fun getBrithday()
     }
 }

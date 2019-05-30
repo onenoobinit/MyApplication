@@ -61,6 +61,8 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
         tv_gift.setOnClickListener(this)
         tv_about.setOnClickListener(this)
         iv_user.setOnClickListener(this)
+        tv_name.setOnClickListener(this)
+        tv_meinfo.setOnClickListener(this)
     }
 
     private fun initanimation() {
@@ -114,7 +116,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 intent.setClass(mContext, LoginActivity::class.java)
                 startActivityForResult(intent, 1001)
             }
-            R.id.iv_user -> {//选择头像
+            R.id.tv_name, R.id.tv_meinfo, R.id.iv_user -> {//个人信息
                 if (!SomeThingApp.instance.isNeedLogin) {
                     val intent = Intent()
                     intent.setClass(mContext, MeInfoActivity::class.java)
@@ -168,6 +170,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 }
 
                 1002 -> {
+                    iv_user.setImageResource(R.drawable.ic_app)
                     tv_me_login.visibility = TextView.VISIBLE
                     ll_user.visibility = LinearLayout.GONE
                     startOutAnimator()
