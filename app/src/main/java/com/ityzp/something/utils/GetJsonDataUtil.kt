@@ -22,9 +22,10 @@ class GetJsonDataUtil {
                 )
             )
             var line: String = bf.readLine()
-            while (line != null) {
+            if (line != null) {
                 stringBuilder.append(line)
             }
+
         } catch (e: IOException) {
             e.printStackTrace()
         }

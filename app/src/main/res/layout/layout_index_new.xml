@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:background="@color/white"
+				android:layout_marginTop="15dp"
+				android:layout_height="150dp">
+
+
+	<ImageView android:layout_width="match_parent"
+			   android:layout_marginLeft="15dp"
+			   android:id="@+id/iv_index_super"
+			   android:layout_marginRight="15dp"
+			   android:layout_marginTop="5dp"
+			   android:src="@mipmap/ic_moren"
+			   android:scaleType="centerCrop"
+			   android:layout_height="50dp"/>
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:layout_alignParentBottom="true"
+				  android:layout_marginLeft="10dp"
+				  android:layout_marginRight="10dp"
+				  android:orientation="horizontal"
+				  android:layout_height="70dp">
+
+		<RelativeLayout android:layout_width="0dp"
+						android:background="@drawable/bg_index_new"
+						android:layout_weight="2"
+						android:layout_height="match_parent">
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="新人礼包"
+					  android:textColor="@color/white"
+					  android:layout_centerInParent="true"
+					  android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dp"
+						android:layout_weight="1"
+						android:background="@drawable/bg_index_new"
+						android:layout_marginLeft="2dp"
+						android:layout_height="match_parent">
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="新人专享"
+					  android:textColor="@color/white"
+					  android:layout_centerInParent="true"
+					  android:layout_height="wrap_content"/>
+		</RelativeLayout>
+
+		<RelativeLayout android:layout_width="0dp"
+						android:layout_weight="1"
+						android:background="@drawable/bg_index_new"
+						android:layout_marginLeft="2dp"
+						android:layout_height="match_parent">
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="新人9.9"
+					  android:textColor="@color/white"
+					  android:layout_centerInParent="true"
+					  android:layout_height="wrap_content"/>
+		</RelativeLayout>
+	</LinearLayout>
+</RelativeLayout>

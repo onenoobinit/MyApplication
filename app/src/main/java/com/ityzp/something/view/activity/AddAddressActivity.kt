@@ -12,7 +12,6 @@ import android.widget.Toast
 import com.bigkoo.pickerview.builder.OptionsPickerBuilder
 import com.bigkoo.pickerview.listener.OnOptionsSelectListener
 import com.example.baseklibrary.mvp.MvpActivity
-import com.example.baseklibrary.utils.L
 import com.example.baseklibrary.utils.StatusBarCompat
 import com.example.baseklibrary.utils.ToastUtil
 import com.google.gson.Gson
@@ -60,12 +59,12 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
 
 
                 MSG_LOAD_SUCCESS -> {
-                    ToastUtil.show(this@AddAddressActivity, "Parse Succeed")
+//                    ToastUtil.show(this@AddAddressActivity, "Parse Succeed")
                     isLoaded = true
                 }
 
                 MSG_LOAD_FAILED -> {
-                    ToastUtil.show(this@AddAddressActivity, "Parse Failed")
+//                    ToastUtil.show(this@AddAddressActivity, "Parse Failed")
                 }
             }
         }
@@ -73,7 +72,7 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
 
     override fun onDestroy() {
         super.onDestroy()
-        if (mHandler!=null) {
+        if (mHandler != null) {
             mHandler.removeCallbacksAndMessages(null)
         }
     }
@@ -201,6 +200,8 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
 
         /*pvOptions.setPicker(options1Items);//一级选择器
         pvOptions.setPicker(options1Items, options2Items);//二级选择器*/
+
+//        L.i("AAAA","options1Items="+options1Items.size+",options2Items ="+options2Items.size+",options3Items="+options3Items.size)
         pvOptions.setPicker(
             options1Items, options2Items as List<MutableList<Any>>?,
             options3Items as List<MutableList<MutableList<Any>>>?
@@ -209,15 +210,13 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
     }
 
     private fun initJsonData() {//解析数据
-        L.i("AAAA", "initJsonData")
         /**
          * 注意：assets 目录下的Json文件仅供参考，实际使用可自行替换文件
          * 关键逻辑在于循环体
          */
         val JsonData = GetJsonDataUtil().getJson(this, "area.json")//获取assets目录下的json文件数据
-
         val jsonBean = parseData(JsonData)//用Gson 转成实体
-
+//        L.i("AAAA", "jsonBean=" + jsonBean.get(0).children!!.get(0).children!!.size)
         /**
          * 添加省份数据
          *
@@ -227,14 +226,12 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
         options1Items = jsonBean
 
         for (i in jsonBean.indices) {//遍历省份
-            L.i("AAAA", "jsonBean.indices")
             val cityList = ArrayList<String>()//该省的城市列表（第二级）
             val cityListCode = ArrayList<String>()//该省的城市列表（第二级）
             val province_AreaList = ArrayList<ArrayList<String>>()//该省的所有地区列表（第三极）
             val province_AreaListCodes = ArrayList<ArrayList<String>>()//该省的所有地区列表（第三极）
 
             for (c in jsonBean.get(i).children!!.indices) {//遍历该省份的所有城市
-                L.i("AAAA", "jsonBean.indices")
                 val cityName = jsonBean.get(i).children!!.get(c).name
                 val cityCode = jsonBean.get(i).children!!.get(c).value
                 cityList.add(cityName!!)//添加城市
@@ -282,7 +279,7 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
             val data = JSONArray(result)
             val gson = Gson()
             for (i in 0 until data.length()) {
-                val entity = gson.fromJson<Any>(data.optJSONObject(i).toString(), SanjiInfo::class.java)
+                val entity = gson.fromJson<SanjiInfo>(data.optJSONObject(i).toString(), SanjiInfo::class.java)
                 detail.add((entity as SanjiInfo?)!!)
             }
         } catch (e: Exception) {

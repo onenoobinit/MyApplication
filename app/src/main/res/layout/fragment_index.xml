@@ -1,11 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:background="@color/white"
-                android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+			  android:orientation="vertical"
+			  android:background="@color/white"
+			  android:layout_height="match_parent">
 
-    <TextView android:layout_width="wrap_content"
-              android:text="首页"
-              android:layout_centerInParent="true"
-              android:layout_height="wrap_content"/>
-</RelativeLayout>
+	<include android:id="@+id/inclde_index_top"
+			 layout="@layout/layout_inex_top"/>
+
+	<android.support.design.widget.CoordinatorLayout
+			android:layout_width="match_parent"
+			android:orientation="vertical"
+			android:layout_height="match_parent">
+
+		<android.support.design.widget.AppBarLayout
+				android:layout_width="match_parent"
+				android:id="@+id/apl_top"
+				android:layout_height="wrap_content">
+
+			<android.support.design.widget.CollapsingToolbarLayout
+					android:layout_width="match_parent"
+					android:id="@+id/ctl_top"
+					app:layout_scrollFlags="scroll"
+					android:layout_height="match_parent">
+
+				<android.support.constraint.ConstraintLayout
+						android:layout_width="match_parent"
+						app:layout_collapseMode="pin"
+						android:layout_height="wrap_content">
+
+					<include android:id="@+id/include_index_center"
+							 layout="@layout/layout_index_center"/>
+				</android.support.constraint.ConstraintLayout>
+			</android.support.design.widget.CollapsingToolbarLayout>
+
+			<android.support.constraint.ConstraintLayout
+					android:layout_width="match_parent"
+					app:layout_collapseMode="none"
+					android:layout_height="60dp">
+
+				<include android:id="@+id/include_index_levitate"
+						 layout="@layout/layout_index_levitate"></include>
+			</android.support.constraint.ConstraintLayout>
+		</android.support.design.widget.AppBarLayout>
+
+		<LinearLayout android:layout_width="match_parent"
+					  android:orientation="vertical"
+					  app:layout_behavior="@string/appbar_scrolling_view_behavior"
+					  android:layout_height="match_parent">
+
+
+		</LinearLayout>
+	</android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

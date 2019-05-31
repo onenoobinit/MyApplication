@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="90dp">
+
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:layout_alignParentBottom="true"
+				  android:layout_height="80dp">
+
+
+		<de.hdodenhof.circleimageview.CircleImageView android:layout_width="40dp"
+													  android:src="@drawable/ic_app"
+													  android:id="@+id/iv_index_pic"
+													  android:layout_gravity="center_vertical"
+													  android:layout_marginLeft="15dp"
+													  android:layout_height="40dp"/>
+
+		<LinearLayout android:layout_width="wrap_content"
+					  android:layout_marginLeft="12dp"
+					  android:orientation="vertical"
+					  android:id="@+id/ll_index_address"
+					  android:layout_gravity="center_vertical"
+					  android:layout_height="wrap_content">
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="上海 "
+					  android:textColor="@color/c_4A4A4A"
+					  android:textSize="14sp"
+					  android:textStyle="bold"
+					  android:drawableRight="@drawable/ic_arrow_down"
+					  android:id="@+id/tv_index_address"
+					  android:layout_height="wrap_content"/>
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="晴 30°"
+					  android:id="@+id/tv_index_tq"
+					  android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+		<LinearLayout android:layout_width="0dp"
+					  android:layout_weight="1"
+					  android:layout_marginLeft="15dp"
+					  android:layout_gravity="center_vertical"
+					  android:background="@drawable/bg_index_search"
+					  android:orientation="horizontal"
+					  android:layout_height="50dp">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_search"
+					   android:layout_gravity="center_vertical"
+					   android:layout_marginLeft="10dp"
+					   android:layout_height="wrap_content"/>
+
+			<EditText android:layout_width="match_parent"
+					  android:layout_marginLeft="5dp"
+					  android:layout_marginRight="10dp"
+					  android:hint="搜索"
+					  android:background="@null"
+					  android:layout_gravity="center_vertical"
+					  android:textColorHint="@color/c_999999"
+					  android:textSize="14sp"
+					  android:layout_height="wrap_content"/>
+		</LinearLayout>
+
+		<RelativeLayout android:layout_width="60dp"
+						android:id="@+id/rl_index_top_more"
+						android:layout_height="match_parent">
+
+			<ImageView android:layout_width="15dp"
+					   android:src="@mipmap/ic_index_add"
+					   android:rotation="45"
+					   android:layout_centerInParent="true"
+					   android:layout_gravity="center_vertical"
+					   android:layout_height="15dp"/>
+		</RelativeLayout>
+
+	</LinearLayout>
+</RelativeLayout>

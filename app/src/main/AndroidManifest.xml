@@ -43,6 +43,8 @@
 			android:theme="@style/AppTheme"
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
+			android:hardwareAccelerated="false"
+			android:largeHeap="true"
 			tools:replace="android:name">
 		<activity android:name=".view.activity.AddAddressActivity">
 		</activity>
