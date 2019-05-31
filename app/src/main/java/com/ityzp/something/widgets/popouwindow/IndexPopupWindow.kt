@@ -1,6 +1,7 @@
 package com.ityzp.something.widgets.popouwindow
 
 import android.content.Context
+import android.graphics.Color
 import android.graphics.drawable.ColorDrawable
 import android.view.LayoutInflater
 import android.view.View
@@ -23,7 +24,7 @@ class IndexPopupWindow(var context: Context) : PopupWindow() {
         this.width = 300
         this.height = ViewGroup.LayoutParams.WRAP_CONTENT
         this.isOutsideTouchable = true
-        val dw = ColorDrawable(0)
+        val dw = ColorDrawable(Color.parseColor("#80000000"))
         this.setBackgroundDrawable(dw)
 
     }
