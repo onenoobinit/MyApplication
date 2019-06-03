@@ -33,6 +33,7 @@ import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
  * Created by wangqiang on 2019/5/23.
  */
 
+
 class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meView, View.OnClickListener {
     private var viewHeight: Int? = 0
     private var old_offset: Int? = 0

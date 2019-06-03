@@ -15,6 +15,7 @@
 
 		<LinearLayout android:layout_width="0dp"
 					  android:orientation="vertical"
+					  android:id="@+id/ll_index_center_one"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
 
@@ -33,7 +34,7 @@
 		</LinearLayout>
 
 		<LinearLayout android:layout_width="0dp"
-					  android:id="@+id/ll_index_split"
+					  android:id="@+id/ll_index_center_two"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
@@ -53,7 +54,7 @@
 		</LinearLayout>
 
 		<LinearLayout android:layout_width="0dp"
-					  android:id="@+id/ll_index_video"
+					  android:id="@+id/ll_index_center_three"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
@@ -73,7 +74,7 @@
 		</LinearLayout>
 
 		<LinearLayout android:layout_width="0dp"
-					  android:id="@+id/ll_index_tv"
+					  android:id="@+id/ll_index_center_four"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
@@ -93,7 +94,7 @@
 		</LinearLayout>
 
 		<LinearLayout android:layout_width="0dp"
-					  android:id="@+id/ll_index_found"
+					  android:id="@+id/ll_index_center_five"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
@@ -121,6 +122,7 @@
 				  android:layout_height="wrap_content">
 
 		<LinearLayout android:layout_width="0dp"
+					  android:id="@+id/ll_index_center_six"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
@@ -141,6 +143,7 @@
 
 		<LinearLayout android:layout_width="0dp"
 					  android:orientation="vertical"
+					  android:id="@+id/ll_index_center_seven"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
 
@@ -160,6 +163,7 @@
 
 		<LinearLayout android:layout_width="0dp"
 					  android:orientation="vertical"
+					  android:id="@+id/ll_index_center_eight"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
 
@@ -179,6 +183,7 @@
 
 		<LinearLayout android:layout_width="0dp"
 					  android:orientation="vertical"
+					  android:id="@+id/ll_index_center_nine"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">
 
@@ -197,6 +202,7 @@
 		</LinearLayout>
 
 		<LinearLayout android:layout_width="0dp"
+					  android:id="@+id/ll_index_center_ten"
 					  android:orientation="vertical"
 					  android:layout_weight="1"
 					  android:layout_height="wrap_content">

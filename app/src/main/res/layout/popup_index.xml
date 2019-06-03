@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-				android:layout_width="match_parent"
-				android:background="@drawable/bg_home_pinglun"
+			  android:layout_width="match_parent"
+			  android:background="@drawable/bg_home_pinglun"
 			  android:orientation="vertical"
-				android:layout_height="match_parent">
+			  android:layout_height="match_parent">
 
 	<LinearLayout android:layout_width="match_parent"
 				  android:orientation="horizontal"
+				  android:id="@+id/ll_sao"
 				  android:layout_marginTop="30dp"
+				  android:layout_marginLeft="15dp"
 				  android:layout_height="wrap_content">
 
 		<ImageView android:layout_width="20dp"
@@ -20,13 +22,23 @@
 				  android:layout_height="wrap_content"/>
 	</LinearLayout>
 
+
+	<View android:layout_width="match_parent"
+		  android:background="@color/c_F3F2F2"
+		  android:layout_marginLeft="15dp"
+		  android:layout_marginRight="15dp"
+		  android:layout_marginTop="10dp"
+		  android:layout_height="1dp"></View>
+
 	<LinearLayout android:layout_width="match_parent"
 				  android:orientation="horizontal"
-				  android:layout_marginTop="30dp"
+				  android:layout_marginTop="15dp"
+				  android:id="@+id/ll_message"
+				  android:layout_marginLeft="15dp"
 				  android:layout_height="wrap_content">
 
 		<ImageView android:layout_width="20dp"
-				   android:src="@mipmap/ic_message"
+				   android:src="@mipmap/ic_index_message"
 				   android:layout_height="20dp"/>
 
 		<TextView android:layout_width="wrap_content"
@@ -34,4 +46,59 @@
 				  android:layout_marginLeft="15dp"
 				  android:layout_height="wrap_content"/>
 	</LinearLayout>
+
+	<View android:layout_width="match_parent"
+		  android:background="@color/c_F3F2F2"
+		  android:layout_marginLeft="15dp"
+		  android:layout_marginRight="15dp"
+		  android:layout_marginTop="10dp"
+		  android:layout_height="1dp"></View>
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:layout_marginTop="15dp"
+				  android:id="@+id/ll_share"
+				  android:layout_marginLeft="15dp"
+				  android:layout_height="wrap_content">
+
+		<ImageView android:layout_width="20dp"
+				   android:src="@mipmap/ic_index_share"
+				   android:layout_height="20dp"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="分享"
+				  android:layout_marginLeft="15dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<View android:layout_width="match_parent"
+		  android:background="@color/c_F3F2F2"
+		  android:layout_marginLeft="15dp"
+		  android:layout_marginRight="15dp"
+		  android:layout_marginTop="10dp"
+		  android:layout_height="1dp"></View>
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:layout_marginTop="15dp"
+				  android:id="@+id/ll_collection"
+				  android:layout_marginLeft="15dp"
+				  android:layout_height="wrap_content">
+
+		<ImageView android:layout_width="20dp"
+				   android:src="@mipmap/ic_index_collection"
+				   android:layout_height="20dp"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="收藏"
+				  android:layout_marginLeft="15dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<View android:layout_width="match_parent"
+		  android:background="@color/white"
+		  android:layout_marginLeft="15dp"
+		  android:layout_marginRight="15dp"
+		  android:layout_marginTop="10dp"
+		  android:layout_height="1dp"></View>
 </LinearLayout>

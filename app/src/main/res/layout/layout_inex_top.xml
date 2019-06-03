@@ -42,6 +42,7 @@
 
 		<LinearLayout android:layout_width="0dp"
 					  android:layout_weight="1"
+					  android:id="@+id/ll_index_search"
 					  android:layout_marginLeft="15dp"
 					  android:layout_gravity="center_vertical"
 					  android:background="@drawable/bg_index_search"
@@ -54,13 +55,12 @@
 					   android:layout_marginLeft="10dp"
 					   android:layout_height="wrap_content"/>
 
-			<EditText android:layout_width="match_parent"
+			<TextView android:layout_width="match_parent"
 					  android:layout_marginLeft="5dp"
 					  android:layout_marginRight="10dp"
-					  android:hint="搜索"
-					  android:background="@null"
+					  android:id="@+id/tv_index_search"
+					  android:text="搜索"
 					  android:layout_gravity="center_vertical"
-					  android:textColorHint="@color/c_999999"
 					  android:textSize="14sp"
 					  android:layout_height="wrap_content"/>
 		</LinearLayout>

@@ -3,8 +3,11 @@ package com.ityzp.something.view.fragment
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
+import android.view.WindowManager
+import android.widget.PopupWindow
 import com.example.baseklibrary.mvp.MvpFragment
 import com.example.baseklibrary.utils.DensityUtil
+import com.example.baseklibrary.utils.ToastUtil
 import com.ityzp.something.R
 import com.ityzp.something.adapter.IndexBannerAdapter
 import com.ityzp.something.adapter.IndexRvTitleAdapter
@@ -14,6 +17,7 @@ import com.ityzp.something.widgets.ViewPagerIndicator
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
 import com.tmall.ultraviewpager.UltraViewPager
 import kotlinx.android.synthetic.main.layout_index_center.*
+import kotlinx.android.synthetic.main.layout_index_icon.*
 import kotlinx.android.synthetic.main.layout_index_levitate.*
 import kotlinx.android.synthetic.main.layout_inex_top.*
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
@@ -37,11 +41,41 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     override fun finishCreateView(state: Bundle?) {
         initBanner()
         initRv()
+        initPopup()
         rl_index_top_more.setOnClickListener(this)
-        indexPopupWindow = IndexPopupWindow(mContext)
-
+        ll_index_center_one.setOnClickListener(this)
+        ll_index_center_two.setOnClickListener(this)
+        ll_index_center_three.setOnClickListener(this)
+        ll_index_center_four.setOnClickListener(this)
+        ll_index_center_five.setOnClickListener(this)
+        ll_index_center_six.setOnClickListener(this)
+        ll_index_center_seven.setOnClickListener(this)
+        ll_index_center_eight.setOnClickListener(this)
+        ll_index_center_nine.setOnClickListener(this)
+        ll_index_center_ten.setOnClickListener(this)
 
 //        mPresenter.getIndex()
+    }
+
+    private fun initPopup() {
+        indexPopupWindow = IndexPopupWindow(mContext)
+        indexPopupWindow!!.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
+
+        indexPopupWindow!!.setOnSaoListener = {
+            ToastUtil.show(mContext, "我是扫一扫")
+        }
+
+        indexPopupWindow!!.setOnMessageListener = {
+            ToastUtil.show(mContext, "消息")
+        }
+
+        indexPopupWindow!!.setOnShareListener = {
+            ToastUtil.show(mContext, "分享")
+        }
+
+        indexPopupWindow!!.setOnCollectionListener = {
+            ToastUtil.show(mContext, "收藏")
+        }
     }
 
     private fun initRv() {
@@ -77,10 +111,74 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
 
     override fun onClick(v: View?) {
         when (v!!.id) {
-            R.id.rl_index_top_more -> {
+            R.id.rl_index_top_more -> {//加号
                 indexPopupWindow!!.showPopupWindow(rl_index_top_more, indexTitles)
+                setBackgroundAlpha(0.55f)
             }
+
+            R.id.iv_index_pic -> {//头像
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_address -> {//地区
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_search -> {//搜索
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_one -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_two -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_three -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_four -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_five -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_six -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_seven -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_eight -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+            R.id.ll_index_center_ten -> {
+                ToastUtil.show(mContext,"暂未开发")
+            }
+
+
         }
+    }
+
+    private fun setBackgroundAlpha(bgAlpha: Float) {
+        val lp = getActivity()!!.window.attributes
+        lp.alpha = bgAlpha
+        lp.dimAmount = bgAlpha
+        if (bgAlpha == 1f) {
+            getActivity()!!.window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+        } else {
+            getActivity()!!.window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+        }
+
+        getActivity()!!.window.attributes = lp
     }
 
 }
