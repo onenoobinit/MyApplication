@@ -43,6 +43,8 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         initRv()
         initPopup()
         rl_index_top_more.setOnClickListener(this)
+        iv_index_pic.setOnClickListener(this)
+        ll_index_address.setOnClickListener(this)
         ll_index_center_one.setOnClickListener(this)
         ll_index_center_two.setOnClickListener(this)
         ll_index_center_three.setOnClickListener(this)
@@ -117,51 +119,51 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             }
 
             R.id.iv_index_pic -> {//头像
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_address -> {//地区
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_search -> {//搜索
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_one -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_two -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_three -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_four -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_five -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_six -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_seven -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_eight -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
             R.id.ll_index_center_ten -> {
-                ToastUtil.show(mContext,"暂未开发")
+                ToastUtil.show(mContext, "暂未开发")
             }
 
 

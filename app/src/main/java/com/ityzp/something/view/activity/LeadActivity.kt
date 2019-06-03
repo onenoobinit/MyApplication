@@ -50,6 +50,8 @@ class LeadActivity : BaseActivity() {
                 currentItem = position
                 if (position == mImageIds.size - 1) {
                     tv_start.visibility = TextView.VISIBLE
+                } else {
+                    tv_start.visibility = TextView.GONE
                 }
             }
 
