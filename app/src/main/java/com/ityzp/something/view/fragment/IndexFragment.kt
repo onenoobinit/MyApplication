@@ -1,5 +1,6 @@
 package com.ityzp.something.view.fragment
 
+import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
@@ -13,23 +14,32 @@ import com.ityzp.something.adapter.IndexBannerAdapter
 import com.ityzp.something.adapter.IndexRvTitleAdapter
 import com.ityzp.something.contract.IndexContract
 import com.ityzp.something.presenter.IndexPresenter
+import com.ityzp.something.utils.WXObserver
+import com.ityzp.something.utils.WxShareUtils
 import com.ityzp.something.widgets.ViewPagerIndicator
+import com.ityzp.something.widgets.dialog.WxShareDialog
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
+import com.tencent.mm.opensdk.modelbase.BaseResp
 import com.tmall.ultraviewpager.UltraViewPager
 import kotlinx.android.synthetic.main.layout_index_center.*
 import kotlinx.android.synthetic.main.layout_index_icon.*
 import kotlinx.android.synthetic.main.layout_index_levitate.*
 import kotlinx.android.synthetic.main.layout_inex_top.*
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
+import java.util.*
 
 /**
  * Created by wangqiang on 2019/5/23.
  */
 class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), IndexContract.indexView,
-    View.OnClickListener {
+    View.OnClickListener, Observer {
     private var indexBanners: ArrayList<Int> = ArrayList()
     private var indexTitles: ArrayList<String> = ArrayList()
     private var indexPopupWindow: IndexPopupWindow? = null
+    private var wxShareDialog: WxShareDialog? = null
+    private var wxUrl: String = "https://www.baidu.com/"
+    private var wxTitle: String = "死亡如黎明中的花朵！"
+    private var wxIntrodution: String = "死亡如风，常伴吾身，欢迎来到英雄联盟"
 
     override fun initPresenter(): IndexPresenter {
         return IndexPresenter()
@@ -39,6 +49,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         get() = R.layout.fragment_index
 
     override fun finishCreateView(state: Bundle?) {
+        WXObserver.INSTANCE.addObserver(this)
         initBanner()
         initRv()
         initPopup()
@@ -63,19 +74,32 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         indexPopupWindow = IndexPopupWindow(mContext)
         indexPopupWindow!!.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
 
-        indexPopupWindow!!.setOnSaoListener = {
+        indexPopupWindow!!.setOnSaoListener = {//扫一扫
             ToastUtil.show(mContext, "我是扫一扫")
         }
 
-        indexPopupWindow!!.setOnMessageListener = {
+        indexPopupWindow!!.setOnMessageListener = {//消息
             ToastUtil.show(mContext, "消息")
         }
 
-        indexPopupWindow!!.setOnShareListener = {
-            ToastUtil.show(mContext, "分享")
+        indexPopupWindow!!.setOnShareListener = {//分享到微信或朋友圈
+            indexPopupWindow!!.dismiss()
+            if (wxShareDialog == null) {
+                wxShareDialog = WxShareDialog(mContext)
+            }
+            val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.ic_two, null)
+            wxShareDialog!!.setOnWxListener = {
+                WxShareUtils.shareWeb(mContext, wxUrl, wxTitle, wxIntrodution, bitmap, false)
+            }
+
+            wxShareDialog!!.setOnFriendListener = {
+                WxShareUtils.shareWeb(mContext, wxUrl, wxTitle, wxIntrodution, bitmap, true)
+            }
+
+            wxShareDialog!!.show()
         }
 
-        indexPopupWindow!!.setOnCollectionListener = {
+        indexPopupWindow!!.setOnCollectionListener = {//收藏
             ToastUtil.show(mContext, "收藏")
         }
     }
@@ -183,4 +207,19 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         getActivity()!!.window.attributes = lp
     }
 
+    //微信分享回调 取消和成功返回同样数值
+    override fun update(o: Observable?, arg: Any?) {
+        if (o is WXObserver) {
+            val res = arg as BaseResp
+            when (res.errCode) {
+                0 -> {
+                }
+                -2 -> {
+                }
+                -4 -> {
+                }
+            }
+            wxShareDialog!!.dismiss()
+        }
+    }
 }

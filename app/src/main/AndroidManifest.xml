@@ -91,6 +91,13 @@
 		<meta-data
 				android:name="design_height_in_dp"
 				android:value="667"/>
+
+		<activity
+				android:name=".wxapi.WXEntryActivity"
+				android:exported="true"
+				android:label="@string/app_name"
+				android:launchMode="singleTop"
+				android:taskAffinity="net.sourceforge.simcpux" />
 	</application>
 
 </manifest>

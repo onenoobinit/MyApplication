@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@color/c_F3F2F2">
+
+	<TextView
+			android:id="@+id/tv_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerHorizontal="true"
+			android:layout_marginTop="15dp"
+			android:text="请选择分享平台"
+			android:textColor="@color/c_4A4A4A"
+			android:textSize="16sp" />
+
+	<LinearLayout
+			android:id="@+id/ll_share"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_below="@+id/tv_title"
+			android:layout_marginTop="15dp"
+			android:orientation="horizontal">
+
+		<LinearLayout
+				android:id="@+id/ll_wx_in"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="25dp"
+				android:orientation="vertical">
+
+			<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:background="@drawable/bg_wx_share">
+
+				<ImageView
+						android:layout_width="45dp"
+						android:layout_height="45dp"
+						android:layout_centerInParent="true"
+						android:src="@mipmap/ic_wx_friend" />
+			</RelativeLayout>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:text="微信"
+					android:textColor="@color/c_4A4A4A"
+					android:textSize="13sp" />
+		</LinearLayout>
+
+
+		<LinearLayout
+				android:id="@+id/ll_wx_friend"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="25dp"
+				android:orientation="vertical">
+
+			<RelativeLayout
+					android:layout_width="60dp"
+					android:layout_height="60dp"
+					android:background="@drawable/bg_wx_share">
+
+				<ImageView
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:layout_centerInParent="true"
+						android:src="@mipmap/ic_wx_in" />
+			</RelativeLayout>
+
+			<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_gravity="center_horizontal"
+					android:layout_marginTop="5dp"
+					android:text="微信朋友圈"
+					android:textColor="@color/c_4A4A4A"
+					android:textSize="13sp" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<TextView
+			android:id="@+id/tv_wx_cancle"
+			android:layout_width="match_parent"
+			android:layout_height="40dp"
+			android:layout_below="@+id/ll_share"
+			android:layout_marginTop="10dp"
+			android:background="@color/white"
+			android:gravity="center"
+			android:text="取消分享"
+			android:textColor="@color/c_4A4A4A"
+			android:textSize="14sp" />
+
+</RelativeLayout>

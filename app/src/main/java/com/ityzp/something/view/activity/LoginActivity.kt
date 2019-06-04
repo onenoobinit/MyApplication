@@ -16,15 +16,21 @@ import com.ityzp.something.SomeThingApp
 import com.ityzp.something.contract.LoginContract
 import com.ityzp.something.moudle.User
 import com.ityzp.something.presenter.LoginPresenter
+import com.ityzp.something.utils.WXObserver
+import com.tencent.mm.opensdk.modelmsg.SendAuth
+import com.tencent.mm.opensdk.openapi.IWXAPI
+import com.tencent.mm.opensdk.openapi.WXAPIFactory
 import kotlinx.android.synthetic.main.activity_login.*
+import java.util.*
 
 /**
  * 登录页面
  * Created by wangqiang on 2019/5/23.
  */
 class LoginActivity : MvpActivity<LoginContract.loginView, LoginPresenter>(), LoginContract.loginView,
-    View.OnClickListener {
+    View.OnClickListener, Observer {
     var muser: User? = User()
+    private var wxapi: IWXAPI? = null
     override val layoutId: Int
         get() = R.layout.activity_login
 
@@ -33,6 +39,9 @@ class LoginActivity : MvpActivity<LoginContract.loginView, LoginPresenter>(), Lo
     }
 
     override fun initViews(savedInstanceState: Bundle?) {
+        WXObserver.INSTANCE.addObserver(this)
+        wxapi = WXAPIFactory.createWXAPI(this, SomeThingApp.APP_ID, true)
+        wxapi!!.registerApp(SomeThingApp.APP_ID)
         tv_login.setOnClickListener(this)
         iv_login_close.setOnClickListener(this)
         tv_login_help.setOnClickListener(this)
@@ -120,9 +129,24 @@ class LoginActivity : MvpActivity<LoginContract.loginView, LoginPresenter>(), Lo
             R.id.ll_login_qq -> {//qq登录
             }
             R.id.ll_login_wx -> {//微信登录
-
+                wxlogin()
             }
         }
+    }
+
+    private fun wxlogin() {
+        if (wxapi == null) {
+            WXAPIFactory.createWXAPI(this, SomeThingApp.APP_ID, true)
+        }
+
+        if (!wxapi!!.isWXAppInstalled) {
+            ToastUtil.show(this, "您的手机尚未安装微信，请安装后再登录")
+            return
+        }
+        val req = SendAuth.Req()
+        req.scope = "snsapi_userinfo"
+        req.state = "wechat_sdk_something"
+        wxapi!!.sendReq(req)
     }
 
     private fun setVisiable(i: Int) {
@@ -175,4 +199,14 @@ class LoginActivity : MvpActivity<LoginContract.loginView, LoginPresenter>(), Lo
             }
         }
     }
+
+    //wx登录回调
+    override fun update(o: Observable?, arg: Any?) {
+        if (o is WXObserver) {
+            val res = arg as SendAuth.Resp
+            val code = res.code
+//            getData(code)
+        }
+    }
+
 }

@@ -75,7 +75,7 @@ class SomeThingApp : BaseApplication() {
     companion object {
         private var user: User? = null
         lateinit var instance: SomeThingApp
-        var APP_ID = "wx89bfbe26609a6b54"
+        var APP_ID = "wx5e7042aba648ed28"
         val RESULT_OK = -1
     }
 }

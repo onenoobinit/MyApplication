@@ -65,4 +65,6 @@ dependencies {
     api 'com.contrarywind:Android-PickerView:4.1.7'
     //图片选择
     api 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
+    //微信依赖
+    api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
 }
