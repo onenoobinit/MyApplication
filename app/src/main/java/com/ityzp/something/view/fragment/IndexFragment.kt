@@ -1,5 +1,6 @@
 package com.ityzp.something.view.fragment
 
+import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Bundle
 import android.support.v7.widget.LinearLayoutManager
@@ -16,6 +17,7 @@ import com.ityzp.something.contract.IndexContract
 import com.ityzp.something.presenter.IndexPresenter
 import com.ityzp.something.utils.WXObserver
 import com.ityzp.something.utils.WxShareUtils
+import com.ityzp.something.view.activity.MessageActivity
 import com.ityzp.something.widgets.ViewPagerIndicator
 import com.ityzp.something.widgets.dialog.WxShareDialog
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
@@ -73,16 +75,19 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     private fun initPopup() {
         indexPopupWindow = IndexPopupWindow(mContext)
         indexPopupWindow!!.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
-
-        indexPopupWindow!!.setOnSaoListener = {//扫一扫
+        //扫一扫
+        indexPopupWindow!!.setOnSaoListener = {
             ToastUtil.show(mContext, "我是扫一扫")
         }
-
-        indexPopupWindow!!.setOnMessageListener = {//消息
-            ToastUtil.show(mContext, "消息")
+        //消息
+        indexPopupWindow!!.setOnMessageListener = {
+            indexPopupWindow!!.dismiss()
+            val intent = Intent()
+            intent.setClass(mContext, MessageActivity::class.java)
+            startActivity(intent)
         }
-
-        indexPopupWindow!!.setOnShareListener = {//分享到微信或朋友圈
+        //分享到微信或朋友圈
+        indexPopupWindow!!.setOnShareListener = {
             indexPopupWindow!!.dismiss()
             if (wxShareDialog == null) {
                 wxShareDialog = WxShareDialog(mContext)
@@ -98,8 +103,8 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
 
             wxShareDialog!!.show()
         }
-
-        indexPopupWindow!!.setOnCollectionListener = {//收藏
+        //收藏
+        indexPopupWindow!!.setOnCollectionListener = {
             ToastUtil.show(mContext, "收藏")
         }
     }
@@ -113,6 +118,22 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         val indexRvTitleAdapter = IndexRvTitleAdapter(mContext, indexTitles)
         rv_index_title.adapter = indexRvTitleAdapter
         OverScrollDecoratorHelper.setUpOverScroll(rv_index_title, OverScrollDecoratorHelper.ORIENTATION_HORIZONTAL)
+        indexRvTitleAdapter.setOnItemListener = {
+            when (it) {
+                0 -> {//推荐
+
+                }
+                1 -> {//销量
+
+                }
+                2 -> {//价格
+
+                }
+                3 -> {//其他
+
+                }
+            }
+        }
     }
 
     private fun initBanner() {
@@ -189,8 +210,6 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             R.id.ll_index_center_ten -> {
                 ToastUtil.show(mContext, "暂未开发")
             }
-
-
         }
     }
 
@@ -220,6 +239,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
                 }
             }
             wxShareDialog!!.dismiss()
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (wxShareDialog != null) {
+            wxShareDialog!!.dismiss()
+        }
+        if (indexPopupWindow != null) {
+            indexPopupWindow!!.dismiss()
         }
     }
 }

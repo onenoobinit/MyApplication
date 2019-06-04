@@ -90,4 +90,11 @@ class SettingActivity : BaseActivity(), View.OnClickListener {
         tv_set_cache.setText("0.0MB")
         clearCacheDialog!!.dismiss()
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (clearCacheDialog != null) {
+            clearCacheDialog!!.dismiss()
+        }
+    }
 }

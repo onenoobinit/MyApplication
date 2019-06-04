@@ -56,4 +56,11 @@ class AboutActivity : BaseActivity(), View.OnClickListener {
             }
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        if (updateDialog != null) {
+            updateDialog!!.dismiss()
+        }
+    }
 }

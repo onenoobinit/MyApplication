@@ -25,7 +25,6 @@ class ViewPagerIndicator(
     private val dotViewLists = ArrayList<ImageView>()
 
     init {
-
         for (i in 0 until size) {
             val imageView = ImageView(context)
             val params = LinearLayout.LayoutParams(

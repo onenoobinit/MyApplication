@@ -75,6 +75,10 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
         if (mHandler != null) {
             mHandler.removeCallbacksAndMessages(null)
         }
+
+        if (stubSelectDialog != null) {
+            stubSelectDialog!!.dismiss()
+        }
     }
 
     override fun initPresenter(): AddAddressPresenter {
@@ -289,4 +293,5 @@ class AddAddressActivity : MvpActivity<AddAddressContract.addAddressView, AddAdd
 
         return detail
     }
+
 }
