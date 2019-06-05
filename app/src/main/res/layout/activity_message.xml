@@ -1,15 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<LinearLayout
 		xmlns:android="http://schemas.android.com/apk/res/android"
 		xmlns:tools="http://schemas.android.com/tools"
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
 		android:background="@color/white"
+		android:orientation="vertical"
 		tools:context=".view.activity.MessageActivity">
 
 	<include android:id="@+id/tb_message"
 			 layout="@layout/activity_head"/>
 
 
-</RelativeLayout>
+	<com.scwang.smartrefresh.layout.SmartRefreshLayout
+			android:id="@+id/refreshLayout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+
+		<com.scwang.smartrefresh.layout.header.ClassicsHeader
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				app:srlClassicsSpinnerStyle="FixedBehind"
+				app:srlDrawableArrowSize="20dp"
+				app:srlDrawableMarginRight="20dp"
+				app:srlDrawableProgress="@drawable/ic_progress_hojder"
+				app:srlDrawableProgressSize="20dp"
+				app:srlEnableLastTime="true"
+				app:srlFinishDuration="500"
+				app:srlTextSizeTime="10dp"
+				app:srlTextSizeTitle="16sp"
+				app:srlTextTimeMarginTop="2dp"/>
+
+		<LinearLayout android:layout_width="match_parent"
+					  android:orientation="vertical"
+					  android:background="@color/white"
+					  android:layout_height="match_parent">
+
+			<android.support.v7.widget.RecyclerView
+					android:layout_width="match_parent"
+					android:id="@+id/rv_message"
+					android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+			<ViewStub android:layout_width="match_parent"
+					  android:id="@+id/vs_none"
+					  android:layout="@layout/vs_none"
+					  android:layout_height="match_parent"/>
+		</LinearLayout>
+
+	</com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</LinearLayout>

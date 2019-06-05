@@ -2,7 +2,9 @@ package com.ityzp.something.view.fragment
 
 import android.content.Intent
 import android.graphics.BitmapFactory
+import android.os.Build
 import android.os.Bundle
+import android.support.annotation.RequiresApi
 import android.support.v7.widget.LinearLayoutManager
 import android.view.View
 import android.view.WindowManager
@@ -26,6 +28,7 @@ import com.tmall.ultraviewpager.UltraViewPager
 import kotlinx.android.synthetic.main.layout_index_center.*
 import kotlinx.android.synthetic.main.layout_index_icon.*
 import kotlinx.android.synthetic.main.layout_index_levitate.*
+import kotlinx.android.synthetic.main.layout_index_new.*
 import kotlinx.android.synthetic.main.layout_inex_top.*
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
 import java.util.*
@@ -37,6 +40,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     View.OnClickListener, Observer {
     private var indexBanners: ArrayList<Int> = ArrayList()
     private var indexTitles: ArrayList<String> = ArrayList()
+    private var indexNotices: ArrayList<String> = ArrayList()
     private var indexPopupWindow: IndexPopupWindow? = null
     private var wxShareDialog: WxShareDialog? = null
     private var wxUrl: String = "https://www.baidu.com/"
@@ -50,11 +54,13 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     override val layoutResId: Int
         get() = R.layout.fragment_index
 
+    @RequiresApi(Build.VERSION_CODES.M)
     override fun finishCreateView(state: Bundle?) {
         WXObserver.INSTANCE.addObserver(this)
         initBanner()
         initRv()
         initPopup()
+        initNotices()
         rl_index_top_more.setOnClickListener(this)
         iv_index_pic.setOnClickListener(this)
         ll_index_address.setOnClickListener(this)
@@ -70,6 +76,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         ll_index_center_ten.setOnClickListener(this)
 
 //        mPresenter.getIndex()
+    }
+
+    private fun initNotices() {
+        indexNotices.add("今天天气不错！")
+        indexNotices.add("问太多问题是不是不礼貌！")
+        indexNotices.add("她的酒窝蛮好看的！")
+        mv_index.startWithList(indexNotices, 0)
+        mv_index.setOnItemListener = {
+            ToastUtil.show(mContext, indexNotices.get(it))
+        }
     }
 
     private fun initPopup() {

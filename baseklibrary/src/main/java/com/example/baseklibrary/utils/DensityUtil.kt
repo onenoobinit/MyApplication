@@ -55,7 +55,7 @@ class DensityUtil {
          * @param pxVal
          * @return
          */
-        fun px2sp(context: Context, pxVal: Float): Float {
+        fun px2sp(context: Context, pxVal: Int): Float {
             return pxVal / context.resources.displayMetrics.scaledDensity
         }
     }

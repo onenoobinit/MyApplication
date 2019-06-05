@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_mq"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="horizontal">
+
+    <!--<TextView
+        android:id="@+id/tv_red"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:layout_centerVertical="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/tv_red" />-->
+
+    <ImageView android:layout_width="wrap_content"
+               android:src="@mipmap/ic_index_notice"
+               android:layout_gravity="center_vertical"
+               android:layout_marginLeft="15dp"
+               android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/tv_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_new"
+        android:paddingLeft="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="2dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="2dp"
+        android:layout_gravity="center_vertical"
+        android:text="通知"
+        android:textColor="@color/c_4EB2FF"
+        android:textSize="13sp"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@+id/tv_red"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text=""
+        android:textColor="@color/c_4A4A4A"
+        android:textSize="13sp" />
+
+</LinearLayout>
