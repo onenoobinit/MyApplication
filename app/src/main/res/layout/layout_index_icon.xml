@@ -213,7 +213,7 @@
 					   android:layout_height="40dp"/>
 
 			<TextView android:layout_width="wrap_content"
-					  android:text="标题"
+					  android:text="更多"
 					  android:textSize="14sp"
 					  android:layout_gravity="center_horizontal"
 					  android:layout_marginTop="10dp"
