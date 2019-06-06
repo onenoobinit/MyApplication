@@ -20,6 +20,7 @@ import com.ityzp.something.presenter.IndexPresenter
 import com.ityzp.something.utils.WXObserver
 import com.ityzp.something.utils.WxShareUtils
 import com.ityzp.something.view.activity.MessageActivity
+import com.ityzp.something.view.activity.SearchActivity
 import com.ityzp.something.widgets.ViewPagerIndicator
 import com.ityzp.something.widgets.dialog.WxShareDialog
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
@@ -74,6 +75,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         ll_index_center_eight.setOnClickListener(this)
         ll_index_center_nine.setOnClickListener(this)
         ll_index_center_ten.setOnClickListener(this)
+        ll_index_search.setOnClickListener(this)
 
 //        mPresenter.getIndex()
     }
@@ -188,7 +190,9 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             }
 
             R.id.ll_index_search -> {//搜索
-                ToastUtil.show(mContext, "暂未开发")
+                val intent = Intent()
+                intent.setClass(mContext, SearchActivity::class.java)
+                startActivity(intent)
             }
 
             R.id.ll_index_center_one -> {

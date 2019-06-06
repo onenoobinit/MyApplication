@@ -46,6 +46,8 @@
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
 			tools:replace="android:name">
+		<activity android:name=".view.activity.SearchActivity">
+		</activity>
 		<activity android:name=".view.activity.MessageActivity">
 		</activity>
 		<activity android:name=".view.activity.AddAddressActivity">

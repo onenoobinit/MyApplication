@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+				android:layout_width="match_parent"
+				android:layout_height="70dp">
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:layout_alignParentBottom="true"
+				  android:layout_height="50dp">
+
+		<ImageView android:layout_width="wrap_content"
+				   android:id="@+id/iv_search_back"
+				   android:layout_gravity="center_vertical"
+				   android:layout_marginLeft="15dp"
+				   android:src="@mipmap/ic_search_back"
+				   android:layout_height="wrap_content"/>
+
+		<LinearLayout android:layout_width="0dp"
+					  android:layout_weight="1"
+					  android:layout_marginLeft="15dp"
+					  android:orientation="horizontal"
+					  android:background="@drawable/bg_search_top"
+					  android:layout_gravity="center_vertical"
+					  android:layout_height="35dp">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_search_edit"
+					   android:layout_gravity="center_vertical"
+					   android:layout_marginLeft="15dp"
+					   android:layout_height="wrap_content"/>
+
+			<EditText android:layout_width="match_parent"
+					  android:layout_marginLeft="10dp"
+					  android:layout_marginRight="15dp"
+					  android:background="@null"
+					  android:hint="输入你要搜索的内容"
+					  android:textSize="14sp"
+					  android:textColor="@color/c_4A4A4A"
+					  android:textColorHint="@color/c_999999"
+					  android:layout_height="match_parent"/>
+		</LinearLayout>
+
+		<TextView android:layout_width="80dp"
+				  android:text="搜索"
+				  android:gravity="center"
+				  android:textColor="@color/c_4A4A4A"
+				  android:textSize="16sp"
+				  android:id="@+id/tv_search"
+				  android:layout_height="match_parent"/>
+	</LinearLayout>
+</RelativeLayout>
