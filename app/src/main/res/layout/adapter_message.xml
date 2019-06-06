@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="match_parent"
+			  android:orientation="horizontal"
+			  android:layout_height="100dp">
+
+	<ImageView android:layout_width="50dp"
+			   android:id="@+id/iv_message"
+			   android:src="@drawable/ic_app"
+			   android:scaleType="centerCrop"
+			   android:layout_marginLeft="15dp"
+			   android:layout_gravity="center_vertical"
+			   android:layout_height="50dp"/>
+
+	<LinearLayout android:layout_width="0dp"
+				  android:layout_weight="1"
+				  android:layout_marginLeft="15dp"
+				  android:orientation="vertical"
+				  android:layout_gravity="center_vertical"
+				  android:layout_height="wrap_content">
+
+		<TextView android:layout_width="wrap_content"
+				  android:text=""
+				  android:textSize="16sp"
+				  android:id="@+id/tv_message_title"
+				  android:textColor="@color/c_4A4A4A"
+				  android:layout_height="wrap_content"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text=""
+				  android:id="@+id/tv_message_content"
+				  android:textColor="@color/c_999999"
+				  android:textSize="14sp"
+				  android:layout_marginTop="5dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<TextView android:layout_width="120dp"
+			  android:text=""
+			  android:id="@+id/tv_message_time"
+			  android:gravity="right|center_vertical"
+			  android:paddingRight="15dp"
+			  android:layout_height="match_parent"/>
+</LinearLayout>
