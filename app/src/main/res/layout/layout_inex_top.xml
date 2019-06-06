@@ -47,7 +47,7 @@
 					  android:layout_gravity="center_vertical"
 					  android:background="@drawable/bg_index_search"
 					  android:orientation="horizontal"
-					  android:layout_height="50dp">
+					  android:layout_height="45dp">
 
 			<ImageView android:layout_width="wrap_content"
 					   android:src="@mipmap/ic_search"
