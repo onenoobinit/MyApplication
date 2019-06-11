@@ -33,6 +33,7 @@
 					  android:layout_marginLeft="10dp"
 					  android:layout_marginRight="15dp"
 					  android:background="@null"
+					  android:id="@+id/et_search"
 					  android:hint="输入你要搜索的内容"
 					  android:textSize="14sp"
 					  android:textColor="@color/c_4A4A4A"

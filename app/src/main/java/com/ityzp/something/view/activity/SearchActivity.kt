@@ -1,6 +1,9 @@
 package com.ityzp.something.view.activity
 
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextUtils
+import android.text.TextWatcher
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
@@ -29,6 +32,32 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
 
         iv_search_back.setOnClickListener(this)
         tv_search.setOnClickListener(this)
+
+        et_search.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+
+            }
+
+            override fun onTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
+//                arlX.setVisibility(View.VISIBLE)
+                rl_search_result.setVisibility(View.VISIBLE)
+//                ContentAdapter.canClick = 1
+//                contentAdapter.notifyDataSetChanged()
+//                rvContent.setVisibility(View.GONE)
+//                mFuzzySearchAdapter.getFilter().filter(charSequence.toString().trim { it <= ' ' })
+            }
+
+            override fun afterTextChanged(editable: Editable) {
+                val s = editable.toString()
+                if (TextUtils.isEmpty(s)) {
+//                    arlX.setVisibility(View.GONE)
+                    rl_search_result.setVisibility(View.GONE)
+//                    rvContent.setVisibility(View.VISIBLE)
+//                    ContentAdapter.canClick = 0
+//                    contentAdapter.notifyDataSetChanged()
+                }
+            }
+        })
     }
 
     private fun initData() {
