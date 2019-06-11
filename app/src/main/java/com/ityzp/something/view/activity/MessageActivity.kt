@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.ImageView
 import com.example.baseklibrary.mvp.MvpActivity
 import com.example.baseklibrary.utils.StatusBarCompat
+import com.example.baseklibrary.utils.ToastUtil
 import com.ityzp.something.R
 import com.ityzp.something.adapter.MessageAdapter
 import com.ityzp.something.contract.MessageContract
@@ -93,6 +94,9 @@ class MessageActivity : MvpActivity<MessageContract.messageView, MessagePresente
         }
         val messageAdapter = MessageAdapter(this, totalList)
         rv_message.adapter = messageAdapter
+        messageAdapter.setOnItemListener = {
+            ToastUtil.show(this, it)
+        }
     }
 
     override fun initToolBar() {
@@ -106,7 +110,18 @@ class MessageActivity : MvpActivity<MessageContract.messageView, MessagePresente
 
     }
 
-    override fun onClick(v: View?) {
+    override fun removeMessage() {
 
+    }
+
+    override fun onClick(v: View?) {
+        when (v!!.id) {
+            R.id.iv_toorbar -> {
+                ToastUtil.show(this, "清空消息！")
+//                mPresenter.getMessage()
+            }
+
+
+        }
     }
 }

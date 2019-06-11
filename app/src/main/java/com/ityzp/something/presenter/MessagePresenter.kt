@@ -10,4 +10,8 @@ class MessagePresenter : BasePresenter<MessageContract.messageView>() {
     fun getMessage() {
 
     }
+
+    fun removeMessag() {
+
+    }
 }

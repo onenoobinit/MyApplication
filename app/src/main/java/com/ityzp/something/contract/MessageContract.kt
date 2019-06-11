@@ -6,5 +6,6 @@ package com.ityzp.something.contract
 interface MessageContract {
     interface messageView {
         fun getMessage()
+        fun removeMessage()
     }
 }

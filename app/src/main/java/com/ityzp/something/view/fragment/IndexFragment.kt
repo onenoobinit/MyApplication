@@ -12,6 +12,7 @@ import android.widget.PopupWindow
 import com.example.baseklibrary.mvp.MvpFragment
 import com.example.baseklibrary.utils.DensityUtil
 import com.example.baseklibrary.utils.ToastUtil
+import com.google.zxing.client.android.CaptureActivity
 import com.ityzp.something.R
 import com.ityzp.something.adapter.IndexBannerAdapter
 import com.ityzp.something.adapter.IndexRvTitleAdapter
@@ -93,9 +94,11 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     private fun initPopup() {
         indexPopupWindow = IndexPopupWindow(mContext)
         indexPopupWindow!!.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
-        //扫一扫
+        //扫一扫 简单的集成zxing还未做其他操作（比如ui和功能）
         indexPopupWindow!!.setOnSaoListener = {
-            ToastUtil.show(mContext, "我是扫一扫")
+            val intent = Intent()
+            intent.setClass(mContext, CaptureActivity::class.java)
+            startActivity(intent)
         }
         //消息
         indexPopupWindow!!.setOnMessageListener = {

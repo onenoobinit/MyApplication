@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.ityzp.something.R
 import com.ityzp.something.moudle.MessageInfo
@@ -37,6 +38,11 @@ class MessageAdapter(var context: Context, var datas: ArrayList<MessageInfo>) :
             myViewHolder.tv_message_title.setText(datas.get(p1).title)
             myViewHolder.tv_message_content.setText(datas.get(p1).content)
             myViewHolder.tv_message_time.setText(datas.get(p1).time)
+            myViewHolder.ll_message_item.setOnClickListener {
+                if (::setOnItemListener.isInitialized) {
+                    setOnItemListener.invoke(datas.get(p1).title!!)
+                }
+            }
         } else {
             val grideHolder = p0 as GrideHolder
             if (p1 == 0) {
@@ -59,5 +65,8 @@ class MessageAdapter(var context: Context, var datas: ArrayList<MessageInfo>) :
         val tv_message_content = itemView.findViewById<TextView>(R.id.tv_message_content)
         val tv_message_time = itemView.findViewById<TextView>(R.id.tv_message_time)
         val iv_message = itemView.findViewById<ImageView>(R.id.iv_message)
+        val ll_message_item = itemView.findViewById<LinearLayout>(R.id.ll_message_item)
     }
+
+    lateinit var setOnItemListener: (content: String) -> Unit
 }
