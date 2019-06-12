@@ -25,7 +25,6 @@ class GetJsonDataUtil {
             if (line != null) {
                 stringBuilder.append(line)
             }
-
         } catch (e: IOException) {
             e.printStackTrace()
         }

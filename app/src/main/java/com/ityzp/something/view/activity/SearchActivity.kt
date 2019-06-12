@@ -1,24 +1,37 @@
 package com.ityzp.something.view.activity
 
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
 import android.view.View
 import android.view.ViewGroup
+import android.widget.FrameLayout
 import android.widget.LinearLayout
+import android.widget.RelativeLayout
 import android.widget.TextView
 import com.example.baseklibrary.mvp.MvpActivity
+import com.example.baseklibrary.utils.SPUtil
 import com.example.baseklibrary.utils.StatusBarCompat
+import com.google.gson.Gson
 import com.ityzp.something.R
+import com.ityzp.something.adapter.FuzzySearchAdapter
 import com.ityzp.something.contract.SearchContract
+import com.ityzp.something.moudle.ItemEntity
+import com.ityzp.something.moudle.SearchInfo
 import com.ityzp.something.presenter.SearchPresenter
+import com.ityzp.something.utils.GetJsonDataUtil
+import com.ityzp.something.utils.PinyinUtil
 import kotlinx.android.synthetic.main.activity_search.*
 import kotlinx.android.synthetic.main.activity_search_top.*
+import org.json.JSONArray
+import java.util.*
+import kotlin.collections.ArrayList
 
 class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>(), SearchContract.searchView,
     View.OnClickListener {
-
+    private var history: ArrayList<String>? = null
     override fun initPresenter(): SearchPresenter {
         return SearchPresenter()
     }
@@ -28,10 +41,19 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
 
     override fun initViews(savedInstanceState: Bundle?) {
         StatusBarCompat.setTranslucentForImageView(this, 0, null)
+        history = (SPUtil.getObject(this, "history", ArrayList::class.java) as ArrayList<String>?)
+        if (history == null || history!!.size == 0) {
+            rl_history.visibility = RelativeLayout.GONE
+            fl_history.visibility = FrameLayout.GONE
+            history = ArrayList()
+        } else {
+            rl_history.visibility = RelativeLayout.VISIBLE
+            fl_history.visibility = FrameLayout.VISIBLE
+        }
         initData()
-
         iv_search_back.setOnClickListener(this)
         tv_search.setOnClickListener(this)
+        iv_delete_search.setOnClickListener(this)
 
         et_search.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(charSequence: CharSequence, i: Int, i1: Int, i2: Int) {
@@ -58,6 +80,8 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
                 }
             }
         })
+
+//        mPresenter.getSearch()
     }
 
     private fun initData() {
@@ -89,28 +113,18 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
         }
 
 
-        var historydatas = ArrayList<String>()
-        historydatas.clear()
-        historydatas.add("蜘蛛侠")
-        historydatas.add("火锅")
-        historydatas.add("欢乐谷")
-        historydatas.add("拔罐")
-        historydatas.add("玩")
-        historydatas.add("许记龙虾烧烤")
-        historydatas.add("XCAPE异时刻秘密")
-        historydatas.add("美容养生")
-        historydatas.add("魔都HB CLUB")
-
+        history = removeDuplicate(history!!) as ArrayList<String>
+        Collections.reverse(history)
         val lp =
             LinearLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         if (fl_history != null) {
             fl_history.removeAllViews()
         }
-        for (i in historydatas.indices) {
+        for (i in history!!.indices) {
             var tv = TextView(this)
             tv.setPadding(28, 10, 28, 10)
             layoutParams.setMargins(10, 5, 10, 5)
-            tv.setText(historydatas.get(i))
+            tv.setText(history!!.get(i))
             tv.maxEms = 7
             tv.setSingleLine()
             tv.setBackgroundResource(R.drawable.tv_search_hot)
@@ -118,6 +132,70 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
             fl_history.addView(tv, layoutParams)
         }
 
+        val jsonData = GetJsonDataUtil().getJson(this, "search.json")
+        val parseData = parseData(jsonData)
+        var tests = ArrayList<String>()
+        tests.clear()
+        for (i in parseData.indices) {
+            tests.add(
+                parseData.get(i).airport + "," + parseData.get(i).cityNameC + "," + parseData.get(
+                    i
+                ).countryNameC
+            )
+        }
+//        val size = tests.size
+        val strings = tests.toTypedArray()
+        val fillData = fillData(strings)
+        val manager = LinearLayoutManager(this)
+        rv_search_result.layoutManager = manager
+        val fuzzySearchAdapter = FuzzySearchAdapter(fillData)
+        rv_search_result.adapter = fuzzySearchAdapter
+        fuzzySearchAdapter.setOnItemClickListener = {
+            //将搜索存入list
+            val split = it.split(",".toRegex()).dropLastWhile({ it.isEmpty() }).toTypedArray()
+            history!!.add(split[0])
+            SPUtil.setObject(this@SearchActivity, "history", history!!)
+        }
+    }
+
+    private fun fillData(date: Array<String>): List<ItemEntity> {
+        val sortList = java.util.ArrayList<ItemEntity>()
+        for (item in date) {
+            val letter: String
+            //汉字转换成拼音
+            val pinyinList = PinyinUtil.getPinYinList(item)
+            if (pinyinList != null && !pinyinList!!.isEmpty()) {
+                // A-Z导航
+                val letters = pinyinList!!.get(0).substring(0, 1).toUpperCase()
+                // 正则表达式，判断首字母是否是英文字母
+                if (letters.matches("[A-Z]".toRegex())) {
+                    letter = letters.toUpperCase()
+                } else {
+                    letter = "#"
+                }
+            } else {
+                letter = "#"
+            }
+            sortList.add(ItemEntity(item, letter, pinyinList!!))
+        }
+        return sortList
+
+    }
+
+    fun parseData(result: String): ArrayList<SearchInfo> {//Gson 解析
+        val detail = ArrayList<SearchInfo>()
+        try {
+            val data = JSONArray(result)
+            val gson = Gson()
+            for (i in 0 until data.length()) {
+                val entity = gson.fromJson<SearchInfo>(data.optJSONObject(i).toString(), SearchInfo::class.java)
+                detail.add(entity)
+            }
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
+
+        return detail
     }
 
     override fun initToolBar() {
@@ -131,9 +209,25 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
         when (v!!.id) {
             R.id.iv_search_back -> finish()
 
-            R.id.tv_search -> {
+            R.id.tv_search -> {//搜索
+                history!!.add(et_search.text.toString().trim())
+                SPUtil.setObject(this, "history", history!!)
+            }
 
+            R.id.iv_delete_search -> {//清除浏览记录
+                rl_history.visibility = RelativeLayout.GONE
+                fl_history.visibility = FrameLayout.GONE
+                history!!.clear()
+                SPUtil.setObject(this, "history", history!!)
             }
         }
+    }
+
+    fun removeDuplicate(list: MutableList<String>): List<String> {
+        val set = LinkedHashSet<String>()
+        set.addAll(list)
+        list.clear()
+        list.addAll(set)
+        return list
     }
 }

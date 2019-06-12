@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/all_result_item"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tv_result_sx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="46px"
+            android:layout_marginTop="50px"
+            android:text="AMS"
+            android:textColor="@color/c_9b9b9b"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_result_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginLeft="50px"
+            android:layout_marginTop="50px"
+            android:layout_weight="1"
+            android:text="阿姆斯特丹"
+            android:textColor="@color/c_9b9b9b"
+            android:textSize="40px" />
+
+        <TextView
+            android:id="@+id/tv_result_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:layout_marginRight="46px"
+            android:layout_marginTop="50px"
+            android:text="荷兰"
+            android:textColor="@color/c_9b9b9b"
+            android:textSize="40px" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,4792 @@
+{
+  "destinationListAll": [
+    {
+      "airport": "AAR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "丹麦",
+      "countryNameE": "DENMARK",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABE",
+      "cityNameC": "阿伦敦，美国（ U.S.A）宾夕法尼亚洲，北美洲",
+      "cityNameE": "ALLENTOWN",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABI",
+      "cityNameC": "阿比林，美国（ U.S.A）得克萨斯洲，北美洲",
+      "cityNameE": "ABILENE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABJ",
+      "cityNameC": "阿比让，科特迪瓦（ Cote d'lvoire），西非",
+      "cityNameE": "ABIDJAN",
+      "countryNameC": "科特迪瓦",
+      "countryNameE": "COTE D'IVOIRE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABQ",
+      "cityNameC": "阿尔伯克基，美国（ U.S.A）新墨西哥州，北美州",
+      "cityNameE": "ALBUQUERQUE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABV",
+      "cityNameC": "阿布贾，尼日利亚（ Nigeria）首都，非州",
+      "cityNameE": "ABUJA",
+      "countryNameC": "尼日利亚",
+      "countryNameE": "NIGERIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ABZ",
+      "cityNameC": "阿伯丁，英国（ United Kingdom），欧洲",
+      "cityNameE": "ABERDEEN",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ACC",
+      "cityNameC": "阿克拉，加纳 (Ghana)首都 , 非洲",
+      "cityNameE": "ACCRA",
+      "countryNameC": "加纳",
+      "countryNameE": "GHANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ADA",
+      "cityNameC": "阿达纳，土耳其 (Turkey), 西北亚",
+      "cityNameE": "ADANA",
+      "countryNameC": "土耳其",
+      "countryNameE": "TURKEY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ADD",
+      "cityNameC": "亚的斯亚贝巴",
+      "cityNameE": "ADDISABABA",
+      "countryNameC": "埃塞俄比亚",
+      "countryNameE": "ETHIOPIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ADL",
+      "cityNameC": "阿德莱德，澳大利亚（ Australia）南澳大利亚州，大洋洲",
+      "cityNameE": "ADELAIDE",
+      "countryNameC": "澳大利亚",
+      "countryNameE": "AUSTRALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ADZ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AGP",
+      "cityNameC": "马拉加，西班牙 (Spain), 欧洲",
+      "cityNameE": "MALAGA",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AJM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AKA",
+      "cityNameC": "安康市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AKL",
+      "cityNameC": "奥克兰，新西兰 (New Zealand)，大洋洲",
+      "cityNameE": "AUCKLAND",
+      "countryNameC": "新西兰",
+      "countryNameE": "NEW ZEALAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ALA",
+      "cityNameC": "阿拉木图",
+      "cityNameE": "ALMATY",
+      "countryNameC": "哈萨克斯坦",
+      "countryNameE": "KAZAKHSTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ALB",
+      "cityNameC": "斯克内克塔迪，美国 (U.S.A.)纽约州，北美洲",
+      "cityNameE": "SCHENECTADY",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ALC",
+      "cityNameC": "阿利坎特，西班亚（ Spain），欧洲",
+      "cityNameE": "ALICANTE",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ALG",
+      "cityNameC": "阿尔及尔",
+      "cityNameE": "ALGIERS",
+      "countryNameC": "阿尔及利亚",
+      "countryNameE": "ALGERIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AMA",
+      "cityNameC": "阿马里洛，美国（ U.S.A.） 得克萨斯州，北美洲",
+      "cityNameE": "AMARILLO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AMM",
+      "cityNameC": "安曼，约旦 (Jordan)首都，亚洲（中东）",
+      "cityNameE": "AMMAN",
+      "countryNameC": "约旦",
+      "countryNameE": "JORDAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AMS",
+      "cityNameC": "阿姆斯特丹",
+      "cityNameE": "AMSTERDAM",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ANC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ANK",
+      "cityNameC": "安卡拉，土耳其 (Turkey)首都，西北亚",
+      "cityNameE": "ANKARA",
+      "countryNameC": "土耳其",
+      "countryNameE": "TURKEY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ANR",
+      "cityNameC": "安特卫普",
+      "cityNameE": "ANTWERP",
+      "countryNameC": "比利时",
+      "countryNameE": "BELGIUM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AOI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "APW",
+      "cityNameC": "阿皮亚，萨摩亚（ Samoa），大洋洲",
+      "cityNameE": "APIA",
+      "countryNameC": "美属萨摩亚",
+      "countryNameE": "SAMOA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AQG",
+      "cityNameC": "安庆市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AQJ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "约旦",
+      "countryNameE": "JORDAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ARN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ASB",
+      "cityNameC": "阿什哈巴德，土库曼斯坦共和国（ Turkmenistan）首都，中亚",
+      "cityNameE": "ASHGABAD",
+      "countryNameC": "土库曼斯坦",
+      "countryNameE": "TURKMENISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ASU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴拉圭",
+      "countryNameE": "PARAGUAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ATH",
+      "cityNameC": "雅典，希腊 (Greece)首都，欧洲",
+      "cityNameE": "ATHENS",
+      "countryNameC": "希腊",
+      "countryNameE": "GREECE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ATL",
+      "cityNameC": "亚特兰大，美国 (U.S.A)佐治亚州，北美州",
+      "cityNameE": "ATLANTA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AUH",
+      "cityNameC": "阿布扎比",
+      "cityNameE": "ABUDHABI",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AUS",
+      "cityNameC": "奥斯汀，美国 (U.S.A.)得克萨斯州，北美洲",
+      "cityNameE": "AUSTIN",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "AXA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "安圭拉岛",
+      "countryNameE": "ANGUILLA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BAH",
+      "cityNameC": "巴林岛，(Bahrain)，西亚（中东）",
+      "cityNameE": "BAHRAIN",
+      "countryNameC": "巴林",
+      "countryNameE": "BAHRAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BAK",
+      "cityNameC": "巴库",
+      "cityNameE": "BAKU",
+      "countryNameC": "阿塞拜疆",
+      "countryNameE": "AZERBAIJAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BAQ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BBK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "博茨瓦纳",
+      "countryNameE": "BOTSWANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BCN",
+      "cityNameC": "巴塞罗那，西班牙 (Spain)，欧洲",
+      "cityNameE": "BARCELONA",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BDL",
+      "cityNameC": "HARTFORD",
+      "cityNameE": "HARTFORD",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BEG",
+      "cityNameC": "BELGRADE",
+      "cityNameE": "BELGRADE",
+      "countryNameC": "塞尔维亚和黑山",
+      "countryNameE": "SERBIA & MONTENEGRO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BER",
+      "cityNameC": "柏林，德国 (Germany) 首都 , 欧洲",
+      "cityNameE": "BERLIN",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BEW",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "莫桑比克",
+      "countryNameE": "MOZAMBIQUE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BEY",
+      "cityNameC": "贝鲁特，黎巴嫩 (Lebanon) 首都，西亚（中东）",
+      "cityNameE": "BEIRUT",
+      "countryNameC": "黎巴嫩",
+      "countryNameE": "LEBANON",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BFS",
+      "cityNameC": "贝尔法斯特，英国（ United Kingdom），欧洲",
+      "cityNameE": "BELFAST",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BGA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BGO",
+      "cityNameC": "卑尔根，挪威（ Norway），北欧",
+      "cityNameE": "BERGEN",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BGW",
+      "cityNameC": "巴格达，伊拉克 (Iraq)首都，西亚（中东）",
+      "cityNameE": "BAGHDAD",
+      "countryNameC": "伊拉克",
+      "countryNameE": "IRAQ",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BHM",
+      "cityNameC": "伯明翰，美国（ U.S.A）阿拉巴马州，北美州",
+      "cityNameE": "BIRMINGHAM",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BHX",
+      "cityNameC": "伯明翰，英国 (United Kingdom), 欧洲",
+      "cityNameE": "BIRMINGHAM",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BIO",
+      "cityNameC": "毕尔巴鄂，西班牙（ Spain）被部港市，欧洲",
+      "cityNameE": "BILBAO",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BJM",
+      "cityNameC": "布琼布拉，布隆迪 (Burundi) 首都，非洲",
+      "cityNameE": "BUJUMBURA",
+      "countryNameC": "布隆迪",
+      "countryNameE": "BURUNDI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BKI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "马来西亚",
+      "countryNameE": "MALAYSIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BKK",
+      "cityNameC": "曼谷，泰国 (Thailand)首都，亚洲",
+      "cityNameE": "THAILAND",
+      "countryNameC": "泰国",
+      "countryNameE": "THAILAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BKO",
+      "cityNameC": "巴马科，马里 (Mali)首都，非洲",
+      "cityNameE": "BAMAKO",
+      "countryNameC": "马里",
+      "countryNameE": "MALI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BLL",
+      "cityNameC": "比隆",
+      "cityNameE": "BILLUND",
+      "countryNameC": "丹麦",
+      "countryNameE": "DENMARK",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BLQ",
+      "cityNameC": "博洛尼亚，意大利（ Italy），欧洲",
+      "cityNameE": "BOLOGNA",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BLR",
+      "cityNameC": "班加罗尔，印度（ India），亚洲",
+      "cityNameE": "BANGALORE",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BLZ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "马拉维",
+      "countryNameE": "MALAWI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BNA",
+      "cityNameC": "纳什维尔，美国 (U.S.A)田纳西州 ,北美州",
+      "cityNameE": "NASHVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BNE",
+      "cityNameC": "布里斯班，澳大利亚 (Australia) 昆士兰州，大洋洲",
+      "cityNameE": "BRISBANE",
+      "countryNameC": "澳大利亚",
+      "countryNameE": "AUSTRALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOD",
+      "cityNameC": "波尔多",
+      "cityNameE": "BORDEAUX",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOG",
+      "cityNameC": "波哥大",
+      "cityNameE": "BOGOTA",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOH",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOM",
+      "cityNameC": "孟买，印度 (India),亚洲",
+      "cityNameE": "MUMBAI",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BOS",
+      "cityNameC": "波士顿，美国 (U.S.A)马萨诸塞州 ,北美洲",
+      "cityNameE": "BOSTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRE",
+      "cityNameC": "不来梅",
+      "cityNameE": "BREMEN",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRI",
+      "cityNameC": "巴里，意大利（ Italy），欧洲",
+      "cityNameE": "BARI",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRL",
+      "cityNameC": "伯灵顿，美国（ U.S.A.）艾奥瓦州，北美洲",
+      "cityNameE": "BURLINGTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRN",
+      "cityNameC": "伯尔尼，瑞士 (Switzerland) 首都 ,欧洲",
+      "cityNameE": "BERNE",
+      "countryNameC": "瑞士",
+      "countryNameE": "SWITZERLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRO",
+      "cityNameC": "布朗维尔，美国 (U.S.A.)得克萨斯州，北美州",
+      "cityNameE": "BROWNSVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRS",
+      "cityNameC": "布里斯托尔，英国（ United Kingdom），欧洲",
+      "cityNameE": "BRISTOL",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BRU",
+      "cityNameC": "布鲁塞尔",
+      "cityNameE": "BRUSSELS",
+      "countryNameC": "比利时",
+      "countryNameE": "BELGIUM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BSB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BSD",
+      "cityNameC": "保山市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BSL",
+      "cityNameC": "巴塞尔，瑞士 (Switzerland)，欧洲",
+      "cityNameE": "BASEL",
+      "countryNameC": "瑞士",
+      "countryNameE": "SWITZERLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BTR",
+      "cityNameC": "巴吞鲁日，美国（ U.S.A.）路易斯安纳州，北美州",
+      "cityNameE": "BATONROUGE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BTS",
+      "cityNameC": "布拉迪斯拉发，斯洛伐克（ Slovakia ）首都，欧洲",
+      "cityNameE": "BRATISLAVA",
+      "countryNameC": "斯洛伐克",
+      "countryNameE": "SLOVAKIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BUD",
+      "cityNameC": "布达佩斯，匈牙利 (Hungary) 首都，欧洲",
+      "cityNameE": "BUDAPEST",
+      "countryNameC": "匈牙利",
+      "countryNameE": "HUNGARY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BUE",
+      "cityNameC": "布宜诺斯艾利斯",
+      "cityNameE": "BUENOSAIRES",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BUF",
+      "cityNameC": "布法罗，美国 (U.S.A)纽约州，北美州",
+      "cityNameE": "BUFFALO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BUH",
+      "cityNameC": "布加勒斯特，罗马尼亚 (Romania)首都，欧洲",
+      "cityNameE": "BUCHAREST",
+      "countryNameC": "罗马尼亚",
+      "countryNameE": "ROMANIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BUQ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "津巴布韦",
+      "countryNameE": "ZIMBABWE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BWI",
+      "cityNameC": "巴尔的摩，美国 (U.S.A)马里兰州，北美州",
+      "cityNameE": "BALTIMORE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BWN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "文莱",
+      "countryNameE": "BRUNEI DARUSSALAM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BZE",
+      "cityNameC": "贝利兹，贝利兹（ Belize），中美洲",
+      "cityNameE": "BELIZE",
+      "countryNameC": "伯利兹",
+      "countryNameE": "BELIZE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "BZV",
+      "cityNameC": "布拉柴维尔，刚果（布） 首都，",
+      "cityNameE": "BRAZZAVILLE",
+      "countryNameC": "刚果",
+      "countryNameE": "CONGO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CAE",
+      "cityNameC": "哥伦比亚，美国（ U.S.A）南卡罗来纳州，北美洲",
+      "cityNameE": "COLUMBIA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CAI",
+      "cityNameC": "开罗",
+      "cityNameE": "CAIRO",
+      "countryNameC": "埃及",
+      "countryNameE": "EGYPT",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CAS",
+      "cityNameC": "卡萨布兰卡，摩洛哥 (Morocco)，非洲",
+      "cityNameE": "CASABLANCA",
+      "countryNameC": "摩洛哥",
+      "countryNameE": "MOROCCO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CCS",
+      "cityNameC": "加拉加斯，委内瑞拉 首都，南美洲",
+      "cityNameE": "CARACAS",
+      "countryNameC": "委内瑞拉",
+      "countryNameE": "VENEZUELA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CCU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CDG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CEB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "菲律宾",
+      "countryNameE": "PHILIPPINES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CEN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CGK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CGN",
+      "cityNameC": "科隆",
+      "cityNameE": "COLOGNE",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CHA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CHC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "新西兰",
+      "countryNameE": "NEW ZEALAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CHG",
+      "cityNameC": "朝阳市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CHI",
+      "cityNameC": "芝加哥，美国 (U.S.A)伊利诺斯州，北美洲",
+      "cityNameE": "CHICAGO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CHS",
+      "cityNameC": "查尔斯敦，美国（ U.S.A） 南卡罗来纳州，北美洲",
+      "cityNameE": "CHARLESTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CID",
+      "cityNameC": "锡达拉皮兹，美国 (U.S.A.)艾奥瓦州，北美洲",
+      "cityNameE": "CEDARRAPIDS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CIF",
+      "cityNameC": "赤峰市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CIH",
+      "cityNameC": "长治市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CJU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "韩国",
+      "countryNameE": "KOREA, REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CLE",
+      "cityNameC": "克利夫兰，美国 (U.S.A) 俄亥俄洲，北美洲",
+      "cityNameE": "CLEVELAND",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CLO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CLT",
+      "cityNameC": "夏洛特，美国 (U.S.A北卡罗来纳州，北美洲",
+      "cityNameE": "CHARLOTTE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CMB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "斯里兰卡",
+      "countryNameE": "SRI LANKA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CMH",
+      "cityNameC": "哥伦布，美国（ U.S.A.），俄亥俄州，北美洲",
+      "cityNameE": "COLUMBUS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CMN",
+      "cityNameC": "CASABLANCA",
+      "cityNameE": "CASABLANCA",
+      "countryNameC": "摩洛哥",
+      "countryNameE": "MOROCCO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CNX",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "泰国",
+      "countryNameE": "THAILAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "COC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "COK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "COO",
+      "cityNameC": "科托努，贝宁 (Benin)，非洲",
+      "cityNameE": "COTONOU",
+      "countryNameC": "贝宁",
+      "countryNameE": "BENIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "COR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CPH",
+      "cityNameC": "哥本哈根",
+      "cityNameE": "COPENHAGEN",
+      "countryNameC": "丹麦",
+      "countryNameE": "DENMARK",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CPT",
+      "cityNameC": "开普敦，南非 (South Africa)，非洲南部",
+      "cityNameE": "CAPETOWN",
+      "countryNameC": "南非",
+      "countryNameE": "SOUTH AFRICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CRP",
+      "cityNameC": "科帕斯克里斯蒂，美国 (U.S.A.)得克萨斯州，北美洲",
+      "cityNameE": "CORPUSCHRISTI",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CTA",
+      "cityNameC": "卡塔尼亚，意大利（ Italy），欧洲",
+      "cityNameE": "CATANIA",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CTG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CUN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CUR",
+      "cityNameC": "库拉索，荷属安的列斯（ Netherlands Antilles）加勒比海地区",
+      "cityNameE": "CURACAO",
+      "countryNameC": "荷属安的列斯群岛",
+      "countryNameE": "NETHERLANDS ANTILLES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CVG",
+      "cityNameC": "辛辛那堤，美国 (U.S.A)俄亥俄州，北美洲",
+      "cityNameE": "CINCINNATI",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CWB",
+      "cityNameC": "库里蒂巴，巴西 ,巴拉那州 ,南美洲",
+      "cityNameE": "CURITIBA",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "CWL",
+      "cityNameC": "加的夫，英国（ United Kingdom），欧洲",
+      "cityNameE": "CARDIFF",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DAC",
+      "cityNameC": "达卡，孟加拉国 (Bangladesh)首都，南亚",
+      "cityNameE": "DHAKA",
+      "countryNameC": "孟加拉国",
+      "countryNameE": "BANGLADESH",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DAD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "越南",
+      "countryNameE": "VIET NAM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DAR",
+      "cityNameC": "达累斯萨拉姆，坦桑尼亚 (Tanzania)首都，非洲",
+      "cityNameE": "DARESSALAAM",
+      "countryNameC": "坦桑尼亚",
+      "countryNameE": "TANZANIA, UNITED REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DAX",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DAY",
+      "cityNameC": "代顿，美国 (U.S.A) 俄亥俄州，北美洲",
+      "cityNameE": "DAYTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DDG",
+      "cityNameC": "丹东市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DEL",
+      "cityNameC": "德里，印度 (India)首都，亚洲",
+      "cityNameE": "DELHI",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DEN",
+      "cityNameC": "丹佛，美国 (U.S.A)科罗拉多州，北美州",
+      "cityNameE": "DENVER",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DFW",
+      "cityNameC": "达拉斯，美国 (U.S.A)得克萨斯州，北美洲",
+      "cityNameE": "DALLAS/FTW",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DIL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "东帝汶",
+      "countryNameE": "TIMOR-LESTE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DKR",
+      "cityNameC": "达喀尔，塞内加尔 (Senegal)首都，非洲",
+      "cityNameE": "DAKAR",
+      "countryNameC": "塞内加尔",
+      "countryNameE": "SENEGAL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DLA",
+      "cityNameC": "杜阿拉，喀麦隆 (Cameroon )，非洲",
+      "cityNameE": "DOUALA",
+      "countryNameC": "喀麦隆",
+      "countryNameE": "CAMEROON",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DME",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "俄罗斯",
+      "countryNameE": "RUSSIAN FEDERATION",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DMK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "泰国",
+      "countryNameE": "THAILAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DMM",
+      "cityNameC": "达曼，沙特阿拉伯 (Saudi Arabia), 西亚（中东）",
+      "cityNameE": "DAMMAM",
+      "countryNameC": "沙特阿拉伯",
+      "countryNameE": "SAUDI ARABIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DOH",
+      "cityNameC": "多哈，卡塔尔 (Qatar)首都，西亚 (中东 )",
+      "cityNameE": "DOHA",
+      "countryNameC": "卡塔尔",
+      "countryNameE": "QATAR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DPS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DRS",
+      "cityNameC": "德累斯顿",
+      "cityNameE": "DRESDEN",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DSM",
+      "cityNameC": "得梅因，美国 (U.S.A)艾奥瓦州 , 北美洲",
+      "cityNameE": "DESMOINES",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DTM",
+      "cityNameC": "多特蒙德，德国（ Germany），欧洲",
+      "cityNameE": "DORTMUND",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DTT",
+      "cityNameC": "底特律，美国",
+      "cityNameE": "DETROIT",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DTW",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DUB",
+      "cityNameC": "都柏林",
+      "cityNameE": "DUBLIN",
+      "countryNameC": "爱尔兰",
+      "countryNameE": "IRELAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DUR",
+      "cityNameC": "德班，南非 (South Africa), 非洲南部",
+      "cityNameE": "DURBAN",
+      "countryNameC": "南非",
+      "countryNameE": "SOUTH AFRICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DUS",
+      "cityNameC": "杜塞尔多夫",
+      "cityNameE": "DUSSELDORF",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DWC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DXB",
+      "cityNameC": "迪拜",
+      "cityNameE": "DUBAI",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "DYU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "塔吉克斯坦",
+      "countryNameE": "TAJIKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EBB",
+      "cityNameC": "恩德培，鸟干达 (Uganda)，非洲",
+      "cityNameE": "ENTEBBE",
+      "countryNameC": "乌干达",
+      "countryNameE": "UGANDA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EBL",
+      "cityNameC": "ERBIL",
+      "cityNameE": "ERBIL",
+      "countryNameC": "伊拉克",
+      "countryNameE": "IRAQ",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EDI",
+      "cityNameC": "爱丁堡，英国 (United Kingdom)，欧洲",
+      "cityNameE": "EDINBURGH",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EIN",
+      "cityNameC": "艾恩德霍文",
+      "cityNameE": "EINDHOVEN",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ELP",
+      "cityNameC": "埃尔帕索，美国 (U.S.A)得克萨斯州，北美州",
+      "cityNameE": "ELPASO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EMA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ENS",
+      "cityNameC": "恩斯赫德，荷兰（ Netherlands）欧洲西北部",
+      "cityNameE": "ENSCHEDE",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EUG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EVN",
+      "cityNameC": "埃里温，亚美尼亚（ Armenia）首都，西北亚",
+      "cityNameE": "YEREVAN",
+      "countryNameC": "亚美尼亚",
+      "countryNameE": "ARMENIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EVV",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EWR",
+      "cityNameC": "纽沃，美国（ U.S.A.）新泽西州，北美洲",
+      "cityNameE": "NEWWARK",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EXT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "EZE",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FAY",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FBM",
+      "cityNameC": "卢布巴希，刚果（金） ，非洲中部 (扎伊尔 Zaire)",
+      "cityNameE": "LUBUMBASHI",
+      "countryNameC": "刚果共和国",
+      "countryNameE": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FCO",
+      "cityNameC": "ROME",
+      "cityNameE": "ROME",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FDH",
+      "cityNameC": "腓特烈港，德国 (Germany)，欧洲",
+      "cityNameE": "FRIEDRICHSHAFEN",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FFT",
+      "cityNameC": "法兰克福",
+      "cityNameE": "FRANKFURT",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FIH",
+      "cityNameC": "金沙萨，刚果 (金 )首都 ，非洲",
+      "cityNameE": "KINSHASA",
+      "countryNameC": "刚果共和国",
+      "countryNameE": "CONGO, THE DEMOCRATIC REPUBLIC OF THE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FJR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FLL",
+      "cityNameC": "劳德代尔堡，美国 (U.S.A.)佛罗里达州，北美洲",
+      "cityNameE": "FORTLAUDERDALE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FLN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FLR",
+      "cityNameC": "佛罗伦萨，意大利 (Italy), 欧洲",
+      "cityNameE": "FLORENCE",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FMO",
+      "cityNameC": "明斯特",
+      "cityNameE": "MUNSTER",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FRA",
+      "cityNameC": "法兰克福",
+      "cityNameE": "FRANKFURT",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FRU",
+      "cityNameC": "比什凯克，吉尔吉斯斯坦（ Kyrgyzstan）首都，中亚",
+      "cityNameE": "BISHKEK",
+      "countryNameC": "吉尔吉斯坦",
+      "countryNameE": "KYRGYZSTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FRW",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "博茨瓦纳",
+      "countryNameE": "BOTSWANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FUK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "日本",
+      "countryNameE": "JAPAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "FWA",
+      "cityNameC": "韦恩堡，美国（ U.S.A.）印第安纳州，北美洲",
+      "cityNameE": "FORTWAYNE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GBE",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "博茨瓦纳",
+      "countryNameE": "BOTSWANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GDL",
+      "cityNameC": "瓜达拉哈拉，墨西哥 (Mexico)，中美洲",
+      "cityNameE": "GUADALAJARA",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GDN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GEO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "圭亚那",
+      "countryNameE": "GUYANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GIG",
+      "cityNameC": "RIO DE JANEIRO",
+      "cityNameE": "RIODEJANEIRO",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GLA",
+      "cityNameC": "格拉斯哥，英国 (United Kingdom)欧洲",
+      "cityNameE": "GLASGOW",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GNB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GOA",
+      "cityNameC": "热那亚，意大利 (Italy)，欧洲",
+      "cityNameE": "GENOA",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GOT",
+      "cityNameC": "哥德堡，瑞典 (Sweden)，欧洲",
+      "cityNameE": "GOTHENBURG",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GRB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GRQ",
+      "cityNameC": "格罗宁根",
+      "cityNameE": "GRONINGEN",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GRR",
+      "cityNameC": "大急流，美国（ U.S.A.）密歇根州，北美洲",
+      "cityNameE": "GRANDERAPIDS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GRU",
+      "cityNameC": "圣保罗",
+      "cityNameE": "SAOPAULO",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GRZ",
+      "cityNameC": "格拉茨",
+      "cityNameE": "GRAZ",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GSO",
+      "cityNameC": "格林斯伯勒，美国 (U.S.A.)贝卡罗来纳州，北美洲",
+      "cityNameE": "GREENSBORO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GSP",
+      "cityNameC": "格林维尔，美国（ U.S.A.） 南卡罗来那州，北美洲",
+      "cityNameE": "GREENVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GUA",
+      "cityNameC": "危地马拉城，危地马拉 (Guatemala) 首都，中美洲",
+      "cityNameE": "GUATEMALACITY",
+      "countryNameC": "危地马拉",
+      "countryNameE": "GUATEMALA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GUM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "关岛",
+      "countryNameE": "GUAM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GVA",
+      "cityNameC": "日内瓦，瑞士 (Switzerland)，欧洲",
+      "cityNameE": "GENEVA",
+      "countryNameC": "瑞士",
+      "countryNameE": "SWITZERLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GYD",
+      "cityNameC": "巴库",
+      "cityNameE": "BAKU",
+      "countryNameC": "阿塞拜疆",
+      "countryNameE": "AZERBAIJAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "GYE",
+      "cityNameC": "瓜亚基尔，厄瓜多尔,南美洲西北部",
+      "cityNameE": "GUAYAQUIL",
+      "countryNameC": "厄瓜多尔",
+      "countryNameE": "ECUADOR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HAJ",
+      "cityNameC": "汉诺威",
+      "cityNameE": "HANOVER",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HAM",
+      "cityNameC": "汉堡",
+      "cityNameE": "HAMBURG",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HAN",
+      "cityNameC": "河内",
+      "cityNameE": "Hanoi",
+      "countryNameC": "越南",
+      "countryNameE": "VIET NAM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HAR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HAV",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "古巴",
+      "countryNameE": "CUBA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HEL",
+      "cityNameC": "赫尔辛基",
+      "cityNameE": "HELSINKI",
+      "countryNameC": "芬兰",
+      "countryNameE": "FINLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HER",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "希腊",
+      "countryNameE": "GREECE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HFD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HKG",
+      "cityNameC": "香港，中国（ China）香港特别行政区，亚洲",
+      "cityNameE": "HONGKONG",
+      "countryNameC": "香港",
+      "countryNameE": "HONG KONG",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HKT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "泰国",
+      "countryNameE": "THAILAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HND",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "日本",
+      "countryNameE": "JAPAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HNL",
+      "cityNameC": "火努鲁鲁 (檀香山 )，美国 (U.S.A)夏威夷州，太平洋岛屿",
+      "cityNameE": "HONOLULU",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HOH",
+      "cityNameC": "霍恩埃姆斯",
+      "cityNameE": "HOHENEMS",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HOU",
+      "cityNameC": "休斯敦，美国 (U.S.A)得克萨斯州，北美洲",
+      "cityNameE": "HOUSTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HRE",
+      "cityNameC": "哈拉雷，津巴布韦 (Zimbabwe)首都，非洲",
+      "cityNameE": "HARARE",
+      "countryNameC": "津巴布韦",
+      "countryNameE": "ZIMBABWE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HSV",
+      "cityNameC": "亨茨维尔，美国 (U.S.A.)阿拉巴马州，北美洲",
+      "cityNameE": "HUNTSVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "HYD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IAD",
+      "cityNameC": "WASHINGTON",
+      "cityNameE": "WASHINGTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IAH",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ICN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "韩国",
+      "countryNameE": "KOREA, REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IEV",
+      "cityNameC": "基辅，乌克兰 (Ukraine)首都，欧洲",
+      "cityNameE": "KIEV",
+      "countryNameC": "乌克兰",
+      "countryNameE": "UKRAINE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IKA",
+      "cityNameC": "TEHRAN",
+      "cityNameE": "TEHRAN",
+      "countryNameC": "伊朗",
+      "countryNameE": "IRAN, ISLAMIC REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ILM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ILN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IND",
+      "cityNameC": "印第安纳波利斯，美国 (U.S.A)印第安纳州，北美洲",
+      "cityNameE": "INDIANAPOLIS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "INN",
+      "cityNameC": "因斯布鲁克，奥地利 (Austria )南部 , 欧洲",
+      "cityNameE": "INNSBRUCK",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "INV",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ISB",
+      "cityNameC": "伊斯兰堡，巴基斯坦 (Pakistan)，亚洲",
+      "cityNameE": "ISLAMABAD",
+      "countryNameC": "巴基斯坦",
+      "countryNameE": "PAKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IST",
+      "cityNameC": "伊斯坦布尔，土耳其 (Turkey)，西北亚",
+      "cityNameE": "ISTANBUL",
+      "countryNameC": "土耳其",
+      "countryNameE": "TURKEY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "IZM",
+      "cityNameC": "依兹密尔，土耳其 (Turkey), 西北亚",
+      "cityNameE": "IZMIR",
+      "countryNameC": "土耳其",
+      "countryNameE": "TURKEY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JAN",
+      "cityNameC": "杰克逊维尔，美国（ U.S.A.）佛罗里达州，北美洲",
+      "cityNameE": "JACKSONVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JAX",
+      "cityNameC": "杰克逊维尔，美国（ U.S.A.）佛罗里达州，北美洲",
+      "cityNameE": "JACKSONVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JED",
+      "cityNameC": "吉达，沙特阿拉伯 (Saudi Arabia)，西亚（中东）",
+      "cityNameE": "JEDDAH",
+      "countryNameC": "沙特阿拉伯",
+      "countryNameE": "SAUDI ARABIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JER",
+      "cityNameC": "纽沃，美国（ U.S.A.）新泽西州，北美洲",
+      "cityNameE": "NEWWARK",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JFK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JIB",
+      "cityNameC": "吉布提，吉布提 (Djibouti)首都，非洲",
+      "cityNameE": "DJIBOUTI",
+      "countryNameC": "吉布提",
+      "countryNameE": "DJIBOUTI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JKG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JKT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JNB",
+      "cityNameC": "约翰内斯堡，南非 (South Africa)，非洲南部",
+      "cityNameE": "JOHANNESBURG",
+      "countryNameC": "南非",
+      "countryNameE": "SOUTH AFRICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JOI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JRO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "坦桑尼亚",
+      "countryNameE": "TANZANIA, UNITED REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "JUB",
+      "cityNameC": "朱巴，苏丹 (Sudan)，非洲东北部",
+      "cityNameE": "JUBA",
+      "countryNameC": "苏丹",
+      "countryNameE": "SUDAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KAN",
+      "cityNameC": "卡诺，尼日利亚 (Nigeria),非洲",
+      "cityNameE": "KANO",
+      "countryNameC": "尼日利亚",
+      "countryNameE": "NIGERIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KBL",
+      "cityNameC": "喀布卡",
+      "cityNameE": "KABUL",
+      "countryNameC": "阿富汗",
+      "countryNameE": "AFGHANISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KBP",
+      "cityNameC": "KIEV",
+      "cityNameE": "KIEV",
+      "countryNameC": "乌克兰",
+      "countryNameE": "UKRAINE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KGL",
+      "cityNameC": "基加利，卢旺达 (Rwanda)首都，非洲",
+      "cityNameE": "KIGALI",
+      "countryNameC": "卢旺达",
+      "countryNameE": "RWANDA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KHH",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "台湾省",
+      "countryNameE": "TAIWAN, PROVINCE OF CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KHI",
+      "cityNameC": "卡拉奇",
+      "cityNameE": "KARACHI",
+      "countryNameC": "巴基斯坦",
+      "countryNameE": "PAKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KIN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "牙买加",
+      "countryNameE": "JAMAICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KIX",
+      "cityNameC": "大阪，日本 (Japan)，亚洲",
+      "cityNameE": "JPKIM",
+      "countryNameC": "日本",
+      "countryNameE": "JAPAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KLF",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KLU",
+      "cityNameC": "克拉银福，奥地利 (Austria)，欧洲中部",
+      "cityNameE": "KLAGENFURT",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KRK",
+      "cityNameC": "克拉科夫，波兰 (Poland)，欧洲",
+      "cityNameE": "KRAKOW",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KRS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KRT",
+      "cityNameC": "喀土穆，苏丹 (Sudan)首都，非洲",
+      "cityNameE": "KHARTOUM",
+      "countryNameC": "苏丹",
+      "countryNameE": "SUDAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KTM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "尼泊尔",
+      "countryNameE": "NEPAL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KTW",
+      "cityNameC": "卡托维兹，波兰 (Poland),欧洲",
+      "cityNameE": "KATOWICE",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KUL",
+      "cityNameC": "吉隆坡",
+      "cityNameE": "MYKUL",
+      "countryNameC": "马来西亚",
+      "countryNameE": "MALAYSIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KWI",
+      "cityNameC": "科维特，科维特 (Kuwait)首都，西亚 (中东 )",
+      "cityNameE": "KUWAIT",
+      "countryNameC": "科威特",
+      "countryNameE": "KUWAIT",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "KWL",
+      "cityNameC": "桂林市",
+      "cityNameE": "",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LAD",
+      "cityNameC": "罗安达",
+      "cityNameE": "LUANDA",
+      "countryNameC": "安哥拉",
+      "countryNameE": "ANGOLA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LAS",
+      "cityNameC": "拉斯维加斯，美国 (U.S.A)内达华州 , 北美洲",
+      "cityNameE": "LASVEGAS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LAX",
+      "cityNameC": "洛杉机，美国 (U.S.A)加利福尼亚州 ,北美洲",
+      "cityNameE": "LOSANGELES",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LBA",
+      "cityNameC": "利兹，英国 (United Kingdom ), 欧洲",
+      "cityNameE": "LEEDS",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LBB",
+      "cityNameC": "拉伯克，美国 ((U.S.A.)得克萨斯州，北美洲",
+      "cityNameE": "LUBBOCK",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LBV",
+      "cityNameC": "利伯维尔，加篷 (Gabon)首都，非洲",
+      "cityNameE": "LIBREVILLE",
+      "countryNameC": "加蓬",
+      "countryNameE": "GABON",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LCA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "塞浦路斯",
+      "countryNameE": "CYPRUS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LCG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LED",
+      "cityNameC": "ST PETERSBURG",
+      "cityNameE": "STPETERSBURG",
+      "countryNameC": "俄罗斯",
+      "countryNameE": "RUSSIAN FEDERATION",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LEJ",
+      "cityNameC": "莱比锡",
+      "cityNameE": "LEIPZIG",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LEX",
+      "cityNameC": "列克星敦，美国（ U.S.A.）肯塔基州，北美洲",
+      "cityNameE": "LEXINGTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LFT",
+      "cityNameC": "拉斐特，美国（ U.S.A路易斯安那州，北美洲",
+      "cityNameE": "LAFAYETTE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LFW",
+      "cityNameC": "洛美，多哥 (Togo)首都，非洲",
+      "cityNameE": "LOME",
+      "countryNameC": "多哥",
+      "countryNameE": "TOGO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LGG",
+      "cityNameC": "列日，比利时（ Belgium），欧洲",
+      "cityNameE": "LIEGE",
+      "countryNameC": "比利时",
+      "countryNameE": "BELGIUM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LHE",
+      "cityNameC": "拉合尔",
+      "cityNameE": "LAHORE",
+      "countryNameC": "巴基斯坦",
+      "countryNameE": "PAKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LHR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LIL",
+      "cityNameC": "里尔",
+      "cityNameE": "LILLE",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LIM",
+      "cityNameC": "利马，秘鲁 (Peru)首都，南美洲",
+      "cityNameE": "LIMA",
+      "countryNameC": "秘鲁",
+      "countryNameE": "PERU",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LIN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LIS",
+      "cityNameC": "里斯本，葡萄牙 (Portugal)首都、欧洲",
+      "cityNameE": "LISBON",
+      "countryNameC": "葡萄牙",
+      "countryNameE": "PORTUGAL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LIT",
+      "cityNameC": "小石城，美国 (U.S.A)阿肯色州 ,北美州",
+      "cityNameE": "LITTLEROCK",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LJU",
+      "cityNameC": "卢布尔雅那，斯洛文尼亚（ Slovenia），欧洲",
+      "cityNameE": "LJUBLJANA",
+      "countryNameC": "斯洛文尼亚",
+      "countryNameE": "SLOVENIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LLW",
+      "cityNameC": "利隆圭，马拉维（ Malawi）首都，非洲",
+      "cityNameE": "LILONGWE",
+      "countryNameC": "马拉维",
+      "countryNameE": "MALAWI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LNZ",
+      "cityNameC": "林兹",
+      "cityNameE": "LINZ",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LON",
+      "cityNameC": "伦敦，英国",
+      "cityNameE": "LONDON-HEATHROW",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LOS",
+      "cityNameC": "拉各斯，尼旦利亚 (Nigeria)，非洲",
+      "cityNameE": "LAGOS",
+      "countryNameC": "尼日利亚",
+      "countryNameE": "NIGERIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LPB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "玻利维亚",
+      "countryNameE": "BOLIVIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LPL",
+      "cityNameC": "利物浦，英国 (United Kingdom)，欧洲",
+      "cityNameE": "LIVERPOOL",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LRD",
+      "cityNameC": "拉雷多，美国（ U.S.A.） 得克萨斯州，北美洲，",
+      "cityNameE": "LAREDO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LTN",
+      "cityNameC": "LONDON",
+      "cityNameE": "LONDON",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LUN",
+      "cityNameC": "卢萨卡，赞比亚 (Zambia),非洲",
+      "cityNameE": "LUSAKA",
+      "countryNameC": "赞比亚",
+      "countryNameE": "ZAMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LUX",
+      "cityNameC": "卢森堡，卢森堡 (Luxembourg)首都 ,欧洲",
+      "cityNameE": "LUXEMBOURG",
+      "countryNameC": "卢森堡",
+      "countryNameE": "LUXEMBOURG",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "LYS",
+      "cityNameC": "里昂",
+      "cityNameE": "LYON",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MAA",
+      "cityNameC": "金奈",
+      "cityNameE": "CHENNAI",
+      "countryNameC": "印度",
+      "countryNameE": "INDIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MAD",
+      "cityNameC": "马德里 ,西班牙 (Spain)首都 , 欧洲",
+      "cityNameE": "MADRID",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MAN",
+      "cityNameC": "曼彻斯特，英国 (United Kingdom), 欧洲",
+      "cityNameE": "MANCHESTER",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MAO",
+      "cityNameC": "马瑙斯，巴西 亚马孙州 , 南美洲",
+      "cityNameE": "MANAUS",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MAR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "委内瑞拉",
+      "countryNameE": "VENEZUELA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MBA",
+      "cityNameC": "蒙巴萨，肯尼亚 (Kenya), 非洲",
+      "cityNameE": "MOMBASA",
+      "countryNameC": "肯尼亚",
+      "countryNameE": "KENYA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MBS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MBX",
+      "cityNameC": "帕拉马里博，苏里南 首都，南美洲",
+      "cityNameE": "PARAMARIBO",
+      "countryNameC": "斯洛文尼亚",
+      "countryNameE": "SLOVENIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MCI",
+      "cityNameC": "KANSAS CITY",
+      "cityNameE": "KANSASCITY",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MCO",
+      "cityNameC": "ORLANDO",
+      "cityNameE": "ORLANDO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MCT",
+      "cityNameC": "马斯喀特",
+      "cityNameE": "MUSCAT",
+      "countryNameC": "阿曼",
+      "countryNameE": "OMAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MDE",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MDT",
+      "cityNameC": "HARRISBURG",
+      "cityNameE": "HARRISBURG",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MED",
+      "cityNameC": "麦地那，沙特阿拉伯（ Saudi Arabia），西亚 (中东 )",
+      "cityNameE": "MADINAH",
+      "countryNameC": "沙特阿拉伯",
+      "countryNameE": "SAUDI ARABIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MEL",
+      "cityNameC": "墨尔本，澳大利亚 (Australia)维多利亚州 , 大洋洲",
+      "cityNameE": "MELBOURNE",
+      "countryNameC": "澳大利亚",
+      "countryNameE": "AUSTRALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MEM",
+      "cityNameC": "孟菲斯，美国 (U.S.A)田纳西州 , 北美洲",
+      "cityNameE": "MEMPHIS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MEX",
+      "cityNameC": "墨西哥城，墨西哥 (Mexico)首都 ,中美洲",
+      "cityNameE": "MEXICOCITY",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MFE",
+      "cityNameC": "莫阿莱恩，美国 (U.S.A.)得克萨斯州，北美洲 ,",
+      "cityNameE": "MCALLEN",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MFF",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "加蓬",
+      "countryNameE": "GABON",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MFM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "澳门",
+      "countryNameE": "MACAO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MFU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "赞比亚",
+      "countryNameE": "ZAMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MGM",
+      "cityNameC": "蒙哥马利 ,美国 (U.S.A)阿拉巴马州 , 北美洲",
+      "cityNameE": "MONTGOMERY",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MGQ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "索马里",
+      "countryNameE": "SOMALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MIA",
+      "cityNameC": "迈阿密，美国 (USA)佛罗里达州 , 北美洲",
+      "cityNameE": "MIAMI",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MID",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MIL",
+      "cityNameC": "米兰，意大利 (Italy),欧洲",
+      "cityNameE": "MILAN",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MKC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MKE",
+      "cityNameC": "密尔沃基，美国 (U.S.A)威斯康里州 , 北美州",
+      "cityNameE": "MILWAUKEE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MLA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "马耳他",
+      "countryNameE": "MALTA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MLH",
+      "cityNameC": "米卢斯",
+      "cityNameE": "MULHOUSE",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MLI",
+      "cityNameC": "莫林，美国（ U.S.A.）伊利诺伊州，北美洲，",
+      "cityNameE": "MOLINE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MMA",
+      "cityNameC": "马尔默，瑞典 (Sweden), 北欧",
+      "cityNameE": "MALMO",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MME",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MMX",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MNL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "菲律宾",
+      "countryNameE": "PHILIPPINES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MOB",
+      "cityNameC": "莫比尔，阿拉巴马州，北美洲",
+      "cityNameE": "MOBILE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MOW",
+      "cityNameC": "莫斯科",
+      "cityNameE": "MOSCOW",
+      "countryNameC": "俄罗斯",
+      "countryNameE": "RUSSIAN FEDERATION",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MPL",
+      "cityNameC": "蒙彼利埃，法国（ France），欧洲",
+      "cityNameE": "MONTPELLIER",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MPM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "莫桑比克",
+      "countryNameE": "MOZAMBIQUE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MRS",
+      "cityNameC": "马赛",
+      "cityNameE": "MARSEILLE",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MRU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "毛里求斯",
+      "countryNameE": "MAURITIUS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MSP",
+      "cityNameC": "圣保罗",
+      "cityNameE": "SAOPAULO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MSQ",
+      "cityNameC": "明斯克，白俄罗斯 (Belarus)首都 , 欧洲",
+      "cityNameE": "MINSK",
+      "countryNameC": "白俄罗斯",
+      "countryNameE": "BELARUS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MST",
+      "cityNameC": "马斯特里赫特",
+      "cityNameE": "MAASTRICHT",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MSU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "莱索托",
+      "countryNameE": "LESOTHO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MSY",
+      "cityNameC": "新奥尔良，美国 (USA)路易斯安那州，北美洲",
+      "cityNameE": "NEWORLEAN",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MTY",
+      "cityNameC": "蒙特雷，墨西哥（ Mexico），中美洲",
+      "cityNameE": "MONTERREY",
+      "countryNameC": "墨西哥",
+      "countryNameE": "MEXICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MUB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "博茨瓦纳",
+      "countryNameE": "BOTSWANA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MUC",
+      "cityNameC": "慕尼黑",
+      "cityNameE": "MUNICH",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MUX",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴基斯坦",
+      "countryNameE": "PAKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MVD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "乌拉圭",
+      "countryNameE": "URUGUAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "MXP",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NAN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "斐济",
+      "countryNameE": "FIJI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NAP",
+      "cityNameC": "那不勒斯，意大利 (Italy)，欧洲",
+      "cityNameE": "NAPLES",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NAT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NBO",
+      "cityNameC": "内罗比，肯尼亚 (Kenya)首都 ,非洲",
+      "cityNameE": "NAIROBI",
+      "countryNameC": "肯尼亚",
+      "countryNameE": "KENYA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NCE",
+      "cityNameC": "尼斯",
+      "cityNameE": "NICE",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NCL",
+      "cityNameC": "纽长斯尔，英国 (United Kingdom),欧洲",
+      "cityNameE": "NEWCASTLE",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NDJ",
+      "cityNameC": "恩贾梅纳，乍得 (Chad)首都 ,非洲",
+      "cityNameE": "NDJAMENA",
+      "countryNameC": "乍得",
+      "countryNameE": "CHAD",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NGO",
+      "cityNameC": "名古屋",
+      "cityNameE": "",
+      "countryNameC": "日本",
+      "countryNameE": "JAPAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NLA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "赞比亚",
+      "countryNameE": "ZAMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NOU",
+      "cityNameC": "努美阿，新喀里多尼亚（ New Caledonia），大洋洲（太平洋西南部）",
+      "cityNameE": "NOUMEA",
+      "countryNameC": "新喀里多尼亚",
+      "countryNameE": "NEW CALEDONIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NRK",
+      "cityNameC": "诺尔雪平，瑞典（ Sweden），北欧",
+      "cityNameE": "NORRKOPING",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NRT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "日本",
+      "countryNameE": "JAPAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NTE",
+      "cityNameC": "南特",
+      "cityNameE": "NANTES",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NUE",
+      "cityNameC": "纽伦堡",
+      "cityNameE": "NUREMBERG",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NVT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NWI",
+      "cityNameC": "诺里奇，英国（ United Kingdom），欧洲",
+      "cityNameE": "NORWICH",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "NYC",
+      "cityNameC": "纽约，美国 (USA)纽约州，北美洲",
+      "cityNameE": "NEWYORK",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OAK",
+      "cityNameC": "奥克兰，新西兰 (New Zealand)，大洋洲",
+      "cityNameE": "AUCKLAND",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ODS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "乌克兰",
+      "countryNameE": "UKRAINE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OKC",
+      "cityNameC": "俄克拉何马城，美国 (U.S.A.)俄克拉何马州 , 北美州",
+      "cityNameE": "OKLAHOMACITY",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OMA",
+      "cityNameC": "奥马哈，美国（ U.S.A.）内布拉斯加州 , 北美洲",
+      "cityNameE": "OMAHA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OPO",
+      "cityNameC": "波尔图，葡萄牙（ Portugal），欧洲",
+      "cityNameE": "PORTO",
+      "countryNameC": "葡萄牙",
+      "countryNameE": "PORTUGAL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORD",
+      "cityNameC": "芝加哥，美国 (U.S.A)伊利诺斯州，北美洲",
+      "cityNameE": "CHICAGO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORF",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORK",
+      "cityNameC": "科克",
+      "cityNameE": "CORK",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ORY",
+      "cityNameC": "PARIS",
+      "cityNameE": "PARIS",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OSL",
+      "cityNameC": "奥斯陆，挪威 (Norway)首都，北欧",
+      "cityNameE": "OSLO",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OTP",
+      "cityNameC": "BUCHAREST",
+      "cityNameE": "BUCHAREST",
+      "countryNameC": "罗马尼亚",
+      "countryNameE": "ROMANIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "OUA",
+      "cityNameC": "瓦加杜古， 布基纳法索（ Burkina Faso ）首都，非洲",
+      "cityNameE": "OUAGADOUGOU",
+      "countryNameC": "布基纳法索",
+      "countryNameE": "BURKINA FASO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PAR",
+      "cityNameC": "巴黎，法国 (France)首都，欧洲",
+      "cityNameE": "PARIS",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PBM",
+      "cityNameC": "帕拉马里博，苏里南 首都，南美洲",
+      "cityNameE": "PARAMARIBO",
+      "countryNameC": "苏里南",
+      "countryNameE": "SURINAME",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PDX",
+      "cityNameC": "波特兰，美国 (USA)俄勒冈州，北美洲",
+      "cityNameE": "PORTLAND",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PEI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "哥伦比亚",
+      "countryNameE": "COLOMBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PEN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "马来西亚",
+      "countryNameE": "MALAYSIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PER",
+      "cityNameC": "珀斯",
+      "cityNameE": "PERTH",
+      "countryNameC": "澳大利亚",
+      "countryNameE": "AUSTRALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PFO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "塞浦路斯",
+      "countryNameE": "CYPRUS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PHC",
+      "cityNameC": "哈科特港，尼日利亚（ Nigeria），西非",
+      "cityNameE": "PORTHARCOURT",
+      "countryNameC": "尼日利亚",
+      "countryNameE": "NIGERIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PHL",
+      "cityNameC": "费城，美国 (USA)宾夕法尼亚州，北美洲",
+      "cityNameE": "PHILADELPHIA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PHX",
+      "cityNameC": "菲尼克斯，美国 (USA)亚利桑那州，北美洲",
+      "cityNameE": "PHOENIX",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PIK",
+      "cityNameC": "GLASGOW",
+      "cityNameE": "GLASGOW",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PIT",
+      "cityNameC": "匹兹堡，美国 (U.S.A)宾夕法尼亚州，北美州",
+      "cityNameE": "PITTSBURGH",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PLH",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PLM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PLZ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "南非",
+      "countryNameE": "SOUTH AFRICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PMI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PMO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PNH",
+      "cityNameC": "金边，柬埔赛 (Cambodia)首都，亚洲",
+      "cityNameE": "PHNOMPENH",
+      "countryNameC": "柬埔寨",
+      "countryNameE": "CAMBODIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PNR",
+      "cityNameC": "黑角，刚果（布）（ Congo）（ Brazaville），非洲中西部",
+      "cityNameE": "POINTENOIRE",
+      "countryNameC": "刚果",
+      "countryNameE": "CONGO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PNS",
+      "cityNameC": "彭萨科拉，美国（ U.S.A.）佛罗里达州，北美洲",
+      "cityNameE": "PENSACOLA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "POA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "POL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "莫桑比克",
+      "countryNameE": "MOZAMBIQUE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "POM",
+      "cityNameC": "莫尔斯比港，巴布亚新几内亚（ Papua New Guinea）首都",
+      "cityNameE": "PORTMORESBY",
+      "countryNameC": "巴布亚新几内亚",
+      "countryNameE": "PAPUA NEW GUINEA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "POZ",
+      "cityNameC": "波兹南",
+      "cityNameE": "POZNAN",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PPT",
+      "cityNameC": "帕皮提，法属波利尼西亚（ French Polynesia），",
+      "cityNameE": "PAPEETE",
+      "countryNameC": "法属玻利尼西亚",
+      "countryNameE": "FRENCH POLYNESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PRG",
+      "cityNameC": "布拉格，捷克 (Czech Republic)首都 , 欧洲",
+      "cityNameE": "PRAGUE",
+      "countryNameC": "捷克",
+      "countryNameE": "CZECH REPUBLIC",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PSA",
+      "cityNameC": "比萨，意大利（ Italy），欧洲",
+      "cityNameE": "PISA",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PTY",
+      "cityNameC": "巴拿马城",
+      "cityNameE": "PANAMACITY",
+      "countryNameC": "巴拿马",
+      "countryNameE": "PANAMA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PUS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "韩国",
+      "countryNameE": "KOREA, REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "PVD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RDU",
+      "cityNameC": "罗列，美国（ U.S.A.）北卡罗来纳州，北美洲",
+      "cityNameE": "RALEIGH",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "REC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "REP",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "柬埔寨",
+      "countryNameE": "CAMBODIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RGN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "缅甸",
+      "countryNameE": "MYANMAR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RIC",
+      "cityNameC": "里士满，美国 (U.S.A.)弗吉尼亚州，北美洲",
+      "cityNameE": "RICHMOND",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RIX",
+      "cityNameC": "里加，拉脱维亚 (Latvia)首都）欧洲",
+      "cityNameE": "RIGA",
+      "countryNameC": "拉脱维亚",
+      "countryNameE": "LATVIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RKT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RNO",
+      "cityNameC": "里诺，美国 (U.S.A.)内华达州，北美洲",
+      "cityNameE": "RENO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ROC",
+      "cityNameC": "罗切斯特，美国（ U.S.A.）纽约州州，北美洲",
+      "cityNameE": "ROCHESTER",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ROM",
+      "cityNameC": "罗马，意大利 (Italy)首都，欧洲",
+      "cityNameE": "ROME",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ROS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RSA",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RTM",
+      "cityNameC": "鹿特丹",
+      "cityNameE": "ROTTERDAM",
+      "countryNameC": "荷兰",
+      "countryNameE": "NETHERLANDS",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RUH",
+      "cityNameC": "利雅得，沙特阿拉伯 (Saudi Arabia)首都，西亚（中东）",
+      "cityNameE": "RIYADH",
+      "countryNameC": "沙特阿拉伯",
+      "countryNameE": "SAUDI ARABIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RUN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "留尼汪岛",
+      "countryNameE": "REUNION",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "RZE",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SAL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "萨尔瓦多",
+      "countryNameE": "EL SALVADOR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SAN",
+      "cityNameC": "圣迭哥，美国（ U.S.A）加利福尼亚洲，北美洲",
+      "cityNameE": "SANDIEGO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SAT",
+      "cityNameC": "圣安东，美国 (U.S.A.)得克萨斯州，北美洲",
+      "cityNameE": "SANANTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SAV",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SBN",
+      "cityNameC": "南本德，美国（ U.S.A.）印第安纳州，北美洲",
+      "cityNameE": "SOUTHBEND",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SCL",
+      "cityNameC": "圣地亚哥，智利首都 ,南美洲",
+      "cityNameE": "SANTIAGO",
+      "countryNameC": "智利",
+      "countryNameE": "CHILE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SCN",
+      "cityNameC": "萨尔布吕肯，德国（ Germany），欧洲",
+      "cityNameE": "SAARBRUCKEN",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SDF",
+      "cityNameC": "路易斯维尔，美国（ U.S.A.）肯塔基州，北美洲",
+      "cityNameE": "LOUISVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SDQ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "多米尼加共和国",
+      "countryNameE": "DOMINICAN REPUBLIC",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SEA",
+      "cityNameC": "西雅图，美国 (USA)华盛顿州、北美洲",
+      "cityNameE": "SEATTLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SEZ",
+      "cityNameC": "马埃岛，塞舌尔 (Seychelles)，非洲（东部印度洋）",
+      "cityNameE": "MAHEISLAND",
+      "countryNameC": "塞舌尔",
+      "countryNameE": "SEYCHELLES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SFN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "阿根廷",
+      "countryNameE": "ARGENTINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SFO",
+      "cityNameC": "圣弗朗西斯科 (旧金山 )，美国 (U.S.A)加利福尼亚州，北美洲",
+      "cityNameE": "SANFRANCISCO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SGF",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SGN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "越南",
+      "countryNameE": "VIET NAM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SHJ",
+      "cityNameC": "沙迦",
+      "cityNameE": "SHARJAH",
+      "countryNameC": "阿拉伯联合酋长国",
+      "countryNameE": "UNITED ARAB EMIRATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SIN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "新加坡",
+      "countryNameE": "SINGAPORE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SJC",
+      "cityNameC": "圣何塞，美国（ U.S.A.）加利福尼亚州，北美洲",
+      "cityNameE": "SANJOSE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SJJ",
+      "cityNameC": "萨拉热窝",
+      "cityNameE": "SARAJEVO",
+      "countryNameC": "阿鲁巴岛",
+      "countryNameE": "BOSNIA AND HERZEGOVINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SJO",
+      "cityNameC": "圣何塞",
+      "cityNameE": "SANJOSE",
+      "countryNameC": "哥斯达黎加",
+      "countryNameE": "COSTA RICA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SJU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "波多黎各",
+      "countryNameE": "PUERTO RICO",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SKG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "希腊",
+      "countryNameE": "GREECE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SLC",
+      "cityNameC": "盐湖城，美国 (USA)犹他州，北美洲",
+      "cityNameE": "SALTLATECITY",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SMF",
+      "cityNameC": "SACRAMENTO",
+      "cityNameE": "SACRAMENTO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SNN",
+      "cityNameC": "香农",
+      "cityNameE": "SHANNON",
+      "countryNameC": "爱尔兰",
+      "countryNameE": "IRELAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SOC",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SOF",
+      "cityNameC": "索非亚",
+      "cityNameE": "SOFIA",
+      "countryNameC": "保加利亚",
+      "countryNameE": "BULGARIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SOU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "英国",
+      "countryNameE": "UNITED KINGDOM",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SPU",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "克罗地亚",
+      "countryNameE": "CROATIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SRG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SSG",
+      "cityNameC": "马拉博，赤道几内亚（ Equatorial Guinea），首都，非洲",
+      "cityNameE": "MALABO",
+      "countryNameC": "赤道几内亚",
+      "countryNameE": "EQUATORIAL GUINEA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "STI",
+      "cityNameC": "圣地亚哥，智利首都 ,南美洲",
+      "cityNameE": "SANTIAGO",
+      "countryNameC": "多米尼加共和国",
+      "countryNameE": "DOMINICAN REPUBLIC",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "STL",
+      "cityNameC": "圣路易斯，美国 (U.S.A)密苏里州，北美州",
+      "cityNameE": "STLOUIS",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "STO",
+      "cityNameC": "斯德哥尔摩，瑞典 (Sweden)首都，欧洲",
+      "cityNameE": "STOCKHOLM",
+      "countryNameC": "瑞典",
+      "countryNameE": "SWEDEN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "STR",
+      "cityNameC": "斯图加特",
+      "cityNameE": "STUTTGART",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SUB",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SUV",
+      "cityNameC": "苏瓦，斐济（ Fiji），大洋州太平洋岛屿",
+      "cityNameE": "SUVA",
+      "countryNameC": "斐济",
+      "countryNameE": "FIJI",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SVG",
+      "cityNameC": "斯塔万格，挪威 (Norway)，欧洲",
+      "cityNameE": "STAVANGER",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SVO",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "俄罗斯",
+      "countryNameE": "RUSSIAN FEDERATION",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SVQ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SWF",
+      "cityNameC": "纽堡，美国 (U.S.A.)纽约州，北美洲",
+      "cityNameE": "NEWBURGH",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SWK",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SXB",
+      "cityNameC": "斯特拉斯堡",
+      "cityNameE": "STRASBOURG",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SYD",
+      "cityNameC": "悉尼，澳大利亚 (Austria)新南威尔士州，大洋洲",
+      "cityNameE": "SYDNEY",
+      "countryNameC": "澳大利亚",
+      "countryNameE": "AUSTRALIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SYR",
+      "cityNameC": "锡拉丘兹，美国 (U.S.A.)纽约州，北美洲",
+      "cityNameE": "SYRACUSE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "SZG",
+      "cityNameC": "萨尔茨堡",
+      "cityNameE": "SALZBURG",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TAS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "乌兹别克斯坦",
+      "countryNameE": "UZBEKISTAN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TBS",
+      "cityNameC": "第比利斯，格鲁吉亚 (Georgia)首都，西北亚",
+      "cityNameE": "TBILISI",
+      "countryNameC": "格鲁吉亚",
+      "countryNameE": "GEORGIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TFS",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "THR",
+      "cityNameC": "德黑兰，伊朗 (Iran)，西亚 (中东 )",
+      "cityNameE": "TEHRAN",
+      "countryNameC": "伊朗",
+      "countryNameE": "IRAN, ISLAMIC REPUBLIC OF",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TIP",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "利比亚",
+      "countryNameE": "LIBYAN ARAB JAMAHIRIYA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TLL",
+      "cityNameC": "塔林",
+      "cityNameE": "TALLINN",
+      "countryNameC": "爱沙尼亚",
+      "countryNameE": "ESTONIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TLS",
+      "cityNameC": "图卢兹",
+      "cityNameE": "TOULOUSE",
+      "countryNameC": "法国",
+      "countryNameE": "FRANCE",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TLV",
+      "cityNameC": "特拉维夫-雅法，以色列 (Israel)首都，亚洲",
+      "cityNameE": "TELAVIVYAFO",
+      "countryNameC": "以色列",
+      "countryNameE": "ISRAEL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TNR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "马达加斯加",
+      "countryNameE": "MADAGASCAR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TOL",
+      "cityNameC": "托莱多，美国（ U.S.A.）俄亥俄州，北美洲",
+      "cityNameE": "TOLEDO",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TPA",
+      "cityNameC": "坦帕，美国（ U.S.A.）佛罗里达州，北美洲",
+      "cityNameE": "TAMPA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TPE",
+      "cityNameC": "台北市",
+      "cityNameE": "CNTPE",
+      "countryNameC": "中国",
+      "countryNameE": "CHINA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TRD",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "挪威",
+      "countryNameE": "NORWAY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TRI",
+      "cityNameC": "布里斯托尔，英国（ United Kingdom），欧洲",
+      "cityNameE": "BRISTOL",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TRN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TRS",
+      "cityNameC": "的里雅斯特，意大利（ Italy），欧洲",
+      "cityNameE": "TRIESTE",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TSR",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "罗马尼亚",
+      "countryNameE": "ROMANIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TUL",
+      "cityNameC": "塔尔萨，美国（ U.S.A.）俄克拉何马州，北美洲",
+      "cityNameE": "TULSA",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TUN",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "突尼斯",
+      "countryNameE": "TUNISIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TUS",
+      "cityNameC": "图森，美国 (U.S.A)亚利桑那州，北美洲",
+      "cityNameE": "TUCSON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TXL",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "德国",
+      "countryNameE": "GERMANY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "TYS",
+      "cityNameC": "诺克斯维尔，美国 (U.S.A.)田纳西州，北美洲",
+      "cityNameE": "KNOXVILLE",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "UIO",
+      "cityNameC": "基多，厄瓜多尔 (Ecuador)首都 ,南美洲",
+      "cityNameE": "QUITO",
+      "countryNameC": "厄瓜多尔",
+      "countryNameE": "ECUADOR",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "UPG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "印度尼西亚",
+      "countryNameE": "INDONESIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VCE",
+      "cityNameC": "威尼斯，意大利 (Italy), 欧洲",
+      "cityNameE": "VENICE",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VCP",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VIE",
+      "cityNameC": "维也纳",
+      "cityNameE": "VIENNA",
+      "countryNameC": "奥地利",
+      "countryNameE": "AUSTRIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VIT",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VIX",
+      "cityNameC": "墨尔本，澳大利亚 (Australia)维多利亚州 , 大洋洲",
+      "cityNameE": "MELBOURNE",
+      "countryNameC": "巴西",
+      "countryNameE": "BRAZIL",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VLC",
+      "cityNameC": "巴伦西亚，西班牙（ Spain），欧洲",
+      "cityNameE": "VALENCIA",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VLI",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "瓦努阿图",
+      "countryNameE": "VANUATU",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VLN",
+      "cityNameC": "巴伦西亚，西班牙（ Spain），欧洲",
+      "cityNameE": "VALENCIA",
+      "countryNameC": "委内瑞拉",
+      "countryNameE": "VENEZUELA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VNO",
+      "cityNameC": "维尔纽斯，立陶宛 (Lithuania)首都，欧洲",
+      "cityNameE": "VILNIUS",
+      "countryNameC": "立陶宛",
+      "countryNameE": "LITHUANIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VRN",
+      "cityNameC": "维罗纳，意大利（ Italy），欧洲",
+      "cityNameE": "VERONA",
+      "countryNameC": "意大利",
+      "countryNameE": "ITALY",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "VTE",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "老挝",
+      "countryNameE": "LAO PEOPLE'S DEMOCRATIC REPUBLIC",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "WAS",
+      "cityNameC": "华盛顿，美国 (U.S.A) 首都（哥伦比亚特区），北美洲",
+      "cityNameE": "WASHINGTON",
+      "countryNameC": "美国",
+      "countryNameE": "UNITED STATES",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "WAW",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "WDH",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "纳米比亚",
+      "countryNameE": "NAMIBIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "WLG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "新西兰",
+      "countryNameE": "NEW ZEALAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "WRO",
+      "cityNameC": "弗罗茨瓦夫，波兰（ Poland），欧洲",
+      "cityNameE": "WROCLAW",
+      "countryNameC": "波兰",
+      "countryNameE": "POLAND",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YEG",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YHM",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YHZ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YOW",
+      "cityNameC": "渥太华，加拿大 (Canada)首都，安大略省，北美洲",
+      "cityNameE": "OTTAWA",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YTO",
+      "cityNameC": "TORONTO",
+      "cityNameE": "TORONTO",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YUL",
+      "cityNameC": "蒙特利尔，加拿大 (Canada)魁北克首 ,北美洲",
+      "cityNameE": "MONTREAL",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YVR",
+      "cityNameC": "温哥华，加拿大 (Canada)不列颠哥伦比亚省 , 北美洲",
+      "cityNameE": "VANCOUVER",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YWG",
+      "cityNameC": "WINNIPEG",
+      "cityNameE": "WINNIPEG",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YYC",
+      "cityNameC": "卡尔加里，加拿大 (Canada)艾伯塔省 , 北美洲",
+      "cityNameE": "CALGARY",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "YYZ",
+      "cityNameC": "多伦多(YTO)，加拿大 (Canada)，安大略省，北美洲",
+      "cityNameE": "TORONTO",
+      "countryNameC": "加拿大",
+      "countryNameE": "CANADA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ZAG",
+      "cityNameC": "萨格勒布，克罗地亚 (Croatia)首都 ,欧洲",
+      "cityNameE": "ZAGREB",
+      "countryNameC": "克罗地亚",
+      "countryNameE": "CROATIA",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ZAZ",
+      "cityNameC": "",
+      "cityNameE": "",
+      "countryNameC": "西班牙",
+      "countryNameE": "SPAIN",
+      "range": "0",
+      "valid": "1"
+    },
+    {
+      "airport": "ZRH",
+      "cityNameC": "苏黎世，瑞士 (Switzerland),欧洲",
+      "cityNameE": "ZURICH",
+      "countryNameC": "瑞士",
+      "countryNameE": "SWITZERLAND",
+      "range": "0",
+      "valid": "1"
+    }
+  ]
+}
