@@ -94,6 +94,8 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
     override fun getMeInfo(meInfo: MeInfo) {
 
+
+
     }
 
     override fun initPresenter(): MePresenter {
@@ -103,12 +105,15 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     override fun onResume() {
         super.onResume()
         if (!SomeThingApp.instance.isNeedLogin) {
+
             Glide.with(this).load(SomeThingApp.instance.getUser().portrait).apply(mRequestOptions).into(iv_user)
             tv_me_login.visibility = TextView.GONE
             ll_user.visibility = LinearLayout.VISIBLE
             startAnimatorSet()
         }
     }
+
+
 
     override fun onClick(v: View?) {
         when (v!!.id) {
