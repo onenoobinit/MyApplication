@@ -1,7 +1,7 @@
 package com.ityzp.something.view.activity
 
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.text.Editable
 import android.text.TextUtils
 import android.text.TextWatcher
@@ -146,7 +146,7 @@ class SearchActivity : MvpActivity<SearchContract.searchView, SearchPresenter>()
 //        val size = tests.size
         val strings = tests.toTypedArray()
         val fillData = fillData(strings)
-        val manager = LinearLayoutManager(this)
+        val manager = androidx.recyclerview.widget.LinearLayoutManager(this)
         rv_search_result.layoutManager = manager
         val fuzzySearchAdapter = FuzzySearchAdapter(fillData)
         rv_search_result.adapter = fuzzySearchAdapter

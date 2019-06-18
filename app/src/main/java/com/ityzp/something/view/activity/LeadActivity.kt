@@ -4,8 +4,8 @@ import android.content.Context
 import android.content.Intent
 import android.graphics.Point
 import android.os.Bundle
-import android.support.v4.view.PagerAdapter
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.PagerAdapter
+import androidx.viewpager.widget.ViewPager
 import android.view.MotionEvent
 import android.view.View
 import android.view.ViewGroup
@@ -42,7 +42,7 @@ class LeadActivity : BaseActivity() {
         val adapter = GuideAdapter()
         vp_lead.adapter = adapter
 
-        vp_lead.setOnPageChangeListener(object : ViewPager.OnPageChangeListener {
+        vp_lead.setOnPageChangeListener(object : androidx.viewpager.widget.ViewPager.OnPageChangeListener {
             override fun onPageScrolled(position: Int, positionOffset: Float, positionOffsetPixels: Int) {
             }
 
@@ -99,7 +99,7 @@ class LeadActivity : BaseActivity() {
     }
 
 
-    internal inner class GuideAdapter : PagerAdapter() {
+    internal inner class GuideAdapter : androidx.viewpager.widget.PagerAdapter() {
 
         //item的个数
         override fun getCount(): Int {

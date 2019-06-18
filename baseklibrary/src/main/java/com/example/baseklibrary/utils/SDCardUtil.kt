@@ -3,7 +3,7 @@ package com.example.baseklibrary.utils
 import android.os.Build
 import android.os.Environment
 import android.os.StatFs
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import java.io.File
 
 /**

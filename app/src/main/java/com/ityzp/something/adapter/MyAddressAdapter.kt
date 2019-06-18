@@ -1,7 +1,7 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,7 +15,7 @@ import com.ityzp.something.R
  * Created by wangqiang on 2019/5/30.
  */
 class MyAddressAdapter(var datas: ArrayList<String>, var context: Context) :
-    RecyclerView.Adapter<MyAddressAdapter.MyViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<MyAddressAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): MyViewHolder {
         return MyViewHolder(LayoutInflater.from(context).inflate(R.layout.adapter_my_address, p0, false))
     }
@@ -42,7 +42,7 @@ class MyAddressAdapter(var datas: ArrayList<String>, var context: Context) :
         }
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         val ll_myaddress_item: LinearLayout = itemView.findViewById(R.id.ll_myaddress_item)
         val rl_address_left: RelativeLayout = itemView.findViewById(R.id.rl_address_left)
         val iv_address: ImageView = itemView.findViewById(R.id.iv_address)

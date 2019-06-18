@@ -2,7 +2,7 @@ package com.ityzp.something.widgets.popouwindow
 
 import android.content.Context
 import android.os.Handler
-import android.support.v4.widget.PopupWindowCompat
+import androidx.core.widget.PopupWindowCompat
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View

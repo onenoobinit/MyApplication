@@ -1,6 +1,6 @@
 package com.ityzp.something.adapter
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.text.TextUtils
 import android.widget.Filter
 import android.widget.Filterable
@@ -12,11 +12,11 @@ import java.util.*
 /**
  * Created by wangqiang on 2019/6/12.
  */
-abstract class FuzzySearchBaseAdapter<ITEM : IFuzzySearchItem, VH : RecyclerView.ViewHolder> @JvmOverloads constructor(
+abstract class FuzzySearchBaseAdapter<ITEM : IFuzzySearchItem, VH : androidx.recyclerview.widget.RecyclerView.ViewHolder> @JvmOverloads constructor(
     rule: IFuzzySearchRule?,
     private var mBackDataList: List<ITEM>? = null
 ) :
-    RecyclerView.Adapter<VH>(), Filterable {
+    androidx.recyclerview.widget.RecyclerView.Adapter<VH>(), Filterable {
 
     private var mFilter: FuzzySearchFilter? = null
     protected var mDataList: List<ITEM>? = null

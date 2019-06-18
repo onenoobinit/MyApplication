@@ -3,7 +3,7 @@ package com.example.baseklibrary.base
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
+import androidx.annotation.RequiresApi
 import android.text.TextUtils
 import com.example.baseklibrary.sonic.SonicJavaScriptInterface
 import com.example.baseklibrary.sonic.SonicRuntimeImpl

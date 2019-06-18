@@ -1,7 +1,7 @@
 package com.ityzp.something
 
 import android.content.Context
-import android.support.multidex.MultiDex
+import androidx.multidex.MultiDex
 import android.text.TextUtils
 import com.example.baseklibrary.base.BaseApplication
 import com.example.baseklibrary.utils.SPUtil

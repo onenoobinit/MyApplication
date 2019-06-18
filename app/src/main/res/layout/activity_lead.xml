@@ -9,9 +9,9 @@
         android:layout_height="match_parent"
         tools:context="com.ityzp.something.view.activity.LeadActivity">
 
-    <android.support.v4.view.ViewPager android:layout_width="match_parent"
-                                       android:id="@+id/vp_lead"
-                                       android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    <androidx.viewpager.widget.ViewPager android:layout_width="match_parent"
+										 android:id="@+id/vp_lead"
+										 android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
 
 
     <TextView android:layout_width="100dp"

@@ -1,7 +1,7 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +13,7 @@ import com.ityzp.something.R
  * Created by wangqiang on 2019/5/31.
  */
 class IndexRvTitleAdapter(var context: Context, var datas: ArrayList<String>) :
-    RecyclerView.Adapter<IndexRvTitleAdapter.MyViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<IndexRvTitleAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): MyViewHolder {
         return MyViewHolder(LayoutInflater.from(context).inflate(R.layout.adapter_index_title, p0, false))
     }
@@ -38,7 +38,7 @@ class IndexRvTitleAdapter(var context: Context, var datas: ArrayList<String>) :
     }
 
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         var v_left = itemView.findViewById<View>(R.id.v_left)
         var tv_index_rv_title = itemView.findViewById<TextView>(R.id.tv_index_rv_title)
         var rl_item = itemView.findViewById<RelativeLayout>(R.id.rl_item)

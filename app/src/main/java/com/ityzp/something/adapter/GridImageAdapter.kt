@@ -1,8 +1,8 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v4.content.ContextCompat
-import android.support.v7.widget.RecyclerView
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.RecyclerView
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -31,7 +31,7 @@ class GridImageAdapter(
      * 点击添加图片跳转
      */
     private val mOnAddPicClickListener: onAddPicClickListener
-) : RecyclerView.Adapter<GridImageAdapter.ViewHolder>() {
+) : androidx.recyclerview.widget.RecyclerView.Adapter<GridImageAdapter.ViewHolder>() {
     private val mInflater: LayoutInflater
     private var list: MutableList<LocalMedia> = ArrayList()
     private var selectMax = 9
@@ -54,7 +54,7 @@ class GridImageAdapter(
         this.list = list
     }
 
-    inner class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    inner class ViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
 
         internal var mImg: ImageView
         internal var ll_del: LinearLayout
@@ -114,7 +114,7 @@ class GridImageAdapter(
                 val index = viewHolder.adapterPosition
                 // 这里有时会返回-1造成数据下标越界,具体可参考getAdapterPosition()源码，
                 // 通过源码分析应该是bindViewHolder()暂未绘制完成导致，知道原因的也可联系我~感谢
-                if (index != RecyclerView.NO_POSITION) {
+                if (index != androidx.recyclerview.widget.RecyclerView.NO_POSITION) {
                     list.removeAt(index)
                     notifyItemRemoved(index)
                     notifyItemRangeChanged(index, list.size)

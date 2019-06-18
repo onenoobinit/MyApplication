@@ -93,13 +93,13 @@
 				  android:background="@color/c_F3F2F2"
 				  android:layout_height="1dp"/>
 
-			<android.support.v7.widget.RecyclerView android:layout_width="match_parent"
-													android:id="@+id/rv_vip"
-													android:paddingLeft="5dp"
-													android:paddingRight="5dp"
-													android:background="@color/white"
-													android:layout_height="100dp">
-			</android.support.v7.widget.RecyclerView>
+			<androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+													   android:id="@+id/rv_vip"
+													   android:paddingLeft="5dp"
+													   android:paddingRight="5dp"
+													   android:background="@color/white"
+													   android:layout_height="100dp">
+			</androidx.recyclerview.widget.RecyclerView>
 
 			<View android:layout_width="match_parent"
 				  android:background="@color/c_F3F2F2"

@@ -3,7 +3,7 @@
 		xmlns:app="http://schemas.android.com/apk/res-auto"
 		xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
 		android:layout_height="64dp" android:background="@color/tb_bg">
-	<android.support.v7.widget.Toolbar
+	<androidx.appcompat.widget.Toolbar
 			android:id="@+id/toobar"
 			android:layout_width="match_parent"
 			android:layout_alignParentBottom="true"
@@ -40,5 +40,5 @@
 				   android:visibility="gone"
 				   android:layout_marginRight="16dp"
 				   android:layout_height="wrap_content"/>
-	</android.support.v7.widget.Toolbar>
+	</androidx.appcompat.widget.Toolbar>
 </RelativeLayout>

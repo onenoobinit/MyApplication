@@ -5,7 +5,7 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
@@ -68,7 +68,11 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
     private fun initanimation() {
         rv_vip.adapter = MeVipAdapter(mevips!!, mContext)
-        rv_vip.layoutManager = LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false)
+        rv_vip.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+            mContext,
+            androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
+            false
+        )
         OverScrollDecoratorHelper.setUpOverScroll(rv_vip, OverScrollDecoratorHelper.ORIENTATION_HORIZONTAL)
         val upOverScroll = OverScrollDecoratorHelper.setUpOverScroll(sv_me)
         upOverScroll.setOverScrollUpdateListener(IOverScrollUpdateListener { decor, state, offset ->
@@ -77,7 +81,8 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 viewHeight = iv_head_view.height
             }
             lp.height = offset.toInt() + viewHeight!!
-            old_offset = offset.toInt()
+            old_offset = offset.
+                toInt()
             if (offset > 0) {
                 rl_root.setPadding(0, -old_offset!!, 0, 0)
             }

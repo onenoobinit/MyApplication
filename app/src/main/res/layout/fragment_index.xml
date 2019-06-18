@@ -8,43 +8,43 @@
 	<include android:id="@+id/inclde_index_top"
 			 layout="@layout/layout_inex_top"/>
 
-	<android.support.design.widget.CoordinatorLayout
+	<androidx.coordinatorlayout.widget.CoordinatorLayout
 			android:id="@+id/cl_index"
 			android:layout_width="match_parent"
 			android:orientation="vertical"
 			android:layout_below="@+id/inclde_index_top"
 			android:layout_height="match_parent">
 
-		<android.support.design.widget.AppBarLayout
+		<com.google.android.material.appbar.AppBarLayout
 				android:layout_width="match_parent"
 				android:id="@+id/apl_top"
 				android:layout_height="wrap_content">
 
-			<android.support.design.widget.CollapsingToolbarLayout
+			<com.google.android.material.appbar.CollapsingToolbarLayout
 					android:layout_width="match_parent"
 					android:id="@+id/ctl_top"
 					app:layout_scrollFlags="scroll"
 					android:layout_height="match_parent">
 
-				<android.support.constraint.ConstraintLayout
+				<androidx.constraintlayout.widget.ConstraintLayout
 						android:layout_width="match_parent"
 						app:layout_collapseMode="pin"
 						android:layout_height="wrap_content">
 
 					<include android:id="@+id/include_index_center"
 							 layout="@layout/layout_index_center"/>
-				</android.support.constraint.ConstraintLayout>
-			</android.support.design.widget.CollapsingToolbarLayout>
+				</androidx.constraintlayout.widget.ConstraintLayout>
+			</com.google.android.material.appbar.CollapsingToolbarLayout>
 
-			<android.support.constraint.ConstraintLayout
+			<androidx.constraintlayout.widget.ConstraintLayout
 					android:layout_width="match_parent"
 					app:layout_collapseMode="none"
 					android:layout_height="60dp">
 
 				<include android:id="@+id/include_index_levitate"
 						 layout="@layout/layout_index_levitate"></include>
-			</android.support.constraint.ConstraintLayout>
-		</android.support.design.widget.AppBarLayout>
+			</androidx.constraintlayout.widget.ConstraintLayout>
+		</com.google.android.material.appbar.AppBarLayout>
 
 		<LinearLayout android:layout_width="match_parent"
 					  android:orientation="vertical"
@@ -53,7 +53,7 @@
 
 
 		</LinearLayout>
-	</android.support.design.widget.CoordinatorLayout>
+	</androidx.coordinatorlayout.widget.CoordinatorLayout>
 
 	<RelativeLayout android:layout_width="wrap_content"
 					android:layout_alignParentBottom="true"

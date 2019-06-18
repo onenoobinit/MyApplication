@@ -1,7 +1,7 @@
 package com.example.baseklibrary.utils
 
 import android.content.Context
-import android.support.annotation.UiThread
+import androidx.annotation.UiThread
 import android.view.Gravity
 import android.widget.Toast
 

@@ -37,9 +37,9 @@
 					  android:background="@color/white"
 					  android:layout_height="match_parent">
 
-			<android.support.v7.widget.RecyclerView android:layout_width="match_parent"
-													android:id="@+id/rv_my_address"
-													android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+			<androidx.recyclerview.widget.RecyclerView android:layout_width="match_parent"
+													   android:id="@+id/rv_my_address"
+													   android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
 
 			<ViewStub android:layout_width="match_parent"
 					  android:id="@+id/vs_none"

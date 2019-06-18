@@ -5,7 +5,6 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
 import android.text.TextUtils
 import android.util.Log
 import android.view.MotionEvent
@@ -15,6 +14,7 @@ import android.view.WindowManager
 import android.view.inputmethod.InputMethodManager
 import android.widget.EditText
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import com.example.baseklibrary.manager.ActivityManager
 import com.example.baseklibrary.sonic.SonicJavaScriptInterface
 import com.example.baseklibrary.sonic.SonicSessionClientImpl

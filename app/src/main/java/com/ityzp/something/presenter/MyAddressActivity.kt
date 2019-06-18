@@ -2,8 +2,8 @@ package com.ityzp.something.presenter
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewStub
 import android.widget.TextView
@@ -31,9 +31,13 @@ class MyAddressActivity : MvpActivity<MyAddressContract.myAddressView, MyAddress
     override fun initViews(savedInstanceState: Bundle?) {
         StatusBarCompat.setTranslucentForImageView(this, 0, null)
 //        mPresenter.getMyAddress()
-        rv_my_address.visibility = RecyclerView.VISIBLE
+        rv_my_address.visibility = androidx.recyclerview.widget.RecyclerView.VISIBLE
         vs_none.visibility = ViewStub.GONE
-        val linearLayoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
+        val linearLayoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+            this,
+            androidx.recyclerview.widget.LinearLayoutManager.VERTICAL,
+            false
+        )
         rv_my_address.layoutManager = linearLayoutManager
         myaddresslist!!.add("")
         myaddresslist!!.add("")

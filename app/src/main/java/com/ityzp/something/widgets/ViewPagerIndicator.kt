@@ -1,7 +1,7 @@
 package com.ityzp.something.widgets
 
 import android.content.Context
-import android.support.v4.view.ViewPager
+import androidx.viewpager.widget.ViewPager
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
@@ -14,11 +14,11 @@ import java.util.*
  */
 class ViewPagerIndicator(
     private val context: Context,
-    private val viewPager: ViewPager,
+    private val viewPager: androidx.viewpager.widget.ViewPager,
     private val dotLayout: LinearLayout,
     private val size: Int
 ) :
-    ViewPager.OnPageChangeListener {
+    androidx.viewpager.widget.ViewPager.OnPageChangeListener {
     private val img1 = R.mipmap.sy_spgg_dh_xz_icon
     private val img2 = R.mipmap.sy_spgg_dh_wxz_icon
     private val imgSize = 15

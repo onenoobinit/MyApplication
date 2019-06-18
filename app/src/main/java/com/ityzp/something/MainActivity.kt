@@ -3,9 +3,9 @@ package com.ityzp.something
 import android.Manifest
 import android.graphics.Color
 import android.os.Bundle
-import android.support.v4.app.Fragment
-import android.support.v4.app.FragmentTransaction
 import android.view.View
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentTransaction
 import com.example.baseklibrary.base.BaseActivity
 import com.example.baseklibrary.utils.StatusBarCompat
 import com.ityzp.something.view.fragment.CenterFragment

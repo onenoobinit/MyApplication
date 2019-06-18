@@ -1,20 +1,20 @@
 package com.ityzp.something.widgets
 
 import android.content.Context
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 import android.view.View
 import android.view.ViewGroup
 
 /**
  * Created by wangqiang on 2019/5/29.
  */
-class FullyGridLayoutManager : GridLayoutManager {
+class FullyGridLayoutManager : androidx.recyclerview.widget.GridLayoutManager {
 
     private val mMeasuredDimension = IntArray(2)
 
-    internal val mState = RecyclerView.State()
+    internal val mState = androidx.recyclerview.widget.RecyclerView.State()
 
     constructor(context: Context, spanCount: Int) : super(context, spanCount) {}
 
@@ -27,8 +27,8 @@ class FullyGridLayoutManager : GridLayoutManager {
     }
 
     override fun onMeasure(
-        recycler: RecyclerView.Recycler,
-        state: RecyclerView.State,
+        recycler: androidx.recyclerview.widget.RecyclerView.Recycler,
+        state: androidx.recyclerview.widget.RecyclerView.State,
         widthSpec: Int,
         heightSpec: Int
     ) {
@@ -49,7 +49,7 @@ class FullyGridLayoutManager : GridLayoutManager {
                 mMeasuredDimension
             )
 
-            if (orientation == LinearLayoutManager.HORIZONTAL) {
+            if (orientation == androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL) {
                 if (i % span == 0) {
                     width = width + mMeasuredDimension[0]
                 }
@@ -78,7 +78,7 @@ class FullyGridLayoutManager : GridLayoutManager {
     }
 
     private fun measureScrapChild(
-        recycler: RecyclerView.Recycler, position: Int, widthSpec: Int,
+        recycler: androidx.recyclerview.widget.RecyclerView.Recycler, position: Int, widthSpec: Int,
         heightSpec: Int, measuredDimension: IntArray
     ) {
         val itemCount = mState.itemCount
@@ -86,7 +86,7 @@ class FullyGridLayoutManager : GridLayoutManager {
             try {
                 val view = recycler.getViewForPosition(0)
                 if (view != null) {
-                    val p = view.layoutParams as RecyclerView.LayoutParams
+                    val p = view.layoutParams as androidx.recyclerview.widget.RecyclerView.LayoutParams
                     val childWidthSpec = ViewGroup.getChildMeasureSpec(
                         widthSpec,
                         paddingLeft + paddingRight, p.width

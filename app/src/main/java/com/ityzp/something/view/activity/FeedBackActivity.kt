@@ -2,7 +2,7 @@ package com.ityzp.something.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import android.text.TextUtils
 import android.util.Log
 import android.widget.TextView
@@ -134,7 +134,7 @@ class FeedBackActivity : MvpActivity<FeedBackContract.feedBackView, FeedBackPres
     override fun initViews(savedInstanceState: Bundle?) {
         StatusBarCompat.setTranslucentForImageView(this, 0, null)
 
-        val fullyGridLayoutManager = FullyGridLayoutManager(this, 4, GridLayoutManager.VERTICAL, false)
+        val fullyGridLayoutManager = FullyGridLayoutManager(this, 4, androidx.recyclerview.widget.GridLayoutManager.VERTICAL, false)
         rv_feedback.layoutManager = fullyGridLayoutManager
         adapter = GridImageAdapter(this, onAddPicClickListener)
         adapter!!.setList(selectList)

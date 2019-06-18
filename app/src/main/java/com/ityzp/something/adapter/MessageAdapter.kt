@@ -1,7 +1,7 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -15,12 +15,12 @@ import com.ityzp.something.moudle.MessageInfo
  * Created by wangqiang on 2019/6/6.
  */
 class MessageAdapter(var context: Context, var datas: ArrayList<MessageInfo>) :
-    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<androidx.recyclerview.widget.RecyclerView.ViewHolder>() {
     override fun getItemViewType(position: Int): Int {
         return datas.get(position).viewType
     }
 
-    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): RecyclerView.ViewHolder {
+    override fun onCreateViewHolder(p0: ViewGroup, p1: Int): androidx.recyclerview.widget.RecyclerView.ViewHolder {
         if (p1 == 1) {
             return GrideHolder(LayoutInflater.from(context).inflate(R.layout.adapter_item_top, p0, false))
         } else {
@@ -32,7 +32,7 @@ class MessageAdapter(var context: Context, var datas: ArrayList<MessageInfo>) :
         return datas.size
     }
 
-    override fun onBindViewHolder(p0: RecyclerView.ViewHolder, p1: Int) {
+    override fun onBindViewHolder(p0: androidx.recyclerview.widget.RecyclerView.ViewHolder, p1: Int) {
         if (datas.get(p1).viewType == 0) {
             val myViewHolder = p0 as MyViewHolder
             myViewHolder.tv_message_title.setText(datas.get(p1).title)
@@ -55,12 +55,12 @@ class MessageAdapter(var context: Context, var datas: ArrayList<MessageInfo>) :
         }
     }
 
-    class GrideHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class GrideHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         val tv_message_top = itemView.findViewById<TextView>(R.id.tv_message_top)
         val iv_message_top = itemView.findViewById<ImageView>(R.id.iv_message_top)
     }
 
-    class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class MyViewHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
         val tv_message_title = itemView.findViewById<TextView>(R.id.tv_message_title)
         val tv_message_content = itemView.findViewById<TextView>(R.id.tv_message_content)
         val tv_message_time = itemView.findViewById<TextView>(R.id.tv_message_time)

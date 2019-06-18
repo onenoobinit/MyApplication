@@ -1,7 +1,7 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v4.view.PagerAdapter
+import androidx.viewpager.widget.PagerAdapter
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,7 +12,7 @@ import com.ityzp.something.R
 /**
  * Created by wangqiang on 2019/5/31.
  */
-class IndexBannerAdapter(var context: Context, var datas: ArrayList<Int>) : PagerAdapter() {
+class IndexBannerAdapter(var context: Context, var datas: ArrayList<Int>) : androidx.viewpager.widget.PagerAdapter() {
     override fun isViewFromObject(p0: View, p1: Any): Boolean {
         return p0 == p1
     }

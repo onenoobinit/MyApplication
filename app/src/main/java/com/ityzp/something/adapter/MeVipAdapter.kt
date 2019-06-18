@@ -1,7 +1,7 @@
 package com.ityzp.something.adapter
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -14,7 +14,7 @@ import com.ityzp.something.R
 /**
  * Created by wangqiang on 2019/5/24.
  */
-class MeVipAdapter(var datas: List<String>, var context: Context) : RecyclerView.Adapter<MeVipAdapter.MyViewHolder>() {
+class MeVipAdapter(var datas: List<String>, var context: Context) : androidx.recyclerview.widget.RecyclerView.Adapter<MeVipAdapter.MyViewHolder>() {
     override fun onCreateViewHolder(p0: ViewGroup, p1: Int): MeVipAdapter.MyViewHolder {
         return MyViewHolder(LayoutInflater.from(context).inflate(R.layout.adapter_me_vip, p0, false))
     }
@@ -44,7 +44,7 @@ class MeVipAdapter(var datas: List<String>, var context: Context) : RecyclerView
         p0.rl_vip_item.setOnClickListener { ToastUtil.show(context, "功能开发中！") }
     }
 
-    class MyViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!) {
+    class MyViewHolder(itemView: View?) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView!!) {
         var rl_vip_item: RelativeLayout = itemView!!.findViewById(R.id.rl_vip_item)
         var iv_me_vip: ImageView = itemView!!.findViewById(R.id.iv_me_vip)
         var tv_me_vip_type: TextView = itemView!!.findViewById(R.id.tv_me_vip_type)

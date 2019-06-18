@@ -1,8 +1,8 @@
 package com.ityzp.something.view.activity
 
 import android.os.Bundle
-import android.support.v7.widget.GridLayoutManager
-import android.support.v7.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.widget.ImageView
 import com.example.baseklibrary.mvp.MvpActivity
@@ -85,9 +85,14 @@ class MessageActivity : MvpActivity<MessageContract.messageView, MessagePresente
             totalList.add(messageInfo1)
             totalList.addAll(outList)
         }
-        val manager = GridLayoutManager(this, 1, LinearLayoutManager.VERTICAL, false)
+        val manager = androidx.recyclerview.widget.GridLayoutManager(
+            this,
+            1,
+            androidx.recyclerview.widget.LinearLayoutManager.VERTICAL,
+            false
+        )
         rv_message.layoutManager = manager
-        manager.spanSizeLookup = object : GridLayoutManager.SpanSizeLookup() {
+        manager.spanSizeLookup = object : androidx.recyclerview.widget.GridLayoutManager.SpanSizeLookup() {
             override fun getSpanSize(i: Int): Int {
                 return 1
             }

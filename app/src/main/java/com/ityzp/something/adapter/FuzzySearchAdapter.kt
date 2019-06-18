@@ -1,6 +1,6 @@
 package com.ityzp.something.adapter
 
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -61,7 +61,7 @@ class FuzzySearchAdapter : FuzzySearchBaseAdapter<ItemEntity, FuzzySearchAdapter
 
     }
 
-    class ItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ItemHolder(itemView: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(itemView) {
 
         var tv_result_sx: TextView
         var tv_result_name: TextView

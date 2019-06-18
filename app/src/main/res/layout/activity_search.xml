@@ -73,10 +73,10 @@
 					android:visibility="gone"
 					android:layout_height="match_parent">
 
-		<android.support.v7.widget.RecyclerView
+		<androidx.recyclerview.widget.RecyclerView
 				android:layout_width="match_parent"
 				android:id="@+id/rv_search_content"
-				android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+				android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
 	</RelativeLayout>
 
 	<RelativeLayout android:layout_width="match_parent"
@@ -86,9 +86,9 @@
 					android:id="@+id/rl_search_result"
 					android:layout_height="match_parent">
 
-		<android.support.v7.widget.RecyclerView
+		<androidx.recyclerview.widget.RecyclerView
 				android:layout_width="match_parent"
 				android:id="@+id/rv_search_result"
-				android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+				android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
 	</RelativeLayout>
 </RelativeLayout>

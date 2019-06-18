@@ -4,8 +4,8 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
-import android.support.annotation.RequiresApi
-import android.support.v7.widget.LinearLayoutManager
+import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.view.WindowManager
 import android.widget.PopupWindow
@@ -135,7 +135,11 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         indexTitles.add("销量")
         indexTitles.add("价格")
         indexTitles.add("其他")
-        rv_index_title.layoutManager = LinearLayoutManager(mContext, LinearLayoutManager.HORIZONTAL, false)
+        rv_index_title.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
+            mContext,
+            androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
+            false
+        )
         val indexRvTitleAdapter = IndexRvTitleAdapter(mContext, indexTitles)
         rv_index_title.adapter = indexRvTitleAdapter
         OverScrollDecoratorHelper.setUpOverScroll(rv_index_title, OverScrollDecoratorHelper.ORIENTATION_HORIZONTAL)

@@ -2,7 +2,7 @@ package com.ityzp.something.view.activity
 
 import android.content.Intent
 import android.os.Bundle
-import android.support.v7.app.AppCompatDelegate
+import androidx.appcompat.app.AppCompatDelegate
 import android.view.View
 import com.example.baseklibrary.base.BaseActivity
 import com.example.baseklibrary.utils.StatusBarCompat
