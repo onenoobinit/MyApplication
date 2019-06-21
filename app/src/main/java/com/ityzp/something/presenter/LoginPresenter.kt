@@ -12,7 +12,7 @@ import com.ityzp.something.retrofit.RetrofitManager
 import com.ityzp.something.retrofit.RetryWhenNetworkException
 import com.ityzp.something.retrofit.RxSchedulers
 import com.ityzp.something.retrofit.api.CommonService
-import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody
 import java.util.concurrent.TimeUnit
 
@@ -26,7 +26,7 @@ open class LoginPresenter : BasePresenter<LoginContract.loginView>() {
         postInfoBean.loginName = tell
         postInfoBean.password = password
         val toJson = gson!!.toJson(postInfoBean)
-        val requestBody = RequestBody.create(MediaType.parse("application/json; charset=utf-8"), toJson)
+        val requestBody = RequestBody.create("application/json; charset=utf-8".toMediaTypeOrNull(), toJson)
         RetrofitManager.getInstance()!!.create(CommonService::class.java)
             .login(requestBody)
             .throttleFirst(1, TimeUnit.SECONDS)

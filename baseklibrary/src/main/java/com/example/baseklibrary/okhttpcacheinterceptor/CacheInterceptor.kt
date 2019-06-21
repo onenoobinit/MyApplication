@@ -27,7 +27,7 @@ class CacheInterceptor(private var context: Context?) : Interceptor {
         // 这里还支持WEB端协议的缓存头
         {
             val oldnow = System.currentTimeMillis()
-            val url = request.url().url().toString()
+            val url = request.url.toUrl().toString()
             var responStr: String? = null
             val reqBodyStr = getPostParams(request)
             try {
@@ -35,7 +35,7 @@ class CacheInterceptor(private var context: Context?) : Interceptor {
                 if (response.isSuccessful)
                 // 只有在网络请求返回成功之后，才进行缓存处理，否则，404存进缓存，岂不笑话
                 {
-                    val responseBody = response.body()
+                    val responseBody = response.body
                     if (responseBody != null) {
                         responStr = responseBody.string()
                         if (responStr == null) {
@@ -61,7 +61,7 @@ class CacheInterceptor(private var context: Context?) : Interceptor {
 
     private fun getCacheResponse(request: Request, oldNow: Long): Response? {
         L.d("HttpRetrofit", "--> Try to Get Cache   --------")
-        val url = request.url().url().toString()
+        val url = request.url.toUrl().toString()
         val params = getPostParams(request)
         val cacheStr =
             CacheManager.getInstance(context)!!.getCache(CacheManager.encryptMD5(url + params))//取缓存，以链接+参数进行MD5编码为KEY取
@@ -79,20 +79,20 @@ class CacheInterceptor(private var context: Context?) : Interceptor {
         val useTime = System.currentTimeMillis() - oldNow
         L.i(
             "HttpRetrofit",
-            "<-- Get Cache: " + response.code() + " " + response.message() + " " + url + " (" + useTime + "ms)"
+            "<-- Get Cache: " + response.code + " " + response.message + " " + url + " (" + useTime + "ms)"
         )
         L.i("HttpRetrofit", cacheStr!! + "")
         return response
     }
 
     private fun getOnlineResponse(response: Response, body: String?): Response {
-        val responseBody = response.body()
+        val responseBody = response.body
         return Response.Builder()
-            .code(response.code())
+            .code(response.code)
             .body(ResponseBody.create(responseBody?.contentType(), body!!))
-            .request(response.request())
-            .message(response.message())
-            .protocol(response.protocol())
+            .request(response.request)
+            .message(response.message)
+            .protocol(response.protocol)
             .build()
     }
 
@@ -104,15 +104,15 @@ class CacheInterceptor(private var context: Context?) : Interceptor {
      */
     private fun getPostParams(request: Request): String {
         var reqBodyStr = ""
-        val method = request.method()
+        val method = request.method
         if ("POST" == method)
         // 如果是Post，则尽可能解析每个参数
         {
             val sb = StringBuilder()
-            if (request.body() is FormBody) {
-                val body = request.body() as FormBody?
+            if (request.body is FormBody) {
+                val body = request.body as FormBody?
                 if (body != null) {
-                    for (i in 0 until body.size()) {
+                    for (i in 0 until body.size) {
                         sb.append(body.encodedName(i)).append("=").append(body.encodedValue(i)).append(",")
                     }
                     sb.delete(sb.length - 1, sb.length)

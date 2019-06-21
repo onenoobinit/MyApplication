@@ -1,13 +1,11 @@
 package com.ityzp.something.adapter
 
-import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.ityzp.something.R
-import com.ityzp.something.contract.IFuzzySearchRule
 import com.ityzp.something.moudle.ItemEntity
 
 /**
@@ -16,13 +14,7 @@ import com.ityzp.something.moudle.ItemEntity
 class FuzzySearchAdapter : FuzzySearchBaseAdapter<ItemEntity, FuzzySearchAdapter.ItemHolder> {
     private var cityName = ""
 
-    constructor() : super(null) {}
-
-    constructor(rule: IFuzzySearchRule) : super(rule) {}
-
     constructor(dataList: List<ItemEntity>) : super(null, dataList) {}
-
-    constructor(rule: IFuzzySearchRule, dataList: List<ItemEntity>) : super(rule, dataList) {}
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemHolder {
         return FuzzySearchAdapter.ItemHolder(

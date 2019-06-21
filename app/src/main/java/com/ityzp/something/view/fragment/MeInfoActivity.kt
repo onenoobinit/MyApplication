@@ -2,9 +2,9 @@ package com.ityzp.something.view.fragment
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.core.content.ContextCompat
 import android.view.View
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.bigkoo.pickerview.builder.TimePickerBuilder
 import com.bigkoo.pickerview.listener.OnTimeSelectListener
 import com.bumptech.glide.Glide
@@ -24,7 +24,7 @@ import com.luck.picture.lib.config.PictureMimeType
 import kotlinx.android.synthetic.main.activity_head.*
 import kotlinx.android.synthetic.main.activity_me_info.*
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper
-import okhttp3.MediaType
+import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.MultipartBody
 import okhttp3.RequestBody
 import java.io.File
@@ -176,7 +176,7 @@ class MeInfoActivity : MvpActivity<MeInfoContract.meInfoView, MeInfoPresenter>()
                         SomeThingApp.instance.setUser(user, true)
 
                         val file = File(filePath)
-                        val requestBody = RequestBody.create(MediaType.parse("image/jpeg"), file)
+                        val requestBody = RequestBody.create("image/jpeg".toMediaTypeOrNull(), file)
                         val mBody = MultipartBody.Part.createFormData("file", file.name, requestBody)
                         //暂不请求 没有后台接口处理
 //                        mPresenter.upLoadPicture(mBody, this@MeInfoActivity)
