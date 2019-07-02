@@ -46,6 +46,16 @@
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
 			tools:replace="android:name,icon,label">
+		<activity android:name=".view.activity.SpecisalBasicActivity">
+		</activity>
+		<activity android:name=".view.activity.SlideLinkActivity">
+		</activity>
+		<activity android:name=".view.activity.DrawerLayoutActivity">
+		</activity>
+		<activity android:name=".view.activity.BasicActivity">
+		</activity>
+		<activity android:name=".view.activity.TestActivity">
+		</activity>
 		<activity android:name=".view.activity.SearchActivity">
 		</activity>
 		<activity android:name=".view.activity.MessageActivity">

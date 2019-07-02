@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:layout_width="280dp"
+			  android:layout_gravity="left"
+			  android:orientation="vertical"
+			  android:background="@color/white"
+			  android:layout_height="match_parent">
+
+
+	<RelativeLayout android:layout_width="match_parent"
+					android:layout_height="200dp">
+
+		<ImageView android:layout_width="match_parent"
+				   android:src="@mipmap/ic_index_long"
+				   android:scaleType="centerCrop"
+				   android:layout_height="200dp"/>
+
+
+		<LinearLayout android:layout_width="wrap_content"
+					  android:orientation="horizontal"
+					  android:id="@+id/ll_day"
+					  android:layout_marginLeft="10dp"
+					  android:layout_marginTop="25dp"
+					  android:layout_height="wrap_content">
+
+			<ImageView android:layout_width="wrap_content"
+					   android:src="@mipmap/ic_day"
+					   android:id="@+id/iv_day"
+					   android:layout_gravity="center_vertical"
+					   android:layout_height="wrap_content"/>
+
+			<TextView android:layout_width="wrap_content"
+					  android:text="打卡"
+					  android:id="@+id/tv_day"
+					  android:textSize="13sp"
+					  android:layout_gravity="center_vertical"
+					  android:layout_marginLeft="5dp"
+					  android:textColor="@color/c_AAAAAA"
+					  android:layout_height="wrap_content"/>
+		</LinearLayout>
+	</RelativeLayout>
+
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:id="@+id/ll_drawer_my"
+				  android:layout_height="45dp">
+
+		<ImageView android:layout_width="wrap_content"
+				   android:src="@mipmap/my_on"
+				   android:layout_marginLeft="15dp"
+				   android:layout_gravity="center_vertical"
+				   android:layout_height="wrap_content"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="我的信息"
+				  android:textSize="14sp"
+				  android:textColor="@color/tb_bg"
+				  android:layout_gravity="center_vertical"
+				  android:layout_marginLeft="10dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:id="@+id/ll_drawer_cart"
+				  android:layout_height="45dp">
+
+		<ImageView android:layout_width="wrap_content"
+				   android:src="@mipmap/cart_on"
+				   android:layout_marginLeft="15dp"
+				   android:layout_gravity="center_vertical"
+				   android:layout_height="wrap_content"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="购物车"
+				  android:textSize="14sp"
+				  android:textColor="@color/tb_bg"
+				  android:layout_gravity="center_vertical"
+				  android:layout_marginLeft="10dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:id="@+id/ll_drawer_kinds"
+				  android:layout_height="45dp">
+
+		<ImageView android:layout_width="wrap_content"
+				   android:src="@mipmap/classification_on"
+				   android:layout_marginLeft="15dp"
+				   android:layout_gravity="center_vertical"
+				   android:layout_height="wrap_content"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="类别"
+				  android:textSize="14sp"
+				  android:textColor="@color/tb_bg"
+				  android:layout_gravity="center_vertical"
+				  android:layout_marginLeft="10dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+
+	<LinearLayout android:layout_width="match_parent"
+				  android:orientation="horizontal"
+				  android:id="@+id/ll_drawer_find"
+				  android:layout_height="45dp">
+
+		<ImageView android:layout_width="wrap_content"
+				   android:src="@mipmap/find_on"
+				   android:layout_marginLeft="15dp"
+				   android:layout_gravity="center_vertical"
+				   android:layout_height="wrap_content"/>
+
+		<TextView android:layout_width="wrap_content"
+				  android:text="发现"
+				  android:textSize="14sp"
+				  android:textColor="@color/tb_bg"
+				  android:layout_gravity="center_vertical"
+				  android:layout_marginLeft="10dp"
+				  android:layout_height="wrap_content"/>
+	</LinearLayout>
+</LinearLayout>

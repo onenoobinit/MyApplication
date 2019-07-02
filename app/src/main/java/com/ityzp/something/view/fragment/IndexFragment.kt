@@ -4,11 +4,11 @@ import android.content.Intent
 import android.graphics.BitmapFactory
 import android.os.Build
 import android.os.Bundle
-import androidx.annotation.RequiresApi
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.view.WindowManager
 import android.widget.PopupWindow
+import androidx.annotation.RequiresApi
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.baseklibrary.mvp.MvpFragment
 import com.example.baseklibrary.utils.DensityUtil
 import com.example.baseklibrary.utils.ToastUtil
@@ -20,8 +20,10 @@ import com.ityzp.something.contract.IndexContract
 import com.ityzp.something.presenter.IndexPresenter
 import com.ityzp.something.utils.WXObserver
 import com.ityzp.something.utils.WxShareUtils
+import com.ityzp.something.view.activity.BasicActivity
 import com.ityzp.something.view.activity.MessageActivity
 import com.ityzp.something.view.activity.SearchActivity
+import com.ityzp.something.view.activity.TestActivity
 import com.ityzp.something.widgets.ViewPagerIndicator
 import com.ityzp.something.widgets.dialog.WxShareDialog
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
@@ -79,6 +81,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         ll_index_search.setOnClickListener(this)
 
 //        mPresenter.getIndex()
+
     }
 
     private fun initNotices() {
@@ -146,16 +149,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         indexRvTitleAdapter.setOnItemListener = {
             when (it) {
                 0 -> {//推荐
-
+                    ToastUtil.show(mContext,"推荐")
                 }
                 1 -> {//销量
-
+                    ToastUtil.show(mContext,"销量")
                 }
                 2 -> {//价格
-
+                    ToastUtil.show(mContext,"价格")
                 }
                 3 -> {//其他
-
+                    ToastUtil.show(mContext,"其他")
                 }
             }
         }
@@ -222,12 +225,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
                 ToastUtil.show(mContext, "暂未开发")
             }
 
-            R.id.ll_index_center_six -> {
-                ToastUtil.show(mContext, "暂未开发")
+            R.id.ll_index_center_six -> {//测试页面
+                val intent = Intent()
+                intent.setClass(mContext,TestActivity::class.java)
+                startActivity(intent)
             }
 
-            R.id.ll_index_center_seven -> {
-                ToastUtil.show(mContext, "暂未开发")
+            R.id.ll_index_center_seven -> {//基础组件
+                val intent = Intent()
+                intent.setClass(mContext, BasicActivity::class.java)
+                startActivity(intent)
             }
 
             R.id.ll_index_center_eight -> {

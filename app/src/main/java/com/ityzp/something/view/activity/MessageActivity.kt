@@ -1,10 +1,10 @@
 package com.ityzp.something.view.activity
 
+import android.annotation.SuppressLint
 import android.os.Bundle
-import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.widget.ImageView
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.baseklibrary.mvp.MvpActivity
 import com.example.baseklibrary.utils.StatusBarCompat
 import com.example.baseklibrary.utils.ToastUtil
@@ -60,6 +60,7 @@ class MessageActivity : MvpActivity<MessageContract.messageView, MessagePresente
 //        mPresenter.getMessage()
     }
 
+    @SuppressLint("WrongConstant")
     private fun initData() {
         totalList.clear()
         newList.clear()

@@ -133,7 +133,7 @@
 					   android:layout_height="40dp"/>
 
 			<TextView android:layout_width="wrap_content"
-					  android:text="标题"
+					  android:text="测试页面"
 					  android:textSize="14sp"
 					  android:layout_gravity="center_horizontal"
 					  android:layout_marginTop="10dp"
@@ -153,7 +153,7 @@
 					   android:layout_height="40dp"/>
 
 			<TextView android:layout_width="wrap_content"
-					  android:text="标题"
+					  android:text="基础组件"
 					  android:textSize="14sp"
 					  android:layout_gravity="center_horizontal"
 					  android:layout_marginTop="10dp"
