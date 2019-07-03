@@ -69,5 +69,6 @@ dependencies {
     //微信依赖
     api 'com.tencent.mm.opensdk:wechat-sdk-android-with-mta:+'
     implementation project(':zxinglibs')
+    //球形流量球
     api 'com.gelitenight.waveview:waveview:1.0.0'
 }
