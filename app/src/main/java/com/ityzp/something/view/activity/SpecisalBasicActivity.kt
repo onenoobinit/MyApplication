@@ -34,14 +34,14 @@ class SpecisalBasicActivity : BaseActivity(), View.OnClickListener {
         rsb_special?.setRange(0f, 100f)
         rsb_special?.setProgress(0f, 50f)
         rsb_special?.setIndicatorTextDecimalFormat("0")
-        rsb_special?.setOnRangeChangedListener(object : OnRangeChangedListener {
+        rsb_special?.setOnRangeChangedListener(object : OnRangeChangedListener {//滑动监听
             override fun onStartTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
             }
 
             override fun onStopTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
             }
 
-            override fun onRangeChanged(view: RangeSeekBar?, leftValue: Float, rightValue: Float, isFromUser: Boolean) {
+            override fun onRangeChanged(view: RangeSeekBar?, leftValue: Float, rightValue: Float, isFromUser: Boolean) {//始终小的值为left大的为right
                 ToastUtil.show(this@SpecisalBasicActivity, "start=" + leftValue + "right=" + rightValue)
             }
 
