@@ -9,6 +9,8 @@ import com.example.baseklibrary.utils.ToastUtil
 import com.gelitenight.waveview.library.WaveView
 import com.ityzp.something.R
 import com.ityzp.something.widgets.WaveHelper
+import com.jaygoo.widget.OnRangeChangedListener
+import com.jaygoo.widget.RangeSeekBar
 import kotlinx.android.synthetic.main.activity_head.*
 import kotlinx.android.synthetic.main.activity_specisal_basic.*
 
@@ -27,6 +29,23 @@ class SpecisalBasicActivity : BaseActivity(), View.OnClickListener {
         waveHelper!!.start()
         iv_add.setOnClickListener(this)
         iv_del.setOnClickListener(this)
+
+
+        rsb_special?.setRange(0f, 100f)
+        rsb_special?.setProgress(0f, 50f)
+        rsb_special?.setIndicatorTextDecimalFormat("0")
+        rsb_special?.setOnRangeChangedListener(object : OnRangeChangedListener {
+            override fun onStartTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
+            }
+
+            override fun onStopTrackingTouch(view: RangeSeekBar?, isLeft: Boolean) {
+            }
+
+            override fun onRangeChanged(view: RangeSeekBar?, leftValue: Float, rightValue: Float, isFromUser: Boolean) {
+                ToastUtil.show(this@SpecisalBasicActivity, "start=" + leftValue + "right=" + rightValue)
+            }
+
+        })
     }
 
     override fun initToolBar() {
@@ -40,7 +59,7 @@ class SpecisalBasicActivity : BaseActivity(), View.OnClickListener {
                 if (waveFloat == 1.0f) {
                     waveHelper = WaveHelper(waveview, waveFloat)
                     waveHelper!!.start()
-                    ToastUtil.show(this,"已经是最大值了！")
+                    ToastUtil.show(this, "已经是最大值了！")
                 } else {
                     waveFloat = waveFloat + 0.1f
                     waveHelper = WaveHelper(waveview, waveFloat)
@@ -52,7 +71,7 @@ class SpecisalBasicActivity : BaseActivity(), View.OnClickListener {
                 if (waveFloat == 0.0f) {
                     waveHelper = WaveHelper(waveview, waveFloat)
                     waveHelper!!.start()
-                    ToastUtil.show(this,"已经是最小值了！")
+                    ToastUtil.show(this, "已经是最小值了！")
                 } else {
                     waveFloat = waveFloat - 0.1f
                     waveHelper = WaveHelper(waveview, waveFloat)

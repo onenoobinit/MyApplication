@@ -54,29 +54,33 @@
 						   android:layout_height="20dp"/>
 			</RelativeLayout>
 
-			<RelativeLayout
+			<TextView android:layout_width="match_parent"
+					  android:text="双向滑动"
+					  android:textSize="14sp"
+					  android:layout_centerVertical="true"
+					  android:paddingLeft="15dp"
+					  android:gravity="center_vertical"
+					  android:background="@color/white"
+					  android:textColor="@color/c_AAAAAA"
+					  android:layout_height="40dp"/>
+
+			<com.jaygoo.widget.RangeSeekBar
 					android:layout_width="match_parent"
-					android:background="@color/white"
-					android:layout_height="40dp">
-
-				<TextView android:layout_width="wrap_content"
-						  android:text="环形进度条"
-						  android:textSize="14sp"
-						  android:layout_centerVertical="true"
-						  android:layout_marginLeft="15dp"
-						  android:textColor="@color/c_AAAAAA"
-						  android:layout_height="wrap_content"/>
-
-				<ImageView
-						android:layout_width="wrap_content"
-						android:src="@mipmap/size_add"
-						android:layout_centerVertical="true"
-						android:layout_alignParentRight="true"
-						android:layout_marginRight="15dp"
-						android:id="@+id/iv_progress_add"
-						android:layout_height="wrap_content"/>
-			</RelativeLayout>
-
+					android:id="@+id/rsb_special"
+					app:rsb_mode="range"
+					app:rsb_tick_mark_layout_gravity="bottom"
+					app:rsb_tick_mark_text_margin="15dp"
+					app:rsb_progress_color="@color/tb_bg"
+					app:rsb_min_interval="0"
+					app:rsb_thumb_drawable="@drawable/thumb_yellow_stroke"
+					app:rsb_indicator_show_mode="alwaysShow"
+					app:rsb_indicator_height="30dp"
+					app:rsb_indicator_width="50dp"
+					app:rsb_indicator_margin="5dp"
+					app:rsb_indicator_background_color="@color/tb_bg"
+					app:rsb_tick_mark_mode="number"
+					app:rsb_tick_mark_text_array="@array/markArray5"
+					android:layout_height="wrap_content"/>
 
 
 		</LinearLayout>

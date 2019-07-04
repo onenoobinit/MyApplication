@@ -1,3 +1,7 @@
 <resources>
 	<string name="app_name">弱鸡</string>
+	<string-array name="markArray5">
+		<item>-100</item>
+		<item>100</item>
+	</string-array>
 </resources>
