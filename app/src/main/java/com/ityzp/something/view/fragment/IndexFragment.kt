@@ -96,39 +96,39 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
 
     private fun initPopup() {
         indexPopupWindow = IndexPopupWindow(mContext)
-        indexPopupWindow!!.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
+        indexPopupWindow?.setOnDismissListener(PopupWindow.OnDismissListener { setBackgroundAlpha(1f) })
         //扫一扫 简单的集成zxing还未做其他操作（比如ui和功能）
-        indexPopupWindow!!.setOnSaoListener = {
+        indexPopupWindow?.setOnSaoListener = {
             val intent = Intent()
             intent.setClass(mContext, CaptureActivity::class.java)
             startActivity(intent)
         }
         //消息
-        indexPopupWindow!!.setOnMessageListener = {
-            indexPopupWindow!!.dismiss()
+        indexPopupWindow?.setOnMessageListener = {
+            indexPopupWindow?.dismiss()
             val intent = Intent()
             intent.setClass(mContext, MessageActivity::class.java)
             startActivity(intent)
         }
         //分享到微信或朋友圈
-        indexPopupWindow!!.setOnShareListener = {
-            indexPopupWindow!!.dismiss()
+        indexPopupWindow?.setOnShareListener = {
+            indexPopupWindow?.dismiss()
             if (wxShareDialog == null) {
                 wxShareDialog = WxShareDialog(mContext)
             }
             val bitmap = BitmapFactory.decodeResource(resources, R.mipmap.ic_two, null)
-            wxShareDialog!!.setOnWxListener = {
+            wxShareDialog?.setOnWxListener = {
                 WxShareUtils.shareWeb(mContext, wxUrl, wxTitle, wxIntrodution, bitmap, false)
             }
 
-            wxShareDialog!!.setOnFriendListener = {
+            wxShareDialog?.setOnFriendListener = {
                 WxShareUtils.shareWeb(mContext, wxUrl, wxTitle, wxIntrodution, bitmap, true)
             }
 
-            wxShareDialog!!.show()
+            wxShareDialog?.show()
         }
         //收藏
-        indexPopupWindow!!.setOnCollectionListener = {
+        indexPopupWindow?.setOnCollectionListener = {
             ToastUtil.show(mContext, "收藏")
         }
     }
@@ -185,9 +185,9 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     }
 
     override fun onClick(v: View?) {
-        when (v!!.id) {
+        when (v?.id) {
             R.id.rl_index_top_more -> {//加号
-                indexPopupWindow!!.showPopupWindow(rl_index_top_more, indexTitles)
+                indexPopupWindow?.showPopupWindow(rl_index_top_more, indexTitles)
                 setBackgroundAlpha(0.55f)
             }
 
@@ -248,16 +248,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
     }
 
     private fun setBackgroundAlpha(bgAlpha: Float) {
-        val lp = getActivity()!!.window.attributes
-        lp.alpha = bgAlpha
-        lp.dimAmount = bgAlpha
+        val lp = getActivity()?.window?.attributes
+        lp?.alpha = bgAlpha
+        lp?.dimAmount = bgAlpha
         if (bgAlpha == 1f) {
-            getActivity()!!.window.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+            getActivity()?.window?.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
         } else {
-            getActivity()!!.window.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+            getActivity()?.window?.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
         }
 
-        getActivity()!!.window.attributes = lp
+        getActivity()?.window?.attributes = lp
     }
 
     //微信分享回调 取消和成功返回同样数值
@@ -272,17 +272,17 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
                 -4 -> {
                 }
             }
-            wxShareDialog!!.dismiss()
+            wxShareDialog?.dismiss()
         }
     }
 
     override fun onDestroy() {
         super.onDestroy()
         if (wxShareDialog != null) {
-            wxShareDialog!!.dismiss()
+            wxShareDialog?.dismiss()
         }
         if (indexPopupWindow != null) {
-            indexPopupWindow!!.dismiss()
+            indexPopupWindow?.dismiss()
         }
     }
 }

@@ -5,11 +5,11 @@ import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
 import android.content.Intent
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.RelativeLayout
 import android.widget.TextView
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 import com.example.baseklibrary.mvp.MvpFragment
@@ -46,9 +46,9 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
     override fun finishCreateView(state: Bundle?) {
         initanimation()//设置下拉动画效果 recycleview回弹
-        mevips!!.add("")
-        mevips!!.add("")
-        mevips!!.add("")
+        mevips?.add("")
+        mevips?.add("")
+        mevips?.add("")
         tv_me_login.setOnClickListener(this)
         iv_set.setOnClickListener(this)
         tv_feed.setOnClickListener(this)
@@ -67,7 +67,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     }
 
     private fun initanimation() {
-        rv_vip.adapter = MeVipAdapter(mevips!!, mContext)
+        rv_vip.adapter = mevips?.let { MeVipAdapter(it, mContext) }
         rv_vip.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(
             mContext,
             androidx.recyclerview.widget.LinearLayoutManager.HORIZONTAL,
@@ -121,7 +121,7 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
 
 
     override fun onClick(v: View?) {
-        when (v!!.id) {
+        when (v?.id) {
             R.id.tv_me_login -> {//登录
                 val intent = Intent()
                 intent.setClass(mContext, LoginActivity::class.java)
@@ -201,9 +201,9 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
         val currentY = rl_user.translationY
         val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, 0f)
         val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, 0f)
-        animatorlist!!.clear()
-        animatorlist!!.add(ofFloatX)
-        animatorlist!!.add(ofFloatY)
+        animatorlist?.clear()
+        animatorlist?.add(ofFloatX)
+        animatorlist?.add(ofFloatY)
         animatorSet.playTogether(animatorlist)
         animatorSet.duration = 1000
         animatorSet.start()
@@ -214,9 +214,9 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
         val currentY = rl_user.translationY
         val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, -240f)
         val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, -50f)
-        animatorlist!!.clear()
-        animatorlist!!.add(ofFloatX)
-        animatorlist!!.add(ofFloatY)
+        animatorlist?.clear()
+        animatorlist?.add(ofFloatX)
+        animatorlist?.add(ofFloatY)
         animatorSet.playTogether(animatorlist)
         animatorSet.duration = 1000
         animatorSet.start()
