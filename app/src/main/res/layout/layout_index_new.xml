@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-				android:layout_width="match_parent"
-				android:background="@color/white"
-				android:layout_height="wrap_content">
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+	   android:layout_width="match_parent"
+	   tools:parentTag="RelativeLayout"
+	   android:background="@color/white"
+	   android:layout_height="wrap_content">
 
 	<com.ityzp.something.widgets.MarqueeView android:layout_width="match_parent"
 											 android:id="@+id/mv_index"
@@ -65,4 +66,4 @@
 					  android:layout_height="wrap_content"/>
 		</RelativeLayout>
 	</LinearLayout>
-</RelativeLayout>
+</merge>
