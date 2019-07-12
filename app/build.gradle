@@ -72,5 +72,5 @@ dependencies {
     //球形流量球
     api 'com.gelitenight.waveview:waveview:1.0.0'
     //双向滑动seekbar
-    implementation 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
+    api 'com.github.Jay-Goo:RangeSeekBar:v3.0.0'
 }

@@ -268,4 +268,9 @@
 		<!--相册文件夹列表选中图标-->
 		<item name="picture.folder_checked_dot">@drawable/orange_oval</item>
 	</style>
+
+	<!-- tab标题-->
+	<style name="tab_head" parent="TextAppearance.Design.Tab">
+		<item name="textAllCaps">false</item>
+	</style>
 </resources>

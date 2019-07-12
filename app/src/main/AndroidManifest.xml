@@ -46,6 +46,8 @@
 			android:usesCleartextTraffic="true"
 			tools:ignore="AllowBackup"
 			tools:replace="android:name,icon,label">
+		<activity android:name=".view.activity.SortActivity">
+		</activity>
 		<activity android:name=".view.activity.SpecisalBasicActivity">
 		</activity>
 		<activity android:name=".view.activity.SlideLinkActivity">

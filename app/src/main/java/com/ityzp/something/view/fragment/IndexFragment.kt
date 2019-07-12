@@ -20,10 +20,7 @@ import com.ityzp.something.contract.IndexContract
 import com.ityzp.something.presenter.IndexPresenter
 import com.ityzp.something.utils.WXObserver
 import com.ityzp.something.utils.WxShareUtils
-import com.ityzp.something.view.activity.BasicActivity
-import com.ityzp.something.view.activity.MessageActivity
-import com.ityzp.something.view.activity.SearchActivity
-import com.ityzp.something.view.activity.TestActivity
+import com.ityzp.something.view.activity.*
 import com.ityzp.something.widgets.ViewPagerIndicator
 import com.ityzp.something.widgets.dialog.WxShareDialog
 import com.ityzp.something.widgets.popouwindow.IndexPopupWindow
@@ -149,16 +146,16 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         indexRvTitleAdapter.setOnItemListener = {
             when (it) {
                 0 -> {//推荐
-                    ToastUtil.show(mContext,"推荐")
+                    ToastUtil.show(mContext, "推荐")
                 }
                 1 -> {//销量
-                    ToastUtil.show(mContext,"销量")
+                    ToastUtil.show(mContext, "销量")
                 }
                 2 -> {//价格
-                    ToastUtil.show(mContext,"价格")
+                    ToastUtil.show(mContext, "价格")
                 }
                 3 -> {//其他
-                    ToastUtil.show(mContext,"其他")
+                    ToastUtil.show(mContext, "其他")
                 }
             }
         }
@@ -210,7 +207,9 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             }
 
             R.id.ll_index_center_two -> {
-                ToastUtil.show(mContext, "暂未开发")
+                val intent = Intent()
+                intent.setClass(mContext, SortActivity::class.java)
+                startActivity(intent)
             }
 
             R.id.ll_index_center_three -> {
@@ -227,7 +226,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
 
             R.id.ll_index_center_six -> {//测试页面
                 val intent = Intent()
-                intent.setClass(mContext,TestActivity::class.java)
+                intent.setClass(mContext, TestActivity::class.java)
                 startActivity(intent)
             }
 
@@ -242,7 +241,9 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             }
 
             R.id.ll_index_center_ten -> {
-                ToastUtil.show(mContext, "暂未开发")
+                ToastUtil.show(mContext,
+
+                    "暂未开发")
             }
         }
     }
