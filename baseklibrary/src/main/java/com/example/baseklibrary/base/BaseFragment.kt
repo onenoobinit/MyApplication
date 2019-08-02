@@ -4,12 +4,12 @@ import android.app.Activity
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import androidx.annotation.LayoutRes
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.annotation.LayoutRes
 import com.example.baseklibrary.sonic.SonicJavaScriptInterface
 import com.example.baseklibrary.utils.NetworkUtils
 import com.google.gson.Gson
@@ -52,13 +52,13 @@ abstract class BaseFragment : RxFragment() {
         if (savedInstanceState != null) {
             val isSupportHidden = savedInstanceState.getBoolean(STATE_SAVE_IS_HIDDEN)
 
-            val ft = fragmentManager!!.beginTransaction()
+            val ft = fragmentManager?.beginTransaction()
             if (isSupportHidden) {
-                ft.hide(this)
+                ft?.hide(this)
             } else {
-                ft.show(this)
+                ft?.show(this)
             }
-            ft.commit()
+            ft?.commit()
         }
         initWebView()
     }
@@ -72,7 +72,7 @@ abstract class BaseFragment : RxFragment() {
         //初始化Dialog
         this.inflater = inflater
         parentView = inflater.inflate(layoutResId, container, false)
-        activity = this!!.getActivity()!!
+        activity = this?.getActivity()!!
         return parentView
 
     }
@@ -110,18 +110,6 @@ abstract class BaseFragment : RxFragment() {
         return parentView.findViewById<View>(id) as T
     }
 
-    override fun onDestroy() {
-        super.onDestroy()
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-    }
-
     fun <T> newWorkAvailable(): ObservableTransformer<T, T> {
         return ObservableTransformer { upstream ->
             upstream.retry(RETRY_TIMES)
@@ -152,8 +140,8 @@ abstract class BaseFragment : RxFragment() {
         val sessionConfigBuilder = SonicSessionConfig.Builder()
         sessionConfigBuilder.setSupportLocalServer(true)
         val preloadSuccess = SonicEngine.getInstance().preCreateSession(url!!, sessionConfigBuilder.build())
-        intent!!.putExtra(BaseWebActivity.URL, url)
-        intent.putExtra(SonicJavaScriptInterface.PARAM_CLICK_TIME, System.currentTimeMillis())
+        intent?.putExtra(BaseWebActivity.URL, url)
+        intent?.putExtra(SonicJavaScriptInterface.PARAM_CLICK_TIME, System.currentTimeMillis())
         startActivity(intent)
     }
 

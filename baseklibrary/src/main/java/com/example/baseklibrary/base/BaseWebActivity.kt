@@ -3,8 +3,8 @@ package com.example.baseklibrary.base
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
-import androidx.annotation.RequiresApi
 import android.text.TextUtils
+import androidx.annotation.RequiresApi
 import com.example.baseklibrary.sonic.SonicJavaScriptInterface
 import com.example.baseklibrary.sonic.SonicRuntimeImpl
 import com.example.baseklibrary.sonic.SonicSessionClientImpl
@@ -58,7 +58,7 @@ abstract class BaseWebActivity : BaseActivity() {
             wsonicSession = SonicEngine.getInstance().createSession(wurl!!, sessionConfigBuilder.build())
             if (null != wsonicSession) {
                 wsonicSessionClient = SonicSessionClientImpl()
-                wsonicSession!!.bindClient(wsonicSessionClient)
+                wsonicSession?.bindClient(wsonicSessionClient)
             } else {
                 // 这只发生在同一音速会话已经运行时
                 // u可以将以下代码注释为默认模式。.
@@ -72,9 +72,9 @@ abstract class BaseWebActivity : BaseActivity() {
         wWebSetting.defaultTextEncodingName = "utf-8" //设置文本编码
         //确认加载JS
         wWebSetting.javaScriptEnabled = true
-        wTBSWebView!!.removeJavascriptInterface("searchBoxJavaBridge_")
+        wTBSWebView?.removeJavascriptInterface("searchBoxJavaBridge_")
         intent.putExtra(SonicJavaScriptInterface.PARAM_LOAD_URL_TIME, System.currentTimeMillis())
-        wTBSWebView!!.addJavascriptInterface(SonicJavaScriptInterface(wsonicSessionClient, intent), "sonic")
+        wTBSWebView?.addJavascriptInterface(SonicJavaScriptInterface(wsonicSessionClient, intent), "sonic")
         wWebSetting.loadWithOverviewMode = true
         wWebSetting.javaScriptCanOpenWindowsAutomatically = true
         //设置自适应屏幕，两者合用
@@ -84,23 +84,23 @@ abstract class BaseWebActivity : BaseActivity() {
         wWebSetting.loadsImagesAutomatically = true //支持自动加载图片
         wWebSetting.setSupportZoom(true)
         wWebSetting.builtInZoomControls = true
-        wTBSWebView!!.setOnLongClickListener { true }
+        wTBSWebView?.setOnLongClickListener { true }
         loadUrl()
     }
 
     fun loadUrl() {
         // WebView是准备好了，就告诉客户绑定会话
         if (wsonicSessionClient != null) {
-            wsonicSessionClient!!.bindWebView(wTBSWebView as BaseWebView?)
-            wsonicSessionClient!!.clientReady()
+            wsonicSessionClient?.bindWebView(wTBSWebView as BaseWebView?)
+            wsonicSessionClient?.clientReady()
         } else { // 默认模式
-            wTBSWebView!!.loadUrl(wurl)
+            wTBSWebView?.loadUrl(wurl)
         }
     }
 
     protected override fun onDestroy() {
         if (null != wsonicSession) {
-            wsonicSession!!.destroy()
+            wsonicSession?.destroy()
             wsonicSession = null
         }
         super.onDestroy()
@@ -109,8 +109,8 @@ abstract class BaseWebActivity : BaseActivity() {
     protected override fun onResume() {
         L.i("onResume:" + this.javaClass.getSimpleName())
         if (wTBSWebView != null) {
-            wTBSWebView!!.onResume()
-            wTBSWebView!!.resumeTimers()
+            wTBSWebView?.onResume()
+            wTBSWebView?.resumeTimers()
         }
         super.onResume()
     }
@@ -118,8 +118,8 @@ abstract class BaseWebActivity : BaseActivity() {
     protected override fun onPause() {
         L.i("onPause:" + this.javaClass.getSimpleName())
         if (wTBSWebView != null) {
-            wTBSWebView!!.onPause()
-            wTBSWebView!!.pauseTimers()
+            wTBSWebView?.onPause()
+            wTBSWebView?.pauseTimers()
         }
         super.onPause()
     }

@@ -123,6 +123,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
             }
 
             wxShareDialog?.show()
+
         }
         //收藏
         indexPopupWindow?.setOnCollectionListener = {
@@ -252,13 +253,15 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         val lp = getActivity()?.window?.attributes
         lp?.alpha = bgAlpha
         lp?.dimAmount = bgAlpha
-        if (bgAlpha == 1f) {
-            getActivity()?.window?.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
-        } else {
-            getActivity()?.window?.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
-        }
+        getActivity()?.let {
+            if (bgAlpha == 1f) {
+                it.window?.clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+            } else {
+                it.window?.addFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND)
+            }
 
-        getActivity()?.window?.attributes = lp
+            it.window?.attributes = lp
+        }
     }
 
     //微信分享回调 取消和成功返回同样数值
@@ -266,9 +269,10 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         if (o is WXObserver) {
             val res = arg as BaseResp
             when (res.errCode) {
-                0 -> {
+                0 -> {// 成功回调
+
                 }
-                -2 -> {
+                -2 -> {//失败回调
                 }
                 -4 -> {
                 }

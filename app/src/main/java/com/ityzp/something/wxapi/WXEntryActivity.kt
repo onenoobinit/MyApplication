@@ -15,6 +15,7 @@ import com.tencent.mm.opensdk.openapi.WXAPIFactory
 
 /**
  * Created by wangqiang on 2019/6/4.
+ * 微信分享登录
  */
 class WXEntryActivity : BaseActivity(), IWXAPIEventHandler {
     private var wxapi: IWXAPI? = null
@@ -23,7 +24,7 @@ class WXEntryActivity : BaseActivity(), IWXAPIEventHandler {
 
     override fun initViews(savedInstanceState: Bundle?) {
         wxapi = WXAPIFactory.createWXAPI(this, SomeThingApp.APP_ID, true)
-        wxapi!!.registerApp(SomeThingApp.APP_ID)
+        wxapi?.registerApp(SomeThingApp.APP_ID)
 
         try {
             val result = wxapi!!.handleIntent(intent, this)
@@ -41,13 +42,13 @@ class WXEntryActivity : BaseActivity(), IWXAPIEventHandler {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        wxapi!!.handleIntent(data, this)
+        wxapi?.handleIntent(data, this)
     }
 
     override fun onNewIntent(intent: Intent?) {
         super.onNewIntent(intent)
         setIntent(intent)
-        wxapi!!.handleIntent(intent, this)
+        wxapi?.handleIntent(intent, this)
         finish()
     }
 

@@ -9,6 +9,7 @@ import android.widget.RelativeLayout
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.ityzp.something.R
+import com.ityzp.something.adapter.BasicAdapter.MyViewholder
 import com.ityzp.something.view.activity.DrawerLayoutActivity
 import com.ityzp.something.view.activity.SlideLinkActivity
 import com.ityzp.something.view.activity.SpecisalBasicActivity
@@ -17,7 +18,7 @@ import com.ityzp.something.view.activity.SpecisalBasicActivity
  * Created by wangqiang on 2019/7/2.
  */
 class BasicAdapter(var datas: ArrayList<String>, var mContext: Context) :
-    RecyclerView.Adapter<BasicAdapter.MyViewholder>() {
+    RecyclerView.Adapter<MyViewholder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewholder {
         return MyViewholder(LayoutInflater.from(mContext).inflate(R.layout.adapter_basic, parent, false))
     }

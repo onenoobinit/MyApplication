@@ -79,10 +79,10 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
             val lp = iv_head_view.layoutParams as RelativeLayout.LayoutParams
             if (viewHeight == 0) {
                 viewHeight = iv_head_view.height
+
             }
             lp.height = offset.toInt() + viewHeight!!
-            old_offset = offset.
-                toInt()
+            old_offset = offset.toInt()
             if (offset > 0) {
                 rl_root.setPadding(0, -old_offset!!, 0, 0)
             }
@@ -98,7 +98,6 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     }
 
     override fun getMeInfo(meInfo: MeInfo) {
-
 
 
     }
@@ -117,7 +116,6 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
             startAnimatorSet()
         }
     }
-
 
 
     override fun onClick(v: View?) {
@@ -197,28 +195,32 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     }
 
     private fun startOutAnimator() {
-        val currentX = rl_user.translationX
-        val currentY = rl_user.translationY
-        val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, 0f)
-        val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, 0f)
-        animatorlist?.clear()
-        animatorlist?.add(ofFloatX)
-        animatorlist?.add(ofFloatY)
-        animatorSet.playTogether(animatorlist)
-        animatorSet.duration = 1000
-        animatorSet.start()
+        animatorlist?.let {
+            val currentX = rl_user.translationX
+            val currentY = rl_user.translationY
+            val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, 0f)
+            val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, 0f)
+            it.clear()
+            it.add(ofFloatX)
+            it.add(ofFloatY)
+            animatorSet.playTogether(it)
+            animatorSet.duration = 1000
+            animatorSet.start()
+        }
     }
 
     private fun startAnimatorSet() {
-        val currentX = rl_user.translationX
-        val currentY = rl_user.translationY
-        val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, -240f)
-        val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, -50f)
-        animatorlist?.clear()
-        animatorlist?.add(ofFloatX)
-        animatorlist?.add(ofFloatY)
-        animatorSet.playTogether(animatorlist)
-        animatorSet.duration = 1000
-        animatorSet.start()
+        animatorlist?.let {
+            val currentX = rl_user.translationX
+            val currentY = rl_user.translationY
+            val ofFloatX = ObjectAnimator.ofFloat(rl_user, "translationX", currentX, -240f)
+            val ofFloatY = ObjectAnimator.ofFloat(rl_user, "translationY", currentY, -50f)
+            it.clear()
+            it.add(ofFloatX)
+            it.add(ofFloatY)
+            animatorSet.playTogether(it)
+            animatorSet.duration = 1000
+            animatorSet.start()
+        }
     }
 }

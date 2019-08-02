@@ -83,7 +83,7 @@ abstract class BaseActivity : RxAppCompatActivity() {
 
         initViews(savedInstanceState)
         initToolBar()
-        ActivityManager.instance!!.addActivity(this)
+        ActivityManager.instance?.addActivity(this)
         if (mTBSWebView != null) {
             initializeWebSetting(url)
         }
@@ -104,11 +104,11 @@ abstract class BaseActivity : RxAppCompatActivity() {
         }
         if (null != sonicSession) {
             sonicSessionClient = SonicSessionClientImpl()
-            sonicSession!!.bindClient(sonicSessionClient)
+            sonicSession?.bindClient(sonicSessionClient)
             val intent = Intent()
             intent.putExtra(SonicJavaScriptInterface.PARAM_LOAD_URL_TIME, System.currentTimeMillis())
-            mTBSWebView!!.removeJavascriptInterface("searchBoxJavaBridge_")
-            mTBSWebView!!.addJavascriptInterface(SonicJavaScriptInterface(sonicSessionClient, intent), "sonic")
+            mTBSWebView?.removeJavascriptInterface("searchBoxJavaBridge_")
+            mTBSWebView?.addJavascriptInterface(SonicJavaScriptInterface(sonicSessionClient, intent), "sonic")
         }
         //获取WebSettings
         mWebSetting = mTBSWebView!!.getSettings()
@@ -124,14 +124,14 @@ abstract class BaseActivity : RxAppCompatActivity() {
         mWebSetting.loadsImagesAutomatically = true //支持自动加载图片
         mWebSetting.setSupportZoom(false)
         mWebSetting.builtInZoomControls = true
-        mTBSWebView!!.setOnLongClickListener(View.OnLongClickListener { true })
+        mTBSWebView?.setOnLongClickListener(View.OnLongClickListener { true })
     }
 
     fun loadUrl(url: String) {
         // WebView是准备好了，就告诉客户绑定会话
         if (sonicSessionClient != null) {
-            sonicSessionClient!!.bindWebView(mTBSWebView)
-            sonicSessionClient!!.clientReady()
+            sonicSessionClient?.bindWebView(mTBSWebView)
+            sonicSessionClient?.clientReady()
         } else { // 默认模式
             mTBSWebView!!.loadUrl(url)
         }
@@ -155,16 +155,16 @@ abstract class BaseActivity : RxAppCompatActivity() {
         super.onDestroy()
         if (mTBSWebView != null) {
             //释放资源
-            mTBSWebView!!.stopLoading()
-            mTBSWebView!!.removeAllViews()
-            mTBSWebView!!.destroy()
+            mTBSWebView?.stopLoading()
+            mTBSWebView?.removeAllViews()
+            mTBSWebView?.destroy()
             mTBSWebView = null
         }
         if (null != sonicSession) {
-            sonicSession!!.destroy()
+            sonicSession?.destroy()
             sonicSession = null
         }
-        ActivityManager.instance!!.finishActivity(this)
+        ActivityManager.instance?.finishActivity(this)
     }
 
     protected abstract fun initViews(savedInstanceState: Bundle?)
@@ -201,8 +201,8 @@ abstract class BaseActivity : RxAppCompatActivity() {
         super.onResume()
         L.i("onResume:" + this.javaClass.simpleName)
         if (mTBSWebView != null) {
-            mTBSWebView!!.onResume()
-            mTBSWebView!!.resumeTimers()
+            mTBSWebView?.onResume()
+            mTBSWebView?.resumeTimers()
         }
     }
 
@@ -210,8 +210,8 @@ abstract class BaseActivity : RxAppCompatActivity() {
         L.i("onPause:" + this.javaClass.simpleName)
         super.onPause()
         if (mTBSWebView != null) {
-            mTBSWebView!!.onPause()
-            mTBSWebView!!.pauseTimers()
+            mTBSWebView?.onPause()
+            mTBSWebView?.pauseTimers()
         }
     }
 
@@ -227,8 +227,8 @@ abstract class BaseActivity : RxAppCompatActivity() {
         val sessionConfigBuilder = SonicSessionConfig.Builder()
         sessionConfigBuilder.setSupportLocalServer(true)
         val preloadSuccess = SonicEngine.getInstance().preCreateSession(url!!, sessionConfigBuilder.build())
-        intent!!.putExtra(BaseWebActivity.URL, url)
-        intent.putExtra(SonicJavaScriptInterface.PARAM_CLICK_TIME, System.currentTimeMillis())
+        intent?.putExtra(BaseWebActivity.URL, url)
+        intent?.putExtra(SonicJavaScriptInterface.PARAM_CLICK_TIME, System.currentTimeMillis())
         startActivity(intent)
     }
 

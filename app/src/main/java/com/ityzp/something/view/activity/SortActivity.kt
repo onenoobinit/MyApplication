@@ -79,5 +79,4 @@ class SortActivity : MvpActivity<SortContract.sortView, SortPresenter>(), SortCo
         super.onDestroy()
         moreWindow?.let { it.dismiss() }
     }
-
 }
