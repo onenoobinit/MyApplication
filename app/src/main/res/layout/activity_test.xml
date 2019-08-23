@@ -10,4 +10,5 @@
 
 	<include android:id="@+id/tb_test"
 			 layout="@layout/activity_head"/>
+
 </LinearLayout>

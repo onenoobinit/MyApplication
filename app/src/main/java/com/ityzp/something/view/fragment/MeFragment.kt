@@ -79,7 +79,6 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
             val lp = iv_head_view.layoutParams as RelativeLayout.LayoutParams
             if (viewHeight == 0) {
                 viewHeight = iv_head_view.height
-
             }
             lp.height = offset.toInt() + viewHeight!!
             old_offset = offset.toInt()
@@ -94,11 +93,11 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
                 old_offset = 0
                 iv_head_view.layoutParams = lp
             }
+            lp.alignWithParent
         })
     }
 
     override fun getMeInfo(meInfo: MeInfo) {
-
 
     }
 
@@ -109,7 +108,6 @@ class MeFragment : MvpFragment<MeContract.meView, MePresenter>(), MeContract.meV
     override fun onResume() {
         super.onResume()
         if (!SomeThingApp.instance.isNeedLogin) {
-
             Glide.with(this).load(SomeThingApp.instance.getUser().portrait).apply(mRequestOptions).into(iv_user)
             tv_me_login.visibility = TextView.GONE
             ll_user.visibility = LinearLayout.VISIBLE

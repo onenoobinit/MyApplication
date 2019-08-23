@@ -176,6 +176,7 @@ class IndexFragment : MvpFragment<IndexContract.indexView, IndexPresenter>(), In
         uvp_index.viewPager.pageMargin = DensityUtil.px2dp(mContext, 60F).toInt()
         val viewPagerIndicator = ViewPagerIndicator(mContext, uvp_index.viewPager, ll_indicator, indexBanners.size)
         uvp_index.viewPager.addOnPageChangeListener(viewPagerIndicator)
+        UltraViewPager.ALIGN_END
     }
 
     override fun getIndex() {

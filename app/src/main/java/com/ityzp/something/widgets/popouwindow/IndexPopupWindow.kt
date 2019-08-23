@@ -2,13 +2,13 @@ package com.ityzp.something.widgets.popouwindow
 
 import android.content.Context
 import android.os.Handler
-import androidx.core.widget.PopupWindowCompat
 import android.view.Gravity
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.LinearLayout
 import android.widget.PopupWindow
+import androidx.core.widget.PopupWindowCompat
 import com.ityzp.something.R
 import java.util.*
 
@@ -72,7 +72,6 @@ class IndexPopupWindow(var context: Context) : PopupWindow() {
             }
         }
     }
-
 
     /**
      * 显示popupWindow

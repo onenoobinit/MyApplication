@@ -9,7 +9,7 @@
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_centerInParent="true"
-		android:text="关注"
+		android:text="运动"
 		android:textSize="18sp" />
 
 </RelativeLayout>

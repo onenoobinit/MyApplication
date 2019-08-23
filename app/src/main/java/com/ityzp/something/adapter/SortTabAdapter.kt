@@ -1,10 +1,9 @@
 package com.ityzp.something.adapter
 
-import android.os.Bundle
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentPagerAdapter
-import com.ityzp.something.view.fragment.MsgContentFragment
+import com.ityzp.something.utils.FragmentFactory
 
 /**
  * Created by wangqiang on 2019/7/12.
@@ -14,23 +13,8 @@ class SortTabAdapter(fm: FragmentManager, private val names:List<String>) : Frag
         return names.size
     }
 
-//    /**
-//     * 数据列表
-//     *
-//     * @param datas
-//     */
-//    fun setList(datas: List<String>) {
-//        this.names.clear()
-//        this.names.addAll(datas)
-//        names
-//        notifyDataSetChanged()
-//    }
-
-    override fun getItem(position: Int): Fragment {
-        val fragment = MsgContentFragment()
-        val bundle = Bundle()
-        bundle.putString("name", names[position])
-        fragment.setArguments(bundle)
+    override fun getItem(position: Int): Fragment? {
+        val fragment = FragmentFactory.createdById(position)
         return fragment
     }
 

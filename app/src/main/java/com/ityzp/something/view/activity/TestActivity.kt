@@ -28,5 +28,4 @@ class TestActivity : MvpActivity<TestContract.testView,TestPresenter>(),TestCont
         tb_title.setText("测试")
         toobar.setNavigationOnClickListener { finish() }
     }
-
 }
