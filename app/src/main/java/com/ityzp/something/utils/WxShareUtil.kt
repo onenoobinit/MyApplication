@@ -11,6 +11,7 @@ import java.net.URL
 
 /**
  * Created by wangqiang on 2019/6/4.
+ * 微信分享工具类
  */
 object WxShareUtil {
     private val TAG = "SDK_Sample.Util"
